@@ -21,6 +21,8 @@ EXAM_WEIGHTS = {
 }
 
 
+# question loader
+
 QUESTIONS_DIR = "questions"
 
 
@@ -37,8 +39,11 @@ def load_all_questions():
         all_questions[name] = load_questions(filename)
     return all_questions
 
+# ⭐ Load ALL questions once at startup
 
+all_questions = load_all_questions()
 
+# study mode funtion
 
 def study_mode():
     print("\n=== NSTPT STUDY MODE ===")
@@ -100,10 +105,11 @@ def study_mode():
 
     print(f"\nSession complete. Correct: {correct_count}/{num_to_ask}\n")
 
+#Main 
 
 def main():
-    print("=== NSTPT ===")
-    print("Network+ Study and Test Preparation")
+    print("=== NPST ===")
+    print("Network Pluse Study Tool")
     print("Type 'quit' at any time to exit.\n")
 
     while True:
@@ -111,6 +117,7 @@ def main():
         print("1. Study Mode (by domain)")
         print("2. Full Exam Simulation")
         print("3. Test Mode (short exam)")
+        print("4. Mastery Mode (30-question perfect run) ")
         choice = input("Select an option: ").strip().lower()
 
         if choice == "quit":
@@ -126,13 +133,16 @@ def main():
         elif choice == "3":     #test mode option
             exam_simulation(test_mode=True)
 
+        elif choice == "4":
+            mastery_mode(all_questions)
+
         else:
             print("Invalid choice.\n")
         
 
 
 
-#Exam generator here
+#Exam generator 
 
 def generate_exam(all_questions):
     exam_questions = []
@@ -154,7 +164,7 @@ def generate_exam(all_questions):
     return exam_questions
 
 
-#Exam simulator loop 
+#Exam simulatoin loop 
 
 def exam_simulation(test_mode=False):
 
@@ -231,9 +241,70 @@ def exam_simulation(test_mode=False):
             print("Correct answer:", q["answer"])
             print("Explanation:", q["explanation"])
 
+        
+# Mastery Mode (NEW)
 
-if __name__ == "__main__":
+def mastery_mode(all_questions):
+    print("\n=== NSTPT MASTERY MODE ===")
+    print("30 questions. Immediate feedback. Repeat until perfect.\n")
+
+    # Flatten all domain lists into one big list
+    combined = []
+    for domain_list in all_questions.values():
+        combined.extend(domain_list)
+
+    # Pick 30 random questions
+    session = random.sample(combined, min(30, len(combined)))
+
+    missed = []
+
+    # First pass
+    for q in session:
+        if not ask_question_mastery(q):
+            missed.append(q)
+
+    # Retry loop
+    round_num = 2
+    while missed:
+        print(f"\n--- Round {round_num}: Retrying {len(missed)} missed questions ---\n")
+        retry = missed
+        missed = []
+        for q in retry:
+            if not ask_question_mastery(q):
+                missed.append(q)
+        round_num += 1
+
+    print("\n🔥 Mastery Achieved! You answered all 30 questions correctly! 🔥\n")
+
+#New ask_question 's
+
+def ask_question_mastery(q):
+    print(q["question"])
+    for i, choice in enumerate(q["choices"], 1):
+        print(f"{i}. {choice}")
+
+    answer = input("Your answer: ").strip()
+
+    # Validate numeric input
+    if not answer.isdigit() or int(answer) not in range(1, len(q["choices"]) + 1):
+        print("Invalid input. Marked as incorrect.\n")
+        print(f"Correct answer: {q['answer']}\n")
+        return False
+
+    # Compare TEXT answers
+    selected_choice = q["choices"][int(answer) - 1]
+
+    if selected_choice == q["answer"]:
+        print("✔ Correct!\n")
+        return True
+    else:
+        print("✘ Incorrect.")
+        print(f"Correct answer: {q['answer']}\n")
+        return False
+
+
+
+# ATTN 
+# end main 
+if __name__ == "__main__":  
     main()
-
-    
-  
