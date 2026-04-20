@@ -1,0 +1,68 @@
+[
+    {
+        "question": "What device is used to separate broadcast domains?",
+        "choices": ["Hub", "Switch", "Router", "Repeater"],
+        "answer": "Router",
+        "explanation": "Routers separate broadcast domains by default."
+    },
+    {
+        "question": "Which device operates at Layer 3 and forwards packets based on IP addresses?",
+        "choices": ["Hub", "Switch", "Router", "Bridge"],
+        "answer": "Router",
+        "explanation": "Routers forward traffic between networks using IP addresses."
+    },
+    {
+        "question": "What is the primary purpose of a DMZ?",
+        "choices": ["Encrypt traffic", "Host public-facing services", "Store backups", "Segment wireless networks"],
+        "answer": "Host public-facing services",
+        "explanation": "DMZs isolate public services from internal networks."
+    },
+    {
+        "question": "Which WAN technology uses cell towers for connectivity?",
+        "choices": ["MPLS", "LTE", "T1", "Satellite"],
+        "answer": "LTE",
+        "explanation": "LTE is a cellular-based WAN technology."
+    },
+    {
+        "question": "What is the function of a load balancer?",
+        "choices": ["Increase bandwidth", "Distribute traffic", "Encrypt data", "Assign IP addresses"],
+        "answer": "Distribute traffic",
+        "explanation": "Load balancers distribute client requests across multiple servers."
+    },
+    {
+        "question": "Which cable type is immune to electromagnetic interference?",
+        "choices": ["UTP", "STP", "Coaxial", "Fiber"],
+        "answer": "Fiber",
+        "explanation": "Fiber optic cables use light, making them immune to EMI."
+    },
+    {
+        "question": "Which topology connects all devices to a central point?",
+        "choices": ["Bus", "Ring", "Star", "Mesh"],
+        "answer": "Star",
+        "explanation": "Star topology uses a central switch or hub."
+    },
+    {
+        "question": "What is the purpose of port bonding (LACP)?",
+        "choices": ["Increase speed", "Encrypt traffic", "Assign VLANs", "Provide DHCP"],
+        "answer": "Increase speed",
+        "explanation": "LACP combines multiple physical links into one logical link."
+    },
+    {
+        "question": "Which protocol is used for network time synchronization?",
+        "choices": ["SNMP", "NTP", "FTP", "TFTP"],
+        "answer": "NTP",
+        "explanation": "NTP synchronizes clocks across network devices."
+    },
+    {
+        "question": "What type of IPv4 address cannot be routed on the internet?",
+        "choices": ["Public", "Private", "Static", "Dynamic"],
+        "answer": "Private",
+        "explanation": "Private IP ranges are reserved for internal networks."
+    },
+    {
+        "question": "Which technology allows multiple VLANs to travel over one link?",
+        "choices": ["Port mirroring", "Trunking", "Bonding", "Spanning Tree"],
+        "answer": "Trunking",
+        "explanation": "Trunk ports carry tagged VLAN traffic."
+    }
+]

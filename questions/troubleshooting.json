@@ -1,0 +1,68 @@
+[
+    {
+        "question": "Which tool is used to test reachability between two hosts?",
+        "choices": ["ipconfig", "ping", "nslookup", "arp"],
+        "answer": "ping",
+        "explanation": "Ping uses ICMP echo requests to test connectivity."
+    },
+    {
+        "question": "Which tool tests DNS resolution?",
+        "choices": ["ping", "nslookup", "arp", "ipconfig"],
+        "answer": "nslookup",
+        "explanation": "Nslookup queries DNS servers for name resolution."
+    },
+    {
+        "question": "A user cannot reach a website, but pinging the IP works. What is the likely issue?",
+        "choices": ["DNS failure", "Cable unplugged", "Firewall down", "Switch loop"],
+        "answer": "DNS failure",
+        "explanation": "If IP works but hostname fails, DNS is the problem."
+    },
+    {
+        "question": "Which command shows the path packets take?",
+        "choices": ["ping", "tracert", "arp", "netstat"],
+        "answer": "tracert",
+        "explanation": "Tracert displays each hop along the route."
+    },
+    {
+        "question": "What does a high ping time usually indicate?",
+        "choices": ["Low bandwidth", "High latency", "Bad DNS", "Duplicate IP"],
+        "answer": "High latency",
+        "explanation": "High ping times indicate latency issues."
+    },
+    {
+        "question": "Which issue occurs when two devices share the same IP?",
+        "choices": ["Broadcast storm", "IP conflict", "Loopback error", "DNS poisoning"],
+        "answer": "IP conflict",
+        "explanation": "Duplicate IPs cause communication failures."
+    },
+    {
+        "question": "What does the 'link light' on a switch indicate?",
+        "choices": ["Power", "Connectivity", "Speed", "VLAN"],
+        "answer": "Connectivity",
+        "explanation": "Link lights indicate physical connectivity."
+    },
+    {
+        "question": "Which tool checks for wiring faults?",
+        "choices": ["Tone generator", "Cable tester", "Wireshark", "Loopback plug"],
+        "answer": "Cable tester",
+        "explanation": "Cable testers detect wiring issues like opens and shorts."
+    },
+    {
+        "question": "A user reports slow Wi-Fi. What is the most common cause?",
+        "choices": ["Bad DNS", "Interference", "Duplicate IP", "Wrong subnet mask"],
+        "answer": "Interference",
+        "explanation": "Wi-Fi performance is often affected by interference."
+    },
+    {
+        "question": "Which command releases and renews an IP address?",
+        "choices": ["ipconfig /all", "ipconfig /flushdns", "ipconfig /release", "arp -a"],
+        "answer": "ipconfig /release",
+        "explanation": "Release/renew resets DHCP leases."
+    },
+    {
+        "question": "What does a 169.254.x.x address indicate?",
+        "choices": ["Static IP", "APIPA", "Loopback", "Reserved"],
+        "answer": "APIPA",
+        "explanation": "APIPA addresses are assigned when DHCP fails."
+    }
+]

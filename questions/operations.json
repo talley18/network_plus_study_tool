@@ -1,0 +1,68 @@
+[
+    {
+        "question": "Which document records the physical and logical layout of a network?",
+        "choices": ["SLA", "Baseline", "Network Diagram", "Change Log"],
+        "answer": "Network Diagram",
+        "explanation": "Network diagrams document device placement and connections."
+    },
+    {
+        "question": "Which document defines the expected performance of a service?",
+        "choices": ["SLA", "SOW", "MOU", "NDA"],
+        "answer": "SLA",
+        "explanation": "Service Level Agreements define uptime and performance expectations."
+    },
+    {
+        "question": "What is the purpose of network baselining?",
+        "choices": ["Detect anomalies", "Assign IPs", "Encrypt data", "Configure VLANs"],
+        "answer": "Detect anomalies",
+        "explanation": "Baselines help identify abnormal network behavior."
+    },
+    {
+        "question": "Which tool is used to capture and analyze network packets?",
+        "choices": ["Wireshark", "Traceroute", "Ping", "Nmap"],
+        "answer": "Wireshark",
+        "explanation": "Wireshark is a packet capture and analysis tool."
+    },
+    {
+        "question": "What is the purpose of change management?",
+        "choices": ["Track modifications", "Encrypt data", "Assign VLANs", "Monitor uptime"],
+        "answer": "Track modifications",
+        "explanation": "Change management documents and approves network changes."
+    },
+    {
+        "question": "Which protocol is used for device monitoring and alerts?",
+        "choices": ["SNMP", "SMTP", "SSH", "SCP"],
+        "answer": "SNMP",
+        "explanation": "SNMP monitors network devices and sends alerts."
+    },
+    {
+        "question": "What is the purpose of a network diagram?",
+        "choices": ["Track changes", "Document layout", "Encrypt traffic", "Assign IPs"],
+        "answer": "Document layout",
+        "explanation": "Network diagrams show physical and logical connections."
+    },
+    {
+        "question": "Which log type records authentication attempts?",
+        "choices": ["System", "Security", "Application", "Debug"],
+        "answer": "Security",
+        "explanation": "Security logs track logins and access attempts."
+    },
+    {
+        "question": "What is MTBF used to measure?",
+        "choices": ["Failure frequency", "Packet loss", "Bandwidth", "Latency"],
+        "answer": "Failure frequency",
+        "explanation": "Mean Time Between Failures measures reliability."
+    },
+    {
+        "question": "Which backup type copies only files changed since the last full backup?",
+        "choices": ["Full", "Incremental", "Differential", "Snapshot"],
+        "answer": "Differential",
+        "explanation": "Differential backups copy changes since the last full backup."
+    },
+    {
+        "question": "Which command displays active network connections?",
+        "choices": ["netstat", "ipconfig", "arp", "nslookup"],
+        "answer": "netstat",
+        "explanation": "Netstat shows active connections and listening ports."
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "question": "Which protocol encrypts all data sent between a web browser and server?",
+        "choices": ["HTTP", "FTP", "TLS", "Telnet"],
+        "answer": "TLS",
+        "explanation": "TLS provides encryption for HTTPS and other secure protocols."
+    },
+    {
+        "question": "Which attack floods a target with SYN packets?",
+        "choices": ["Smurf", "SYN Flood", "DNS Poisoning", "ARP Spoofing"],
+        "answer": "SYN Flood",
+        "explanation": "SYN floods exhaust server resources by sending half-open connections."
+    },
+    {
+        "question": "What is the purpose of a firewall?",
+        "choices": ["Encrypt data", "Filter traffic", "Assign IPs", "Monitor uptime"],
+        "answer": "Filter traffic",
+        "explanation": "Firewalls allow or block traffic based on rules."
+    },
+    {
+        "question": "Which protocol secures remote CLI access?",
+        "choices": ["Telnet", "SSH", "FTP", "HTTP"],
+        "answer": "SSH",
+        "explanation": "SSH encrypts remote terminal sessions."
+    },
+    {
+        "question": "Which wireless security method is the most secure?",
+        "choices": ["WEP", "WPA", "WPA2", "Open"],
+        "answer": "WPA2",
+        "explanation": "WPA2 uses AES encryption and is the current standard."
+    },
+    {
+        "question": "What is the purpose of a VLAN?",
+        "choices": ["Increase speed", "Segment networks", "Encrypt traffic", "Assign MAC addresses"],
+        "answer": "Segment networks",
+        "explanation": "VLANs logically segment networks for security and performance."
+    },
+    {
+        "question": "Which authentication factor is a fingerprint?",
+        "choices": ["Something you know", "Something you have", "Something you are", "Somewhere you are"],
+        "answer": "Something you are",
+        "explanation": "Biometrics fall under 'something you are'."
+    },
+    {
+        "question": "Which device inspects traffic at multiple OSI layers?",
+        "choices": ["Hub", "Switch", "Next-Gen Firewall", "Repeater"],
+        "answer": "Next-Gen Firewall",
+        "explanation": "NGFWs inspect traffic at layers 3,4,5,6,7."
+    },
+    {
+        "question": "Which attack tricks users into revealing information?",
+        "choices": ["Phishing", "DDoS", "MITM", "Brute Force"],
+        "answer": "Phishing",
+        "explanation": "Phishing uses deception to steal information."
+    },
+    {
+        "question": "Which protocol secures web traffic?",
+        "choices": ["HTTP", "HTTPS", "FTP", "SMTP"],
+        "answer": "HTTPS",
+        "explanation": "HTTPS uses TLS to encrypt web traffic."
+    },
+    {
+        "question": "What is the purpose of a honeypot?",
+        "choices": ["Store backups", "Trap attackers", "Encrypt data", "Improve Wi-Fi"],
+        "answer": "Trap attackers",
+        "explanation": "Honeypots lure attackers for analysis."
+    }
+]

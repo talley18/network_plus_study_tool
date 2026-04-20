@@ -1,0 +1,74 @@
+[
+    {
+        "question": "Which OSI layer is responsible for MAC addressing?",
+        "choices": ["Physical", "Data Link", "Network", "Transport"],
+        "answer": "Data Link",
+        "explanation": "MAC addresses operate at Layer 2 of the OSI model."
+    },
+    {
+        "question": "What is the default subnet mask for a Class C network?",
+        "choices": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.252"],
+        "answer": "255.255.255.0",
+        "explanation": "Class C networks use a /24 subnet mask by default."
+    },
+    {
+        "question": "Which protocol is responsible for resolving IP addresses to MAC addresses?",
+        "choices": ["DNS", "ARP", "DHCP", "ICMP"],
+        "answer": "ARP",
+        "explanation": "ARP maps IPv4 addresses to MAC addresses on a local network."
+    },
+    {
+        "question": "What type of IPv6 address begins with FE80?",
+        "choices": ["Global Unicast", "Multicast", "Link-Local", "Anycast"],
+        "answer": "Link-Local",
+        "explanation": "FE80::/10 is reserved for link-local IPv6 addresses."
+    },
+    {
+        "question": "Which OSI layer handles end-to-end communication and segmentation?",
+        "choices": ["Network", "Transport", "Session", "Data Link"],
+        "answer": "Transport",
+        "explanation": "The Transport layer (Layer 4) manages segmentation and reliable delivery."
+    },
+    {
+        "question": "What is the maximum number of hosts in a /26 network?",
+        "choices": ["32", "62", "64", "126"],
+        "answer": "62",
+        "explanation": "/26 provides 64 addresses, minus 2 for network and broadcast."
+    },
+    {
+        "question": "Which wireless standard operates only in the 5 GHz band?",
+        "choices": ["802.11g", "802.11n", "802.11ac", "802.11b"],
+        "answer": "802.11ac",
+        "explanation": "802.11ac is 5 GHz only and supports high throughput."
+    },
+    {
+        "question": "What is the purpose of a subnet mask?",
+        "choices": ["Encrypt data", "Identify broadcast domains", "Divide networks", "Assign MAC addresses"],
+        "answer": "Divide networks",
+        "explanation": "Subnet masks define the network and host portions of an IP address."
+    },
+    {
+        "question": "Which connector type is used for fiber optic cables?",
+        "choices": ["RJ45", "LC", "BNC", "DB9"],
+        "answer": "LC",
+        "explanation": "LC is a common fiber connector used in modern networks."
+    },
+    {
+        "question": "What frequency bands does 802.11n support?",
+        "choices": ["2.4 GHz only", "5 GHz only", "2.4 GHz and 5 GHz", "900 MHz"],
+        "answer": "2.4 GHz and 5 GHz",
+        "explanation": "802.11n is dual-band capable."
+    },
+    {
+        "question": "Which protocol uses port 53?",
+        "choices": ["DNS", "SMTP", "HTTPS", "SSH"],
+        "answer": "DNS",
+        "explanation": "DNS uses port 53 for both TCP and UDP."
+    },
+    {
+        "question": "What is the purpose of CIDR notation?",
+        "choices": ["Define VLANs", "Simplify routing", "Encrypt traffic", "Assign MAC addresses"],
+        "answer": "Simplify routing",
+        "explanation": "CIDR allows flexible subnetting and reduces routing table size."
+    }
+]
