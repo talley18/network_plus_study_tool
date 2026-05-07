@@ -1,10 +1,10 @@
 [
-    {
+{
         "question": "Which OSI layer is responsible for MAC addressing?",
         "choices": ["Physical", "Data Link", "Network", "Transport"],
         "answer": "Data Link",
         "explanation": "MAC addresses operate at Layer 2 of the OSI model."
-    },
+},
     {
         "question": "What is the default subnet mask for a Class C network?",
         "choices": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.252"],
@@ -70,5 +70,486 @@
         "choices": ["Define VLANs", "Simplify routing", "Encrypt traffic", "Assign MAC addresses"],
         "answer": "Simplify routing",
         "explanation": "CIDR allows flexible subnetting and reduces routing table size."
-    }
+    },
+    {
+    "question": "Which OSI layer is responsible for end-to-end communication and reliability?",
+    "choices": ["Transport", "Network", "Session", "Data Link"],
+    "answer": "Transport",
+    "explanation": "The Transport layer (Layer 4) handles end-to-end communication, segmentation, and reliability using protocols like TCP."
+},
+{
+    "question": "Which cable type is most resistant to electromagnetic interference (EMI)?",
+    "choices": ["Fiber optic", "Cat 5e UTP", "Coaxial", "Cat 6 UTP"],
+    "answer": "Fiber optic",
+    "explanation": "Fiber optic cables use light instead of electricity, making them immune to EMI."
+},
+{
+    "question": "Which port does HTTPS use by default?",
+    "choices": ["443", "80", "22", "53"],
+    "answer": "443",
+    "explanation": "HTTPS uses TCP port 443 for encrypted web traffic."
+},
+{
+    "question": "Which wireless standard operates only in the 5 GHz band?",
+    "choices": ["802.11a", "802.11b", "802.11g", "802.11n"],
+    "answer": "802.11a",
+    "explanation": "802.11a was the first Wi-Fi standard to operate exclusively in the 5 GHz band."
+},
+{
+    "question": "Which connector type is used for fiber optic cables?",
+    "choices": ["LC", "RJ45", "BNC", "DB9"],
+    "answer": "LC",
+    "explanation": "LC connectors are commonly used for modern fiber optic connections."
+},
+{
+    "question": "What is the maximum distance for a Cat 6 Ethernet cable?",
+    "choices": ["100 meters", "55 meters", "300 meters", "10 meters"],
+    "answer": "100 meters",
+    "explanation": "Copper Ethernet standards limit cable runs to 100 meters."
+},
+{
+    "question": "Which protocol is connection-oriented?",
+    "choices": ["TCP", "UDP", "ICMP", "ARP"],
+    "answer": "TCP",
+    "explanation": "TCP establishes a reliable, connection-oriented session before transmitting data."
+},
+{
+    "question": "Which device operates at Layer 2 of the OSI model?",
+    "choices": ["Switch", "Router", "Firewall", "Hub"],
+    "answer": "Switch",
+    "explanation": "Switches operate at Layer 2, forwarding frames based on MAC addresses."
+},
+{
+    "question": "Which IPv6 address type is equivalent to IPv4 private addresses?",
+    "choices": ["Unique local", "Global unicast", "Link-local", "Multicast"],
+    "answer": "Unique local",
+    "explanation": "Unique local IPv6 addresses (fc00::/7) function similarly to private IPv4 ranges."
+},
+{
+    "question": "Which tool is used to test cable continuity and pinouts?",
+    "choices": ["Cable tester", "Toner probe", "OTDR", "Spectrum analyzer"],
+    "answer": "Cable tester",
+    "explanation": "Cable testers verify wiring, continuity, and pinouts for copper cables."
+},
+{
+    "question": "Which protocol resolves hostnames to IP addresses?",
+    "choices": ["DNS", "DHCP", "NTP", "SNMP"],
+    "answer": "DNS",
+    "explanation": "DNS resolves human-readable names to IP addresses."
+},
+{
+    "question": "Which wireless encryption method is considered insecure?",
+    "choices": ["WEP", "WPA2", "WPA3", "AES"],
+    "answer": "WEP",
+    "explanation": "WEP is outdated and easily cracked due to weak encryption."
+},
+{
+    "question": "Which topology connects all devices to a central point?",
+    "choices": ["Star", "Bus", "Ring", "Mesh"],
+    "answer": "Star",
+    "explanation": "Star topology uses a central device like a switch or hub."
+},
+{
+    "question": "Which protocol is used for remote command-line access?",
+    "choices": ["SSH", "FTP", "SNMP", "SMTP"],
+    "answer": "SSH",
+    "explanation": "SSH provides secure remote command-line access."
+},
+{
+    "question": "Which cable type uses an F-type connector?",
+    "choices": ["Coaxial", "Fiber", "Cat 6", "Twinax"],
+    "answer": "Coaxial",
+    "explanation": "Coaxial cables used for cable internet and TV often use F-type connectors."
+},
+{
+    "question": "Which layer of the OSI model handles routing?",
+    "choices": ["Network", "Transport", "Data Link", "Session"],
+    "answer": "Network",
+    "explanation": "The Network layer (Layer 3) handles routing and logical addressing."
+},
+{
+    "question": "Which protocol is used to automatically assign IP addresses?",
+    "choices": ["DHCP", "DNS", "NTP", "ICMP"],
+    "answer": "DHCP",
+    "explanation": "DHCP assigns IP addresses and network configuration to clients."
+},
+{
+    "question": "Which wireless band provides better range but lower speed?",
+    "choices": ["2.4 GHz", "5 GHz", "6 GHz", "60 GHz"],
+    "answer": "2.4 GHz",
+    "explanation": "2.4 GHz offers longer range but lower throughput due to interference and channel width."
+},
+{
+    "question": "Which device separates collision domains?",
+    "choices": ["Switch", "Hub", "Repeater", "Patch panel"],
+    "answer": "Switch",
+    "explanation": "Switches create separate collision domains for each port."
+},
+{
+    "question": "Which protocol is used for time synchronization?",
+    "choices": ["NTP", "DNS", "DHCP", "FTP"],
+    "answer": "NTP",
+    "explanation": "NTP synchronizes clocks across network devices."
+},
+{
+    "question": "Which protocol is used to test reachability between two network devices?",
+    "choices": ["ICMP", "TCP", "UDP", "SNMP"],
+    "answer": "ICMP",
+    "explanation": "ICMP (Internet Control Message Protocol) is used by tools like ping and traceroute to test connectivity."
+},
+{
+    "question": "Which type of cable is required for 10GBase-T Ethernet?",
+    "choices": ["Cat 6a", "Cat 5e", "Cat 3", "RG-6"],
+    "answer": "Cat 6a",
+    "explanation": "10GBase-T requires Cat 6a or better to support 10 Gbps speeds over copper."
+},
+{
+    "question": "Which wireless standard introduced MU-MIMO?",
+    "choices": ["802.11ac", "802.11n", "802.11g", "802.11a"],
+    "answer": "802.11ac",
+    "explanation": "802.11ac introduced MU-MIMO, allowing multiple simultaneous wireless streams."
+},
+{
+    "question": "Which protocol is used to securely browse websites?",
+    "choices": ["HTTPS", "HTTP", "FTP", "Telnet"],
+    "answer": "HTTPS",
+    "explanation": "HTTPS encrypts web traffic using TLS for secure browsing."
+},
+{
+    "question": "Which device connects different network segments and forwards packets based on IP addresses?",
+    "choices": ["Router", "Switch", "Hub", "Repeater"],
+    "answer": "Router",
+    "explanation": "Routers operate at Layer 3 and forward packets based on IP addresses."
+},
+{
+    "question": "Which type of IPv6 address always begins with fe80?",
+    "choices": ["Link-local", "Global unicast", "Unique local", "Multicast"],
+    "answer": "Link-local",
+    "explanation": "IPv6 link-local addresses always start with fe80 and are used for local network communication."
+},
+{
+    "question": "Which tool is used to locate a specific cable in a bundle?",
+    "choices": ["Toner probe", "Cable certifier", "Loopback plug", "OTDR"],
+    "answer": "Toner probe",
+    "explanation": "A toner probe sends a tone through a cable, allowing technicians to trace it."
+},
+{
+    "question": "Which protocol is used for directory services in Windows environments?",
+    "choices": ["LDAP", "SMTP", "NTP", "RDP"],
+    "answer": "LDAP",
+    "explanation": "LDAP (Lightweight Directory Access Protocol) is used for directory services like Active Directory."
+},
+{
+    "question": "Which wireless frequency band is more prone to interference from household devices?",
+    "choices": ["2.4 GHz", "5 GHz", "6 GHz", "60 GHz"],
+    "answer": "2.4 GHz",
+    "explanation": "2.4 GHz is crowded with devices like microwaves and Bluetooth, causing interference."
+},
+{
+    "question": "Which connector type is used for serial console access on network devices?",
+    "choices": ["RJ45", "USB-C", "LC", "HDMI"],
+    "answer": "RJ45",
+    "explanation": "Many network devices use an RJ45 console port for serial management access."
+},
+{
+    "question": "Which protocol is used to send email from a client to a mail server?",
+    "choices": ["SMTP", "IMAP", "POP3", "SNMP"],
+    "answer": "SMTP",
+    "explanation": "SMTP handles sending email from clients and between mail servers."
+},
+{
+    "question": "Which type of cable is used for long-distance, high-bandwidth connections?",
+    "choices": ["Fiber optic", "Cat 5e", "Coaxial", "Twinax"],
+    "answer": "Fiber optic",
+    "explanation": "Fiber optic cables support long distances and high bandwidth using light transmission."
+},
+{
+    "question": "Which OSI layer handles encryption and decryption?",
+    "choices": ["Presentation", "Session", "Transport", "Network"],
+    "answer": "Presentation",
+    "explanation": "The Presentation layer (Layer 6) handles encryption, compression, and data formatting."
+},
+{
+    "question": "Which protocol is used to automatically configure IPv6 addresses without DHCP?",
+    "choices": ["SLAAC", "NDP", "ICMPv6", "EUI-64"],
+    "answer": "SLAAC",
+    "explanation": "SLAAC allows IPv6 devices to self-configure addresses without DHCPv6."
+},
+{
+    "question": "Which device strengthens and retransmits a signal without interpreting it?",
+    "choices": ["Repeater", "Router", "Switch", "Firewall"],
+    "answer": "Repeater",
+    "explanation": "Repeaters regenerate signals to extend cable distances."
+},
+{
+    "question": "Which protocol is used to securely transfer files over SSH?",
+    "choices": ["SFTP", "FTP", "TFTP", "SMB"],
+    "answer": "SFTP",
+    "explanation": "SFTP uses SSH to securely transfer files."
+},
+{
+    "question": "Which wireless standard introduced support for the 6 GHz band?",
+    "choices": ["802.11ax (Wi-Fi 6E)", "802.11ac", "802.11n", "802.11g"],
+    "answer": "802.11ax (Wi-Fi 6E)",
+    "explanation": "Wi-Fi 6E extends 802.11ax into the 6 GHz band."
+},
+{
+    "question": "Which protocol is used to manage and monitor network devices?",
+       "choices": ["SNMP", "SMTP", "DNS", "DHCP"],
+    "answer": "SNMP",
+    "explanation": "SNMP collects and manages information from network devices."
+},
+{
+    "question": "Which type of address is assigned by a DHCP server?",
+    "choices": ["Dynamic IP", "Static IP", "MAC address", "Loopback address"],
+    "answer": "Dynamic IP",
+    "explanation": "DHCP assigns dynamic IP addresses to clients."
+},
+{
+    "question": "Which tool measures signal loss in fiber optic cables?",
+    "choices": ["OTDR", "Cable tester", "Toner probe", "Spectrum analyzer"],
+    "answer": "OTDR",
+    "explanation": "An OTDR (Optical Time Domain Reflectometer) measures fiber loss and detects breaks."
+},
+{
+    "question": "Which protocol is used to securely manage network devices over an encrypted connection?",
+    "choices": ["SSH", "Telnet", "FTP", "SNMPv1"],
+    "answer": "SSH",
+    "explanation": "SSH provides encrypted remote management, replacing insecure protocols like Telnet."
+},
+{
+    "question": "Which type of IPv4 address cannot be routed on the public internet?",
+    "choices": ["Private", "Public", "Static", "Reserved"],
+    "answer": "Private",
+    "explanation": "Private IPv4 ranges (10.x.x.x, 172.16–31.x.x, 192.168.x.x) are not publicly routable."
+},
+{
+    "question": "Which wireless channel is non-overlapping in the 2.4 GHz band?",
+    "choices": ["1, 6, and 11", "2, 4, and 8", "3, 7, and 10", "5, 9, and 13"],
+    "answer": "1, 6, and 11",
+    "explanation": "Channels 1, 6, and 11 do not overlap in the 2.4 GHz band, reducing interference."
+},
+{
+    "question": "Which protocol is used to automatically discover network devices on the same LAN?",
+    "choices": ["LLDP", "DNS", "NTP", "SMTP"],
+    "answer": "LLDP",
+    "explanation": "LLDP advertises device identity and capabilities on a local network."
+},
+{
+    "question": "Which cable type is commonly used for cable internet connections?",
+    "choices": ["RG-6", "Cat 6", "Fiber LC", "Twinax"],
+    "answer": "RG-6",
+    "explanation": "RG-6 coaxial cable is used for cable internet and TV services."
+},
+{
+    "question": "Which OSI layer is responsible for logical addressing?",
+    "choices": ["Network", "Transport", "Data Link", "Session"],
+    "answer": "Network",
+    "explanation": "The Network layer handles logical addressing using IP addresses."
+},
+{
+    "question": "Which protocol is used to retrieve email while keeping messages on the server?",
+    "choices": ["IMAP", "POP3", "SMTP", "SNMP"],
+    "answer": "IMAP",
+    "explanation": "IMAP allows email clients to access and manage messages stored on a server."
+},
+{
+    "question": "Which device is used to convert digital signals to analog for telephone lines?",
+    "choices": ["Modem", "Switch", "Router", "Repeater"],
+    "answer": "Modem",
+    "explanation": "A modem modulates and demodulates signals for analog telephone lines."
+},
+{
+    "question": "Which protocol is used to resolve MAC addresses from IP addresses?",
+    "choices": ["ARP", "DNS", "DHCP", "ICMP"],
+    "answer": "ARP",
+    "explanation": "ARP maps IP addresses to MAC addresses on a local network."
+},
+{
+    "question": "Which wireless standard first introduced support for MIMO?",
+    "choices": ["802.11n", "802.11g", "802.11a", "802.11b"],
+    "answer": "802.11n",
+    "explanation": "802.11n introduced MIMO, improving throughput and range."
+},
+{
+    "question": "Which type of fiber uses an LED light source?",
+    "choices": ["Multimode", "Single-mode", "Plastic fiber", "Coaxial fiber"],
+    "answer": "Multimode",
+    "explanation": "Multimode fiber typically uses LED light sources and supports shorter distances."
+},
+{
+    "question": "Which protocol is used to send system logs to a centralized server?",
+    "choices": ["Syslog", "SNMP", "SMTP", "FTP"],
+    "answer": "Syslog",
+    "explanation": "Syslog collects and forwards log messages from network devices."
+},
+{
+    "question": "Which port does DNS primarily use for queries?",
+    "choices": ["53", "80", "443", "110"],
+    "answer": "53",
+    "explanation": "DNS uses port 53 for both TCP and UDP queries."
+},
+{
+    "question": "Which type of network topology provides the highest redundancy?",
+    "choices": ["Mesh", "Star", "Bus", "Ring"],
+    "answer": "Mesh",
+    "explanation": "Mesh topology provides multiple redundant paths between devices."
+},
+{
+    "question": "Which protocol is used to securely transfer files using TLS?",
+    "choices": ["FTPS", "FTP", "TFTP", "SCP"],
+    "answer": "FTPS",
+    "explanation": "FTPS adds TLS encryption to traditional FTP."
+},
+{
+    "question": "Which device is used to extend the reach of a wireless network?",
+    "choices": ["Range extender", "Switch", "Router", "Patch panel"],
+    "answer": "Range extender",
+    "explanation": "A wireless range extender amplifies and rebroadcasts Wi-Fi signals."
+},
+{
+    "question": "Which IPv4 address class supports the largest number of hosts?",
+    "choices": ["Class A", "Class B", "Class C", "Class D"],
+    "answer": "Class A",
+    "explanation": "Class A networks support over 16 million hosts per network."
+},
+{
+    "question": "Which protocol is used to synchronize time across network devices?",
+    "choices": ["NTP", "DNS", "DHCP", "SIP"],
+    "answer": "NTP",
+    "explanation": "NTP synchronizes clocks across devices to ensure accurate timestamps."
+},
+{
+    "question": "Which type of cable is required for PoE devices?",
+    "choices": ["Cat 5e or higher", "RG-59", "Fiber optic", "Twinax"],
+    "answer": "Cat 5e or higher",
+    "explanation": "PoE requires Cat 5e or better to deliver power and data."
+},
+{
+    "question": "Which OSI layer is responsible for establishing, maintaining, and ending sessions?",
+    "choices": ["Session", "Presentation", "Transport", "Application"],
+    "answer": "Session",
+    "explanation": "The Session layer manages communication sessions between devices."
+},
+{
+    "question": "Which protocol is used to securely manage network devices using a graphical interface?",
+    "choices": ["HTTPS", "HTTP", "Telnet", "FTP"],
+    "answer": "HTTPS",
+    "explanation": "HTTPS provides encrypted web-based management for devices like firewalls, switches, and APs."
+},
+{
+    "question": "Which type of cable is required for 1000Base-LX connections?",
+    "choices": ["Single-mode fiber", "Cat 5e", "Coaxial", "Multimode fiber only"],
+    "answer": "Single-mode fiber",
+    "explanation": "1000Base-LX commonly uses single-mode fiber for long-distance gigabit connections."
+},
+{
+    "question": "Which OSI layer is responsible for frame encapsulation?",
+    "choices": ["Data Link", "Network", "Transport", "Session"],
+    "answer": "Data Link",
+    "explanation": "The Data Link layer (Layer 2) encapsulates data into frames for transmission."
+},
+{
+    "question": "Which protocol is used to automatically assign IPv6 addresses with stateful configuration?",
+    "choices": ["DHCPv6", "SLAAC", "NDP", "ICMPv6"],
+    "answer": "DHCPv6",
+    "explanation": "DHCPv6 provides stateful IPv6 address assignment similar to IPv4 DHCP."
+},
+{
+    "question": "Which wireless technology allows devices to switch between access points without dropping the connection?",
+    "choices": ["Roaming", "Beamforming", "MU-MIMO", "Channel bonding"],
+    "answer": "Roaming",
+    "explanation": "Roaming allows clients to move between APs while maintaining connectivity."
+},
+{
+    "question": "Which connector is commonly used for serial console access on enterprise switches?",
+    "choices": ["RJ45", "USB-A", "HDMI", "BNC"],
+    "answer": "RJ45",
+    "explanation": "Many enterprise switches use RJ45 console ports for serial management."
+},
+{
+    "question": "Which protocol is used to securely copy files between systems?",
+    "choices": ["SCP", "FTP", "TFTP", "IMAP"],
+    "answer": "SCP",
+    "explanation": "SCP uses SSH to securely transfer files between systems."
+},
+{
+    "question": "Which type of network uses a central controller to manage APs?",
+    "choices": ["Controller-based WLAN", "Ad-hoc network", "Mesh network", "Peer-to-peer WLAN"],
+    "answer": "Controller-based WLAN",
+    "explanation": "Controller-based WLANs centralize AP configuration and management."
+},
+{
+    "question": "Which protocol is used to translate private IP addresses to public ones?",
+    "choices": ["NAT", "DNS", "DHCP", "SNMP"],
+    "answer": "NAT",
+    "explanation": "NAT translates private IP addresses to public ones for internet access."
+},
+{
+    "question": "Which device is used to connect multiple networks and forward packets between them?",
+    "choices": ["Router", "Switch", "Hub", "Repeater"],
+    "answer": "Router",
+    "explanation": "Routers forward packets between networks using IP addresses."
+},
+{
+    "question": "Which wireless standard supports speeds up to 600 Mbps using MIMO?",
+    "choices": ["802.11n", "802.11g", "802.11a", "802.11b"],
+    "answer": "802.11n",
+    "explanation": "802.11n introduced MIMO and channel bonding for higher throughput."
+},
+{
+    "question": "Which type of fiber optic cable supports the longest distances?",
+    "choices": ["Single-mode", "Multimode", "Plastic fiber", "Coaxial fiber"],
+    "answer": "Single-mode",
+    "explanation": "Single-mode fiber supports long-distance transmission using a laser light source."
+},
+{
+    "question": "Which protocol is used to send error messages and operational information?",
+    "choices": ["ICMP", "TCP", "UDP", "SMTP"],
+    "answer": "ICMP",
+    "explanation": "ICMP sends error messages and diagnostic information, used by ping and traceroute."
+},
+{
+    "question": "Which device reduces broadcast domains?",
+    "choices": ["Router", "Switch", "Hub", "Repeater"],
+    "answer": "Router",
+    "explanation": "Routers separate broadcast domains by default."
+},
+{
+    "question": "Which type of cable is used for short-distance 10Gb fiber connections?",
+    "choices": ["Multimode fiber", "Single-mode fiber", "Cat 6", "RG-6"],
+    "answer": "Multimode fiber",
+    "explanation": "Multimode fiber is used for short-distance high-speed connections like 10Gb."
+},
+{
+    "question": "Which protocol is used to resolve IPv6 addresses to MAC addresses?",
+    "choices": ["NDP", "ARP", "ICMP", "SLAAC"],
+    "answer": "NDP",
+    "explanation": "NDP replaces ARP in IPv6 networks for neighbor discovery."
+},
+{
+    "question": "Which wireless feature improves performance by focusing the signal toward clients?",
+    "choices": ["Beamforming", "Roaming", "Channel bonding", "MIMO"],
+    "answer": "Beamforming",
+    "explanation": "Beamforming directs wireless signals toward clients to improve performance."
+},
+{
+    "question": "Which protocol is used to transfer files without authentication?",
+    "choices": ["TFTP", "FTP", "SFTP", "SMB"],
+    "answer": "TFTP",
+    "explanation": "TFTP is a simple, unauthenticated file transfer protocol used for firmware and boot files."
+},
+{
+    "question": "Which OSI layer is responsible for data compression?",
+    "choices": ["Presentation", "Session", "Transport", "Application"],
+    "answer": "Presentation",
+    "explanation": "The Presentation layer handles data compression, encryption, and formatting."
+},
+{
+    "question": "Which type of network uses equal-cost multipath routing to improve performance?",
+    "choices": ["Layer 3 network", "Layer 2 network", "Ad-hoc network", "Mesh Wi-Fi"],
+    "answer": "Layer 3 network",
+    "explanation": "Layer 3 networks can use equal-cost multipath (ECMP) routing to balance traffic across multiple paths."
+}
+
 ]

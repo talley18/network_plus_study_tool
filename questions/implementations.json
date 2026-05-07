@@ -64,5 +64,607 @@
         "choices": ["Port mirroring", "Trunking", "Bonding", "Spanning Tree"],
         "answer": "Trunking",
         "explanation": "Trunk ports carry tagged VLAN traffic."
-    }
+    },
+    {
+    "question": "A network engineer needs to segment traffic between departments without adding new physical switches. Which technology should be implemented?",
+    "choices": ["VLANs", "QoS", "NAT", "Port mirroring"],
+    "answer": "VLANs",
+    "explanation": "VLANs allow logical segmentation of networks on the same physical switch."
+},
+{
+    "question": "Which routing protocol uses hop count as its primary metric?",
+    "choices": ["RIP", "OSPF", "EIGRP", "BGP"],
+    "answer": "RIP",
+    "explanation": "RIP (Routing Information Protocol) uses hop count as its metric."
+},
+{
+    "question": "A company wants to connect two buildings 2 km apart. Which medium is most appropriate?",
+    "choices": ["Single-mode fiber", "Cat 6", "Coaxial", "Twinax"],
+    "answer": "Single-mode fiber",
+    "explanation": "Single-mode fiber supports long-distance connections up to several kilometers."
+},
+{
+    "question": "Which WAN technology uses packet switching and virtual circuits?",
+    "choices": ["Frame Relay", "DSL", "Cable", "ISDN"],
+    "answer": "Frame Relay",
+    "explanation": "Frame Relay uses virtual circuits and packet switching for WAN communication."
+},
+{
+    "question": "Which wireless deployment model uses a central controller to manage access points?",
+    "choices": ["Controller-based", "Ad-hoc", "Mesh", "Peer-to-peer"],
+    "answer": "Controller-based",
+    "explanation": "Controller-based WLANs centralize AP configuration and management."
+},
+{
+    "question": "Which protocol is commonly used for dynamic routing inside an enterprise LAN?",
+    "choices": ["OSPF", "BGP", "SIP", "SMTP"],
+    "answer": "OSPF",
+    "explanation": "OSPF is a link-state routing protocol used within enterprise networks."
+},
+{
+    "question": "Which technology allows multiple physical links to act as one logical link?",
+    "choices": ["LACP", "STP", "NAT", "QoS"],
+    "answer": "LACP",
+    "explanation": "LACP bundles multiple physical links into a single logical link for redundancy and throughput."
+},
+{
+    "question": "Which addressing method assigns IPs based on a device’s MAC address?",
+    "choices": ["DHCP reservation", "APIPA", "Static assignment", "SLAAC"],
+    "answer": "DHCP reservation",
+    "explanation": "DHCP reservations map a MAC address to a specific IP address."
+},
+{
+    "question": "Which device is required to connect multiple VLANs together?",
+    "choices": ["Router or Layer 3 switch", "Hub", "Repeater", "Patch panel"],
+    "answer": "Router or Layer 3 switch",
+    "explanation": "Inter-VLAN routing requires a router or a Layer 3 switch."
+},
+{
+    "question": "Which wireless security method uses a RADIUS server for authentication?",
+    "choices": ["WPA2-Enterprise", "WPA2-Personal", "WEP", "Open authentication"],
+    "answer": "WPA2-Enterprise",
+    "explanation": "WPA2-Enterprise uses 802.1X and a RADIUS server for authentication."
+},
+{
+    "question": "Which IPv6 transition method encapsulates IPv6 packets inside IPv4 packets?",
+    "choices": ["6to4", "SLAAC", "NDP", "EUI-64"],
+    "answer": "6to4",
+    "explanation": "6to4 tunnels IPv6 traffic through IPv4 networks."
+},
+{
+    "question": "Which technology allows remote workers to securely access internal resources?",
+    "choices": ["VPN", "NAT", "QoS", "Port forwarding"],
+    "answer": "VPN",
+    "explanation": "VPNs provide encrypted tunnels for remote access."
+},
+{
+    "question": "Which WAN technology uses telephone lines and supports simultaneous voice and data?",
+    "choices": ["DSL", "Cable", "Fiber", "Satellite"],
+    "answer": "DSL",
+    "explanation": "DSL uses telephone lines and supports simultaneous voice and data."
+},
+{
+    "question": "Which protocol is used by switches to prevent loops in a Layer 2 network?",
+    "choices": ["STP", "OSPF", "RIP", "BGP"],
+    "answer": "STP",
+    "explanation": "STP prevents switching loops by blocking redundant paths."
+},
+{
+    "question": "Which technology allows wireless clients to seamlessly move between access points?",
+    "choices": ["Roaming", "Beamforming", "Channel bonding", "MU-MIMO"],
+    "answer": "Roaming",
+    "explanation": "Roaming allows clients to move between APs without losing connectivity."
+},
+{
+    "question": "Which cable type is required for 10GBase-SR?",
+    "choices": ["Multimode fiber", "Single-mode fiber", "Cat 5e", "RG-6"],
+    "answer": "Multimode fiber",
+    "explanation": "10GBase-SR uses multimode fiber for short-range 10Gb connections."
+},
+{
+    "question": "Which protocol is used to assign IP addresses dynamically?",
+    "choices": ["DHCP", "DNS", "NTP", "SNMP"],
+    "answer": "DHCP",
+    "explanation": "DHCP assigns IP addresses and network configuration automatically."
+},
+{
+    "question": "Which routing protocol is used between ISPs on the internet?",
+    "choices": ["BGP", "OSPF", "RIP", "EIGRP"],
+    "answer": "BGP",
+    "explanation": "BGP is the exterior gateway protocol used to route traffic between ISPs."
+},
+{
+    "question": "Which technology allows multiple VLANs to travel over a single switch-to-switch link?",
+    "choices": ["Trunking", "Mirroring", "Bonding", "Filtering"],
+    "answer": "Trunking",
+    "explanation": "Trunking carries multiple VLANs over a single link using tagging."
+},
+{
+    "question": "Which wireless deployment uses APs that communicate with each other to extend coverage without wiring?",
+    "choices": ["Mesh", "Ad-hoc", "Controller-based", "Hotspot"],
+    "answer": "Mesh",
+    "explanation": "Mesh networks use AP-to-AP wireless links to extend coverage."
+},
+{
+    "question": "A technician needs to connect two switches and allow multiple VLANs to pass between them. What type of port configuration is required?",
+    "choices": ["Trunk port", "Access port", "Mirrored port", "Routed port"],
+    "answer": "Trunk port",
+    "explanation": "Trunk ports carry multiple VLANs using tagging protocols like 802.1Q."
+},
+{
+    "question": "Which routing protocol uses Dijkstra’s algorithm to calculate the shortest path?",
+    "choices": ["OSPF", "RIP", "BGP", "EIGRP"],
+    "answer": "OSPF",
+    "explanation": "OSPF uses the Dijkstra SPF algorithm to determine optimal routes."
+},
+{
+    "question": "A company wants to provide guest Wi-Fi that is isolated from internal resources. What should be implemented?",
+    "choices": ["Separate VLAN", "QoS policy", "Port bonding", "Static routing"],
+    "answer": "Separate VLAN",
+    "explanation": "Guest networks are typically placed in isolated VLANs for security."
+},
+{
+    "question": "Which WAN technology provides dedicated, symmetric bandwidth between two sites?",
+    "choices": ["Leased line", "DSL", "Cable", "Satellite"],
+    "answer": "Leased line",
+    "explanation": "Leased lines provide dedicated, symmetric bandwidth for point-to-point connections."
+},
+{
+    "question": "Which wireless feature allows an AP to adjust power levels to reduce interference?",
+    "choices": ["Transmit power control", "Beamforming", "MU-MIMO", "Channel bonding"],
+    "answer": "Transmit power control",
+    "explanation": "Transmit power control adjusts AP output to reduce interference and improve coverage."
+},
+{
+    "question": "Which protocol is used to authenticate devices before they gain network access?",
+    "choices": ["802.1X", "STP", "LLDP", "NTP"],
+    "answer": "802.1X",
+    "explanation": "802.1X provides port-based network access control using RADIUS authentication."
+},
+{
+    "question": "Which technology allows multiple physical switches to operate as a single logical switch?",
+    "choices": ["Stacking", "Bonding", "Mirroring", "Trunking"],
+    "answer": "Stacking",
+    "explanation": "Switch stacking combines multiple switches into one logical unit for easier management."
+},
+{
+    "question": "Which IPv6 transition method allows IPv4-only devices to communicate with IPv6 networks?",
+    "choices": ["NAT64", "6to4", "SLAAC", "EUI-64"],
+    "answer": "NAT64",
+    "explanation": "NAT64 translates IPv6 traffic to IPv4 for compatibility."
+},
+{
+    "question": "A technician needs to extend a network to a remote building without running new cable. Which solution is best?",
+    "choices": ["Point-to-point wireless bridge", "DSL modem", "Satellite link", "Cellular hotspot"],
+    "answer": "Point-to-point wireless bridge",
+    "explanation": "Wireless bridges connect buildings wirelessly when cabling is impractical."
+},
+{
+    "question": "Which protocol is used to dynamically assign VLANs based on user authentication?",
+    "choices": ["RADIUS", "DNS", "DHCP", "SNMP"],
+    "answer": "RADIUS",
+    "explanation": "RADIUS can assign VLANs dynamically during 802.1X authentication."
+},
+{
+    "question": "Which WAN technology uses coaxial cable and supports high downstream speeds?",
+    "choices": ["Cable broadband", "DSL", "ISDN", "Frame Relay"],
+    "answer": "Cable broadband",
+    "explanation": "Cable broadband uses coaxial cable and offers high downstream bandwidth."
+},
+{
+    "question": "Which routing protocol is considered a distance-vector protocol?",
+    "choices": ["RIP", "OSPF", "BGP", "IS-IS"],
+    "answer": "RIP",
+    "explanation": "RIP is a classic distance-vector routing protocol using hop count."
+},
+{
+    "question": "Which wireless deployment uses APs that automatically form a self-healing network?",
+    "choices": ["Mesh", "Ad-hoc", "Controller-based", "Hotspot"],
+    "answer": "Mesh",
+    "explanation": "Mesh networks allow APs to interconnect wirelessly and self-heal."
+},
+{
+    "question": "Which technology allows a router to forward packets based on the longest prefix match?",
+    "choices": ["CIDR", "VLAN tagging", "STP", "QoS"],
+    "answer": "CIDR",
+    "explanation": "CIDR enables efficient routing using longest prefix match."
+},
+{
+    "question": "Which cable type is required for 1000Base-T Ethernet?",
+    "choices": ["Cat 5e or higher", "Cat 3", "RG-59", "Single-mode fiber"],
+    "answer": "Cat 5e or higher",
+    "explanation": "Gigabit Ethernet requires Cat 5e or better."
+},
+{
+    "question": "Which protocol is used to exchange routing information between autonomous systems?",
+    "choices": ["BGP", "OSPF", "RIP", "EIGRP"],
+    "answer": "BGP",
+    "explanation": "BGP is the exterior gateway protocol used between autonomous systems."
+},
+{
+    "question": "Which wireless feature allows an AP to direct signals toward specific clients?",
+    "choices": ["Beamforming", "Roaming", "Channel bonding", "Band steering"],
+    "answer": "Beamforming",
+    "explanation": "Beamforming focuses wireless energy toward clients to improve performance."
+},
+{
+    "question": "Which technology allows multiple VLANs to be carried over a single fiber link?",
+    "choices": ["802.1Q tagging", "PoE", "LACP", "STP"],
+    "answer": "802.1Q tagging",
+    "explanation": "802.1Q tags VLAN IDs so multiple VLANs can traverse a single link."
+},
+{
+    "question": "Which WAN technology uses cellular towers to provide network connectivity?",
+    "choices": ["LTE", "DSL", "Cable", "Frame Relay"],
+    "answer": "LTE",
+    "explanation": "LTE provides wireless WAN connectivity using cellular networks."
+},
+{
+    "question": "Which protocol is used to automatically configure APs in a controller-based WLAN?",
+    "choices": ["CAPWAP", "SNMP", "SSH", "RADIUS"],
+    "answer": "CAPWAP",
+    "explanation": "CAPWAP manages communication between APs and wireless controllers."
+},
+{
+    "question": "A network engineer needs to ensure that VoIP traffic receives priority over other traffic types. What should be implemented?",
+    "choices": ["QoS", "VLANs", "NAT", "STP"],
+    "answer": "QoS",
+    "explanation": "Quality of Service prioritizes latency-sensitive traffic such as VoIP."
+},
+{
+    "question": "Which technology allows a router to forward traffic for multiple internal networks using a single public IP?",
+    "choices": ["NAT", "VLANs", "STP", "LACP"],
+    "answer": "NAT",
+    "explanation": "NAT translates private IP addresses to a public IP for internet access."
+},
+{
+    "question": "A technician needs to deploy a wireless network in a warehouse with tall metal shelving. Which antenna type is most appropriate?",
+    "choices": ["Directional", "Omnidirectional", "Dipole", "Patch"],
+    "answer": "Directional",
+    "explanation": "Directional antennas focus the signal to overcome obstacles like shelving."
+},
+{
+    "question": "Which routing protocol uses autonomous system numbers (ASNs)?",
+    "choices": ["BGP", "OSPF", "RIP", "EIGRP"],
+    "answer": "BGP",
+    "explanation": "BGP uses ASNs to identify routing domains on the internet."
+},
+{
+    "question": "Which technology allows a switch to forward traffic based on both MAC and IP addresses?",
+    "choices": ["Layer 3 switching", "Layer 2 switching", "STP", "Port mirroring"],
+    "answer": "Layer 3 switching",
+    "explanation": "Layer 3 switches route traffic using IP addresses while switching frames."
+},
+{
+    "question": "A technician needs to extend a network to a remote office using an encrypted tunnel. Which solution is best?",
+    "choices": ["Site-to-site VPN", "VLAN trunk", "Static route", "Proxy server"],
+    "answer": "Site-to-site VPN",
+    "explanation": "Site-to-site VPNs securely connect remote networks over the internet."
+},
+{
+    "question": "Which wireless feature automatically moves clients to the best available AP?",
+    "choices": ["Band steering", "Beamforming", "MU-MIMO", "Channel bonding"],
+    "answer": "Band steering",
+    "explanation": "Band steering shifts clients to the optimal frequency band or AP."
+},
+{
+    "question": "Which WAN technology uses fiber and provides symmetrical upload and download speeds?",
+    "choices": ["FTTH", "Cable", "DSL", "Satellite"],
+    "answer": "FTTH",
+    "explanation": "Fiber-to-the-home provides symmetrical high-speed fiber connectivity."
+},
+{
+    "question": "Which protocol is used to dynamically advertise VLAN information between switches?",
+    "choices": ["VTP", "LLDP", "STP", "NTP"],
+    "answer": "VTP",
+    "explanation": "VTP (Cisco) distributes VLAN information across switches."
+},
+{
+    "question": "A technician needs to deploy redundant internet connections from two different ISPs. Which feature is required?",
+    "choices": ["Dual-homing", "Port bonding", "STP", "QoS"],
+    "answer": "Dual-homing",
+    "explanation": "Dual-homing provides redundancy by connecting to multiple ISPs."
+},
+{
+    "question": "Which technology allows multiple APs to share the same SSID and provide seamless roaming?",
+    "choices": ["ESS", "BSS", "Ad-hoc", "Mesh"],
+    "answer": "ESS",
+    "explanation": "An Extended Service Set (ESS) allows multiple APs to share an SSID."
+},
+{
+    "question": "Which WAN technology uses telephone lines and supports high-speed digital data?",
+    "choices": ["VDSL", "Cable", "Frame Relay", "ISDN BRI"],
+    "answer": "VDSL",
+    "explanation": "VDSL provides high-speed digital service over copper telephone lines."
+},
+{
+    "question": "Which protocol is used to automatically assign IPv6 addresses using router advertisements?",
+    "choices": ["SLAAC", "DHCPv6", "NDP", "EUI-64"],
+    "answer": "SLAAC",
+    "explanation": "SLAAC allows IPv6 devices to self-configure using router advertisements."
+},
+{
+    "question": "Which technology allows a switch to send a copy of traffic from one port to another for analysis?",
+    "choices": ["Port mirroring", "Trunking", "Bonding", "STP"],
+    "answer": "Port mirroring",
+    "explanation": "Port mirroring copies traffic for monitoring or packet capture."
+},
+{
+    "question": "A technician needs to connect a remote sensor that only supports low-bandwidth communication. Which wireless technology is most appropriate?",
+    "choices": ["LoRaWAN", "802.11ac", "Bluetooth 5", "Zigbee"],
+    "answer": "LoRaWAN",
+    "explanation": "LoRaWAN supports long-range, low-bandwidth IoT communication."
+},
+{
+    "question": "Which routing protocol uses cost as its metric and supports hierarchical design?",
+    "choices": ["OSPF", "RIP", "BGP", "EIGRP"],
+    "answer": "OSPF",
+    "explanation": "OSPF uses cost and supports hierarchical areas."
+},
+{
+    "question": "Which technology allows a router to forward packets based on policy rules instead of routing tables?",
+    "choices": ["Policy-based routing", "Static routing", "STP", "NAT"],
+    "answer": "Policy-based routing",
+    "explanation": "Policy-based routing forwards traffic based on administrator-defined rules."
+},
+{
+    "question": "Which wireless standard supports speeds up to 9.6 Gbps and operates in 2.4, 5, and 6 GHz bands?",
+    "choices": ["802.11ax", "802.11ac", "802.11n", "802.11g"],
+    "answer": "802.11ax",
+    "explanation": "802.11ax (Wi-Fi 6/6E) supports high throughput across multiple bands."
+},
+{
+    "question": "Which technology allows a router to advertise a default route to downstream routers?",
+    "choices": ["Route redistribution", "DHCP relay", "Proxy ARP", "Port forwarding"],
+    "answer": "Route redistribution",
+    "explanation": "Route redistribution can inject default routes into other routing domains."
+},
+{
+    "question": "Which WAN technology uses geostationary satellites and has high latency?",
+    "choices": ["Satellite internet", "Cable", "DSL", "MPLS"],
+    "answer": "Satellite internet",
+    "explanation": "Satellite internet has high latency due to long signal travel distances."
+},
+{
+    "question": "A technician needs to deploy a new subnet for security cameras. The cameras must not communicate with the main LAN. What should be implemented?",
+    "choices": ["Separate VLAN", "QoS policy", "Port bonding", "Static routing"],
+    "answer": "Separate VLAN",
+    "explanation": "Placing cameras in a separate VLAN isolates them from the main LAN for security."
+},
+{
+    "question": "Which routing protocol supports unequal-cost load balancing?",
+    "choices": ["EIGRP", "OSPF", "RIP", "BGP"],
+    "answer": "EIGRP",
+    "explanation": "EIGRP supports unequal-cost load balancing using its variance feature."
+},
+{
+    "question": "A company wants to deploy redundant core switches that appear as a single logical switch. Which technology should be used?",
+    "choices": ["Switch stacking", "STP", "LACP", "Trunking"],
+    "answer": "Switch stacking",
+    "explanation": "Stacking allows multiple switches to operate as one logical device."
+},
+{
+    "question": "Which wireless feature helps reduce congestion by moving clients from 2.4 GHz to 5 GHz?",
+    "choices": ["Band steering", "Beamforming", "MU-MIMO", "Channel bonding"],
+    "answer": "Band steering",
+    "explanation": "Band steering pushes clients to the less congested 5 GHz band."
+},
+{
+    "question": "Which WAN technology provides the lowest latency?",
+    "choices": ["Fiber", "Satellite", "Cellular", "DSL"],
+    "answer": "Fiber",
+    "explanation": "Fiber offers extremely low latency compared to satellite or copper-based WANs."
+},
+{
+    "question": "A technician needs to connect two switches using a link that carries multiple VLANs. Which protocol is used?",
+    "choices": ["802.1Q", "LACP", "STP", "RIP"],
+    "answer": "802.1Q",
+    "explanation": "802.1Q tags VLAN traffic on trunk links."
+},
+{
+    "question": "Which technology allows a router to forward traffic based on application type?",
+    "choices": ["Deep packet inspection", "Static routing", "STP", "ARP"],
+    "answer": "Deep packet inspection",
+    "explanation": "DPI identifies applications and can route or filter traffic accordingly."
+},
+{
+    "question": "Which wireless deployment model uses APs that communicate wirelessly with each other to extend coverage?",
+    "choices": ["Mesh", "Ad-hoc", "Controller-based", "Hotspot"],
+    "answer": "Mesh",
+    "explanation": "Mesh APs interconnect wirelessly to extend coverage without cabling."
+},
+{
+    "question": "Which technology allows a router to forward packets based on administrator-defined rules instead of routing tables?",
+    "choices": ["Policy-based routing", "Static routing", "NAT", "STP"],
+    "answer": "Policy-based routing",
+    "explanation": "PBR forwards traffic based on policies such as source, destination, or application."
+},
+{
+    "question": "Which WAN technology uses a dish antenna and suffers from high latency?",
+    "choices": ["Satellite", "Cable", "DSL", "MPLS"],
+    "answer": "Satellite",
+    "explanation": "Satellite WAN links have high latency due to long signal travel distances."
+},
+{
+    "question": "A technician needs to deploy a wireless network in a stadium. Which antenna type is most appropriate?",
+    "choices": ["Sector antenna", "Omnidirectional", "Dipole", "Patch"],
+    "answer": "Sector antenna",
+    "explanation": "Sector antennas cover large areas with focused directional beams."
+},
+{
+    "question": "Which routing protocol is best suited for large enterprise networks with multiple areas?",
+    "choices": ["OSPF", "RIP", "BGP", "EIGRP"],
+    "answer": "OSPF",
+    "explanation": "OSPF supports hierarchical design using multiple areas."
+},
+{
+    "question": "Which technology allows multiple physical links between switches to be combined for redundancy and throughput?",
+    "choices": ["LACP", "STP", "NAT", "QoS"],
+    "answer": "LACP",
+    "explanation": "LACP bundles multiple links into one logical link."
+},
+{
+    "question": "Which IPv6 transition method allows IPv6-only hosts to communicate with IPv4-only servers?",
+    "choices": ["NAT64", "6to4", "SLAAC", "EUI-64"],
+    "answer": "NAT64",
+    "explanation": "NAT64 translates IPv6 traffic to IPv4 for compatibility."
+},
+{
+    "question": "A technician needs to deploy a wireless network where APs must be centrally managed. Which solution is best?",
+    "choices": ["Controller-based WLAN", "Ad-hoc network", "Mesh network", "Peer-to-peer WLAN"],
+    "answer": "Controller-based WLAN",
+    "explanation": "Controller-based WLANs centralize AP configuration and management."
+},
+{
+    "question": "Which WAN technology uses copper telephone lines and provides high-speed digital service?",
+    "choices": ["VDSL", "Cable", "ISDN", "Frame Relay"],
+    "answer": "VDSL",
+    "explanation": "VDSL provides high-speed digital service over copper telephone lines."
+},
+{
+    "question": "Which technology allows a switch to send a copy of traffic to another port for analysis?",
+    "choices": ["Port mirroring", "Trunking", "Bonding", "STP"],
+    "answer": "Port mirroring",
+    "explanation": "Port mirroring copies traffic for monitoring or packet capture."
+},
+{
+    "question": "Which wireless standard supports OFDMA for improved efficiency?",
+    "choices": ["802.11ax", "802.11ac", "802.11n", "802.11g"],
+    "answer": "802.11ax",
+    "explanation": "802.11ax (Wi-Fi 6) introduces OFDMA for improved efficiency."
+},
+{
+    "question": "Which technology allows routers to share a virtual IP address for redundancy?",
+    "choices": ["VRRP", "STP", "LACP", "QoS"],
+    "answer": "VRRP",
+    "explanation": "VRRP provides router redundancy using a shared virtual IP."
+},
+{
+    "question": "Which WAN technology uses MPLS labels to forward packets instead of IP lookups?",
+    "choices": ["MPLS", "Frame Relay", "DSL", "Cable"],
+    "answer": "MPLS",
+    "explanation": "MPLS forwards packets using labels for faster routing."
+},
+{
+    "question": "A technician needs to deploy a redundant router setup where one router automatically takes over if the other fails. Which technology should be used?",
+    "choices": ["VRRP", "STP", "LACP", "QoS"],
+    "answer": "VRRP",
+    "explanation": "VRRP provides router redundancy using a shared virtual IP address."
+},
+{
+    "question": "Which wireless feature allows multiple APs to coordinate channel usage to reduce interference?",
+    "choices": ["RRM", "Beamforming", "MU-MIMO", "Band steering"],
+    "answer": "RRM",
+    "explanation": "Radio Resource Management (RRM) optimizes channel and power settings across APs."
+},
+{
+    "question": "A company needs to connect multiple branch offices using a private WAN with guaranteed QoS. Which solution is best?",
+    "choices": ["MPLS", "Satellite", "Cable", "DSL"],
+    "answer": "MPLS",
+    "explanation": "MPLS provides private WAN connectivity with QoS guarantees."
+},
+{
+    "question": "Which technology allows a switch to forward traffic at Layer 3 without using a router?",
+    "choices": ["Layer 3 switching", "STP", "NAT", "Port mirroring"],
+    "answer": "Layer 3 switching",
+    "explanation": "Layer 3 switches route traffic using IP addresses while switching frames."
+},
+{
+    "question": "A technician needs to deploy a wireless network in a hotel where each room must have isolated traffic. What should be implemented?",
+    "choices": ["Private VLANs", "Mesh networking", "QoS", "LACP"],
+    "answer": "Private VLANs",
+    "explanation": "Private VLANs isolate clients within the same VLAN for security."
+},
+{
+    "question": "Which WAN technology uses cellular towers to provide high-speed data connectivity?",
+    "choices": ["5G", "DSL", "Cable", "Frame Relay"],
+    "answer": "5G",
+    "explanation": "5G provides high-speed wireless WAN connectivity using cellular networks."
+},
+{
+    "question": "Which protocol is used to distribute routing information between routers in different autonomous systems?",
+    "choices": ["BGP", "OSPF", "RIP", "EIGRP"],
+    "answer": "BGP",
+    "explanation": "BGP is the exterior gateway protocol used between autonomous systems."
+},
+{
+    "question": "A technician needs to deploy a wireless network in a large warehouse with roaming forklifts. Which AP layout is best?",
+    "choices": ["Overlapping cells with 15–20% overlap", "Non-overlapping cells", "Single AP in the center", "Directional antennas only"],
+    "answer": "Overlapping cells with 15–20% overlap",
+    "explanation": "Overlapping cells ensure seamless roaming in mobile environments."
+},
+{
+    "question": "Which technology allows a router to forward packets based on the source address instead of the destination?",
+    "choices": ["Policy-based routing", "Static routing", "NAT", "STP"],
+    "answer": "Policy-based routing",
+    "explanation": "PBR forwards traffic based on administrator-defined policies."
+},
+{
+    "question": "Which wireless standard supports speeds up to 3.5 Gbps and operates only in the 5 GHz band?",
+    "choices": ["802.11ac", "802.11n", "802.11g", "802.11ax"],
+    "answer": "802.11ac",
+    "explanation": "802.11ac operates in the 5 GHz band and supports multi-gigabit speeds."
+},
+{
+    "question": "A technician needs to deploy a point-to-point wireless link between two buildings 1 mile apart. Which antenna type is best?",
+    "choices": ["Parabolic dish", "Omnidirectional", "Dipole", "Patch"],
+    "answer": "Parabolic dish",
+    "explanation": "Parabolic dish antennas provide long-range, focused point-to-point links."
+},
+{
+    "question": "Which technology allows a switch to detect and disable ports that create loops?",
+    "choices": ["STP", "LACP", "QoS", "NAT"],
+    "answer": "STP",
+    "explanation": "STP prevents switching loops by blocking redundant paths."
+},
+{
+    "question": "Which WAN technology uses coaxial cable and supports DOCSIS standards?",
+    "choices": ["Cable broadband", "DSL", "ISDN", "Frame Relay"],
+    "answer": "Cable broadband",
+    "explanation": "Cable broadband uses coaxial cable and DOCSIS standards for high-speed internet."
+},
+{
+    "question": "A technician needs to deploy a network where APs automatically reroute traffic if one AP fails. Which deployment model supports this?",
+    "choices": ["Mesh", "Ad-hoc", "Controller-based", "Hotspot"],
+    "answer": "Mesh",
+    "explanation": "Mesh networks self-heal by rerouting traffic through other APs."
+},
+{
+    "question": "Which technology allows multiple VLANs to be transported over a single fiber link?",
+    "choices": ["802.1Q tagging", "PoE", "LACP", "STP"],
+    "answer": "802.1Q tagging",
+    "explanation": "802.1Q tags VLAN IDs so multiple VLANs can traverse a single link."
+},
+{
+    "question": "Which routing protocol uses cost as its metric and supports hierarchical areas?",
+    "choices": ["OSPF", "RIP", "BGP", "EIGRP"],
+    "answer": "OSPF",
+    "explanation": "OSPF uses cost and supports multi-area hierarchical design."
+},
+{
+    "question": "Which technology allows a router to advertise a default route to downstream routers?",
+    "choices": ["Route redistribution", "DHCP relay", "Proxy ARP", "Port forwarding"],
+    "answer": "Route redistribution",
+    "explanation": "Route redistribution can inject default routes into other routing domains."
+},
+{
+    "question": "Which wireless feature improves performance by dividing channels into smaller subcarriers?",
+    "choices": ["OFDMA", "MU-MIMO", "Beamforming", "Band steering"],
+    "answer": "OFDMA",
+    "explanation": "OFDMA increases efficiency by dividing channels into subcarriers."
+},
+{
+    "question": "Which WAN technology uses label switching to forward packets instead of IP lookups?",
+    "choices": ["MPLS", "Frame Relay", "DSL", "Cable"],
+    "answer": "MPLS",
+    "explanation": "MPLS forwards packets using labels for faster routing."
+},
+{
+    "question": "A technician needs to deploy a secure wireless network for employees using certificate-based authentication. Which method is best?",
+    "choices": ["WPA2-Enterprise", "WPA2-Personal", "WEP", "Open authentication"],
+    "answer": "WPA2-Enterprise",
+    "explanation": "WPA2-Enterprise uses 802.1X and certificates for secure authentication."
+}
+
+
 ]

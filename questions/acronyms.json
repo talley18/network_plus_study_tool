@@ -1,0 +1,663 @@
+[
+    {
+        "question": "What does DHCP primarily provide to network clients?",
+        "choices": ["Domain name resolution", "Automatic IP addressing", "MAC address filtering", "Packet encryption"],
+        "answer": "Automatic IP addressing",
+        "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network configuration to clients."
+    },
+    {
+        "question": "What is the purpose of DNS?",
+        "choices": ["Encrypt traffic", "Translate domain names to IP addresses", "Assign MAC addresses", "Monitor network traffic"],
+        "answer": "Translate domain names to IP addresses",
+        "explanation": "DNS (Domain Name System) resolves human-readable domain names into IP addresses."
+    },
+    {
+        "question": "What does NAT do on a router?",
+        "choices": ["Provides wireless authentication", "Translates private IPs to public IPs", "Assigns VLAN IDs", "Encrypts WAN traffic"],
+        "answer": "Translates private IPs to public IPs",
+        "explanation": "NAT (Network Address Translation) allows multiple private hosts to share a single public IP address."
+    },
+    {
+        "question": "What does SSID refer to in wireless networking?",
+        "choices": ["Wireless encryption key", "Network name", "Radio frequency", "MAC filtering rule"],
+        "answer": "Network name",
+        "explanation": "SSID (Service Set Identifier) is the broadcast name of a wireless network."
+    },
+    {
+        "question": "What is the purpose of VLANs?",
+        "choices": ["Increase wireless range", "Segment networks logically", "Encrypt LAN traffic", "Assign IP addresses"],
+        "answer": "Segment networks logically",
+        "explanation": "A VLAN (Virtual Local Area Network) divides a physical network into multiple logical networks."
+    },
+    {
+        "question": "What does VPN provide to remote users?",
+        "choices": ["Public IP addresses", "Secure encrypted tunnels", "MAC address filtering", "Wireless authentication"],
+        "answer": "Secure encrypted tunnels",
+        "explanation": "A VPN (Virtual Private Network) creates an encrypted tunnel for secure remote access."
+    },
+    {
+        "question": "What is the purpose of QoS?",
+        "choices": ["Increase wireless range", "Prioritize network traffic", "Assign IP addresses", "Encrypt data"],
+        "answer": "Prioritize network traffic",
+        "explanation": "QoS (Quality of Service) prioritizes important network traffic to ensure performance."
+    },
+    {
+        "question": "What does FTP primarily do?",
+        "choices": ["Transfers files", "Resolves domain names", "Encrypts email", "Assigns IP addresses"],
+        "answer": "Transfers files",
+        "explanation": "FTP (File Transfer Protocol) is used for transferring files between systems."
+    },
+    {
+        "question": "What is the purpose of SNMP?",
+        "choices": ["Monitor and manage network devices", "Encrypt network traffic", "Assign IP addresses", "Resolve hostnames"],
+        "answer": "Monitor and manage network devices",
+        "explanation": "SNMP (Simple Network Management Protocol) is used for monitoring and managing network equipment."
+    },
+    {
+        "question": "What does WPA2 provide in wireless networking?",
+        "choices": ["MAC filtering", "Wireless encryption", "SSID broadcasting", "IP address assignment"],
+        "answer": "Wireless encryption",
+        "explanation": "WPA2 (Wi‑Fi Protected Access 2) is a security protocol that encrypts wireless communication."
+    },
+    {
+    "question": "What does ARP do on a network?",
+    "choices": ["Resolves IP to MAC", "Resolves MAC to IP", "Encrypts packets", "Assigns IP addresses"],
+    "answer": "Resolves IP to MAC",
+    "explanation": "ARP (Address Resolution Protocol) maps an IP address to a device's MAC address."
+},
+{
+    "question": "What does OSPF stand for?",
+    "choices": ["Open Shortest Path First", "Open Secure Path Forwarding", "Optimal Service Path Function", "Operational Switching Path Format"],
+    "answer": "Open Shortest Path First",
+    "explanation": "OSPF (Open Shortest Path First) is a link-state routing protocol used in IP networks."
+},
+{
+    "question": "What is the purpose of BGP?",
+    "choices": ["Interior routing", "Exterior routing between ISPs", "Wireless encryption", "DHCP failover"],
+    "answer": "Exterior routing between ISPs",
+    "explanation": "BGP (Border Gateway Protocol) is the routing protocol that connects ISPs and large networks on the internet."
+},
+{
+    "question": "What does MTU refer to?",
+    "choices": ["Maximum Transmission Unit", "Minimum Transfer Utility", "Managed Transport Usage", "Multi-Threaded Uplink"],
+    "answer": "Maximum Transmission Unit",
+    "explanation": "MTU (Maximum Transmission Unit) defines the largest packet size allowed on a network interface."
+},
+{
+    "question": "What does EIGRP stand for?",
+    "choices": ["Enhanced Interior Gateway Routing Protocol", "Extended Internet Gateway Routing Process", "Encrypted Internal Gateway Routing Protocol", "Enhanced Internal Group Routing Protocol"],
+    "answer": "Enhanced Interior Gateway Routing Protocol",
+    "explanation": "EIGRP (Enhanced Interior Gateway Routing Protocol) is a Cisco proprietary hybrid routing protocol."
+},
+{
+    "question": "What does IGMP manage?",
+    "choices": ["Multicast group membership", "Unicast routing", "DHCP leases", "Wireless roaming"],
+    "answer": "Multicast group membership",
+    "explanation": "IGMP (Internet Group Management Protocol) manages multicast group memberships on IPv4 networks."
+},
+{
+    "question": "What does SIP handle?",
+    "choices": ["VoIP signaling", "File transfers", "Routing updates", "Wireless authentication"],
+    "answer": "VoIP signaling",
+    "explanation": "SIP (Session Initiation Protocol) establishes, manages, and terminates VoIP communication sessions."
+},
+{
+    "question": "What does RTP transport?",
+    "choices": ["Voice and video streams", "Routing tables", "DNS queries", "Encrypted keys"],
+    "answer": "Voice and video streams",
+    "explanation": "RTP (Real-time Transport Protocol) carries audio and video data for real-time applications like VoIP."
+},
+{
+    "question": "What does RDP allow?",
+    "choices": ["Remote desktop access", "Routing updates", "Packet filtering", "Wireless bridging"],
+    "answer": "Remote desktop access",
+    "explanation": "RDP (Remote Desktop Protocol) allows remote graphical access to Windows systems."
+},
+{
+    "question": "What does TACACS+ provide?",
+    "choices": ["AAA authentication", "Wireless encryption", "Routing metrics", "DHCP failover"],
+    "answer": "AAA authentication",
+    "explanation": "TACACS+ (Terminal Access Controller Access-Control System Plus) provides centralized AAA authentication."
+},
+{
+    "question": "What does RADIUS provide?",
+    "choices": ["AAA authentication", "Routing updates", "DNS resolution", "Packet fragmentation"],
+    "answer": "AAA authentication",
+    "explanation": "RADIUS (Remote Authentication Dial-In User Service) provides centralized AAA services, especially for Wi-Fi."
+},
+{
+    "question": "What does NTP synchronize?",
+    "choices": ["System time", "Routing tables", "DNS zones", "DHCP scopes"],
+    "answer": "System time",
+    "explanation": "NTP (Network Time Protocol) synchronizes clocks across network devices."
+},
+{
+    "question": "What does TFTP do?",
+    "choices": ["Simple file transfers", "Encrypted file transfers", "Routing updates", "Wireless authentication"],
+    "answer": "Simple file transfers",
+    "explanation": "TFTP (Trivial File Transfer Protocol) is a lightweight protocol used for simple file transfers like firmware updates."
+},
+{
+    "question": "What does SMB provide?",
+    "choices": ["File and printer sharing", "Routing updates", "Wireless encryption", "DHCP services"],
+    "answer": "File and printer sharing",
+    "explanation": "SMB (Server Message Block) enables file and printer sharing on Windows networks."
+},
+{
+    "question": "What does AFP stand for?",
+    "choices": ["Apple Filing Protocol", "Advanced File Protection", "Application Forwarding Process", "Authenticated File Path"],
+    "answer": "Apple Filing Protocol",
+    "explanation": "AFP (Apple Filing Protocol) is used for file services on macOS systems."
+},
+{
+    "question": "What does LLDP do?",
+    "choices": ["Advertises device information", "Encrypts traffic", "Assigns IP addresses", "Manages VLANs"],
+    "answer": "Advertises device information",
+    "explanation": "LLDP (Link Layer Discovery Protocol) advertises device identity and capabilities on a LAN."
+},
+{
+    "question": "What does CDP do?",
+    "choices": ["Cisco device discovery", "Packet encryption", "Wireless roaming", "DHCP failover"],
+    "answer": "Cisco device discovery",
+    "explanation": "CDP (Cisco Discovery Protocol) is a Cisco proprietary protocol for discovering neighboring devices."
+},
+{
+    "question": "What does MPLS stand for?",
+    "choices": ["Multiprotocol Label Switching", "Multi-Packet Layer Service", "Managed Protocol Link System", "Multi-Path Link Switching"],
+    "answer": "Multiprotocol Label Switching",
+    "explanation": "MPLS (Multiprotocol Label Switching) speeds up traffic by routing based on labels instead of IP lookups."
+},
+{
+    "question": "What does PPP provide?",
+    "choices": ["Point-to-point WAN connectivity", "Wireless encryption", "Routing updates", "DHCP services"],
+    "answer": "Point-to-point WAN connectivity",
+    "explanation": "PPP (Point-to-Point Protocol) provides direct WAN connections with authentication and encapsulation."
+},
+{
+    "question": "What does PPPoE combine?",
+    "choices": ["PPP and Ethernet", "PPP and Wi-Fi", "Ethernet and MPLS", "PPP and DNS"],
+    "answer": "PPP and Ethernet",
+    "explanation": "PPPoE (Point-to-Point Protocol over Ethernet) encapsulates PPP frames inside Ethernet for broadband access."
+},
+{
+    "question": "What does SIP ALG modify?",
+    "choices": ["VoIP traffic", "DNS queries", "Routing tables", "DHCP leases"],
+    "answer": "VoIP traffic",
+    "explanation": "SIP ALG (Application Layer Gateway) modifies SIP packets for NAT traversal, often causing VoIP issues."
+},
+{
+    "question": "What does IDS stand for?",
+    "choices": ["Intrusion Detection System", "Internal Data Service", "Internet Directory Server", "Integrated Defense System"],
+    "answer": "Intrusion Detection System",
+    "explanation": "IDS (Intrusion Detection System) monitors network traffic for malicious activity."
+},
+{
+    "question": "What does IPS do?",
+    "choices": ["Blocks malicious traffic", "Assigns IP addresses", "Encrypts wireless traffic", "Manages VLANs"],
+    "answer": "Blocks malicious traffic",
+    "explanation": "IPS (Intrusion Prevention System) actively blocks detected threats."
+},
+{
+    "question": "What does SIEM provide?",
+    "choices": ["Security event correlation", "Routing updates", "DHCP failover", "Wireless authentication"],
+    "answer": "Security event correlation",
+    "explanation": "SIEM (Security Information and Event Management) aggregates and analyzes security logs."
+},
+{
+    "question": "What does DLP prevent?",
+    "choices": ["Data leakage", "Routing loops", "Wireless interference", "DHCP exhaustion"],
+    "answer": "Data leakage",
+    "explanation": "DLP (Data Loss Prevention) stops sensitive data from leaving an organization."
+},
+{
+    "question": "What does UPS provide?",
+    "choices": ["Backup power", "Packet filtering", "Routing updates", "Wireless encryption"],
+    "answer": "Backup power",
+    "explanation": "UPS (Uninterruptible Power Supply) provides temporary power during outages."
+},
+{
+    "question": "What does PoE deliver?",
+    "choices": ["Power over Ethernet", "Packets over Encryption", "Protocol over Ethernet", "Power on Endpoint"],
+    "answer": "Power over Ethernet",
+    "explanation": "PoE (Power over Ethernet) delivers electrical power and data over the same Ethernet cable."
+},
+{
+    "question": "What does APIPA assign?",
+    "choices": ["169.254.x.x addresses", "Private 10.x.x.x addresses", "Public IPs", "Loopback addresses"],
+    "answer": "169.254.x.x addresses",
+    "explanation": "APIPA (Automatic Private IP Addressing) assigns 169.254.x.x addresses when DHCP fails."
+},
+{
+    "question": "What does SLAAC do?",
+    "choices": ["Auto-configures IPv6 addresses", "Assigns IPv4 addresses", "Encrypts IPv6 traffic", "Manages VLANs"],
+    "answer": "Auto-configures IPv6 addresses",
+    "explanation": "SLAAC (Stateless Address Autoconfiguration) automatically assigns IPv6 addresses without DHCPv6."
+},
+{
+    "question": "What does NDP replace in IPv6?",
+    "choices": ["ARP", "DNS", "DHCP", "NAT"],
+    "answer": "ARP",
+    "explanation": "NDP (Neighbor Discovery Protocol) replaces ARP in IPv6 networks."
+},
+{
+    "question": "What does ICMP handle?",
+    "choices": ["Error messages and diagnostics", "File transfers", "Routing updates", "Wireless encryption"],
+    "answer": "Error messages and diagnostics",
+    "explanation": "ICMP (Internet Control Message Protocol) handles error reporting and tools like ping and traceroute."
+},
+{
+    "question": "What does IGMPv3 add support for?",
+    "choices": ["Source-specific multicast", "IPv6 routing", "Wireless roaming", "DHCP failover"],
+    "answer": "Source-specific multicast",
+    "explanation": "IGMPv3 (Internet Group Management Protocol v3) adds support for source-specific multicast."
+},
+{
+    "question": "What does HSRP provide?",
+    "choices": ["Router redundancy", "Wireless encryption", "DHCP services", "DNS caching"],
+    "answer": "Router redundancy",
+    "explanation": "HSRP (Hot Standby Router Protocol) provides router failover for high availability."
+},
+{
+    "question": "What does VRRP stand for?",
+    "choices": ["Virtual Router Redundancy Protocol", "Virtual Routing Resource Protocol", "Variable Routing Redundancy Process", "Verified Router Recovery Protocol"],
+    "answer": "Virtual Router Redundancy Protocol",
+    "explanation": "VRRP (Virtual Router Redundancy Protocol) provides router failover similar to HSRP."
+},
+{
+    "question": "What does STP prevent?",
+    "choices": ["Switching loops", "Routing loops", "DHCP starvation", "DNS poisoning"],
+    "answer": "Switching loops",
+    "explanation": "STP (Spanning Tree Protocol) prevents switching loops in Ethernet networks."
+},
+{
+    "question": "What does RSTP improve?",
+    "choices": ["Faster convergence", "Wireless speed", "DHCP lease time", "DNS resolution"],
+    "answer": "Faster convergence",
+    "explanation": "RSTP (Rapid Spanning Tree Protocol) improves convergence time over STP."
+},
+{
+    "question": "What does CSMA/CD manage?",
+    "choices": ["Ethernet collisions", "Wireless roaming", "Routing metrics", "DHCP leases"],
+    "answer": "Ethernet collisions",
+    "explanation": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) manages collisions on half-duplex Ethernet."
+},
+{
+    "question": "What does CSMA/CA manage?",
+    "choices": ["Wireless collisions avoidance", "Ethernet collisions", "Routing updates", "DHCP failover"],
+    "answer": "Wireless collisions avoidance",
+    "explanation": "CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) reduces collisions in Wi-Fi networks."
+},
+{
+    "question": "What does PAT do?",
+    "choices": ["Translates many private IPs to one public IP using ports", "Encrypts packets", "Assigns VLANs", "Manages routing tables"],
+    "answer": "Translates many private IPs to one public IP using ports",
+    "explanation": "PAT (Port Address Translation) maps multiple private IPs to a single public IP using port numbers."
+},
+{
+    "question": "What does AAA stand for?",
+    "choices": ["Authentication, Authorization, Accounting", "Access, Authentication, Allocation", "Authorization, Access, Assignment", "Accounting, Access, Authentication"],
+    "answer": "Authentication, Authorization, Accounting",
+    "explanation": "AAA (Authentication, Authorization, Accounting) is the security framework for identity and access control."
+},
+{
+    "question": "What does DHCPv6 provide?",
+    "choices": ["IPv6 address assignment", "IPv4 address assignment", "Wireless encryption", "Routing updates"],
+    "answer": "IPv6 address assignment",
+    "explanation": "DHCPv6 (Dynamic Host Configuration Protocol for IPv6) assigns IPv6 addresses and configuration settings."
+},
+{
+    "question": "What does SLA stand for in networking?",
+    "choices": ["Service Level Agreement", "Secure Link Access", "System Log Analyzer", "Service Link Authentication"],
+    "answer": "Service Level Agreement",
+    "explanation": "SLA (Service Level Agreement) defines performance guarantees between a provider and a customer."
+},
+{
+    "question": "What does MSS define?",
+    "choices": ["Maximum Segment Size", "Minimum Service Speed", "Managed Switch Setting", "Multi-Stream Service"],
+    "answer": "Maximum Segment Size",
+    "explanation": "MSS (Maximum Segment Size) defines the largest TCP segment a device can receive."
+},
+{
+    "question": "What does CRC detect?",
+    "choices": ["Frame errors", "Routing loops", "DHCP failures", "DNS poisoning"],
+    "answer": "Frame errors",
+    "explanation": "CRC (Cyclic Redundancy Check) detects errors in Ethernet frames."
+},
+{
+    "question": "What does SFTP provide?",
+    "choices": ["Secure file transfers", "Simple file transfers", "Routing updates", "Wireless authentication"],
+    "answer": "Secure file transfers",
+    "explanation": "SFTP (Secure File Transfer Protocol) provides encrypted file transfers over SSH."
+},
+{
+    "question": "What does SSH provide?",
+    "choices": ["Secure remote access", "Wireless encryption", "Routing updates", "DHCP services"],
+    "answer": "Secure remote access",
+    "explanation": "SSH (Secure Shell) provides encrypted remote command-line access."
+},
+{
+    "question": "What does IMAP do?",
+    "choices": ["Retrieves email from a server", "Sends email", "Encrypts email", "Filters spam"],
+    "answer": "Retrieves email from a server",
+    "explanation": "IMAP (Internet Message Access Protocol) retrieves and manages email stored on a server."
+},
+{
+    "question": "What does SMTP handle?",
+    "choices": ["Sending email", "Receiving email", "Encrypting email", "Filtering email"],
+    "answer": "Sending email",
+    "explanation": "SMTP (Simple Mail Transfer Protocol) handles sending email between servers."
+},
+{
+    "question": "What does DMZ stand for?",
+    "choices": ["Demilitarized Zone", "Data Management Zone", "Distributed Monitoring Zone", "Device Management Zone"],
+    "answer": "Demilitarized Zone",
+    "explanation": "DMZ (Demilitarized Zone) is a network segment that isolates public-facing services from the internal LAN."
+},
+{
+    "question": "What does UTM provide?",
+    "choices": ["Unified security functions", "Routing updates", "DHCP failover", "Wireless roaming"],
+    "answer": "Unified security functions",
+    "explanation": "UTM (Unified Threat Management) combines firewall, IDS/IPS, antivirus, and other security features."
+},
+{
+    "question": "What does NGFW stand for?",
+    "choices": ["Next-Generation Firewall", "Network Gateway Firewall", "New Global Firewall", "Next-Gen File Wrapper"],
+    "answer": "Next-Generation Firewall",
+    "explanation": "NGFW (Next-Generation Firewall) provides deep packet inspection and advanced security features."
+},
+{
+    "question": "What does EAP provide?",
+    "choices": ["Authentication framework", "Routing updates", "File transfers", "DHCP services"],
+    "answer": "Authentication framework",
+    "explanation": "EAP (Extensible Authentication Protocol) is used for authentication in wireless and VPN systems."
+},
+{
+    "question": "What does PEAP stand for?",
+    "choices": ["Protected Extensible Authentication Protocol", "Private Encryption Access Protocol", "Public Endpoint Authentication Process", "Protected Endpoint Access Protocol"],
+    "answer": "Protected Extensible Authentication Protocol",
+    "explanation": "PEAP (Protected Extensible Authentication Protocol) encapsulates EAP inside a TLS tunnel for secure authentication."
+},
+{
+    "question": "What does TKIP provide?",
+    "choices": ["Wireless encryption", "Routing updates", "DHCP failover", "DNS caching"],
+    "answer": "Wireless encryption",
+    "explanation": "TKIP (Temporal Key Integrity Protocol) is an older Wi-Fi encryption method used with WPA."
+},
+{
+    "question": "What does AES provide?",
+    "choices": ["Strong encryption", "Routing updates", "DHCP services", "Wireless roaming"],
+    "answer": "Strong encryption",
+    "explanation": "AES (Advanced Encryption Standard) is a widely used strong encryption algorithm, especially in WPA2."
+},
+{
+    "question": "What does IPSec secure?",
+    "choices": ["IP traffic", "DNS queries", "Email messages", "Wireless SSIDs"],
+    "answer": "IP traffic",
+    "explanation": "IPSec (Internet Protocol Security) encrypts and authenticates IP packets for VPNs."
+},
+{
+    "question": "What does GRE encapsulate?",
+    "choices": ["Tunneled traffic", "DNS queries", "Routing tables", "Wireless frames"],
+    "answer": "Tunneled traffic",
+    "explanation": "GRE (Generic Routing Encapsulation) tunnels various network protocols inside IP packets."
+},
+{
+    "question": "What does CARP provide?",
+    "choices": ["Router redundancy", "Wireless encryption", "DHCP services", "DNS resolution"],
+    "answer": "Router redundancy",
+    "explanation": "CARP (Common Address Redundancy Protocol) provides router failover similar to VRRP and HSRP."
+},
+{
+    "question": "What does SAN stand for?",
+    "choices": ["Storage Area Network", "Secure Access Node", "System Allocation Network", "Shared Application Network"],
+    "answer": "Storage Area Network",
+    "explanation": "SAN (Storage Area Network) provides high-speed access to consolidated storage."
+},
+{
+    "question": "What does NAS provide?",
+    "choices": ["Network file storage", "Routing updates", "Wireless authentication", "DHCP failover"],
+    "answer": "Network file storage",
+    "explanation": "NAS (Network Attached Storage) provides file-level storage over a network."
+},
+{
+    "question": "What does IGMP stand for?",
+    "choices": ["Internet Group Management Protocol", "Internal Gateway Management Process", "Inter-Gateway Multicast Protocol", "Internet Global Messaging Protocol"],
+    "answer": "Internet Group Management Protocol",
+    "explanation": "IGMP (Internet Group Management Protocol) manages multicast group memberships on IPv4 networks."
+},
+{
+    "question": "What does NVRAM store on network devices?",
+    "choices": ["Startup configuration", "Running configuration", "Routing tables", "DHCP leases"],
+    "answer": "Startup configuration",
+    "explanation": "NVRAM (Non-Volatile Random Access Memory) stores the startup configuration on routers and switches."
+},
+{
+    "question": "What does ROMMON refer to on Cisco devices?",
+    "choices": ["Bootloader mode", "Routing monitor", "Remote management", "Memory diagnostics"],
+    "answer": "Bootloader mode",
+    "explanation": "ROMMON (ROM Monitor) is a low-level bootloader mode used for recovery on Cisco devices."
+},
+{
+    "question": "What does CSU/DSU do?",
+    "choices": ["Connects digital WAN circuits", "Encrypts WAN traffic", "Assigns IP addresses", "Manages VLANs"],
+    "answer": "Connects digital WAN circuits",
+    "explanation": "A CSU/DSU (Channel Service Unit/Data Service Unit) connects routers to digital WAN circuits like T1 lines."
+},
+{
+    "question": "What does SNR measure?",
+    "choices": ["Signal-to-noise ratio", "Secure network routing", "Service node redundancy", "System network reliability"],
+    "answer": "Signal-to-noise ratio",
+    "explanation": "SNR (Signal-to-Noise Ratio) measures signal strength relative to background noise."
+},
+{
+    "question": "What does BER measure?",
+    "choices": ["Bit error rate", "Bandwidth efficiency rating", "Broadcast energy ratio", "Binary encoding rate"],
+    "answer": "Bit error rate",
+    "explanation": "BER (Bit Error Rate) measures the number of corrupted bits in a transmission."
+},
+{
+    "question": "What does FQDN stand for?",
+    "choices": ["Fully Qualified Domain Name", "Full Query Domain Node", "Fast Query Domain Network", "Federated Qualified Directory Name"],
+    "answer": "Fully Qualified Domain Name",
+    "explanation": "FQDN (Fully Qualified Domain Name) is the complete domain name including all DNS hierarchy levels."
+},
+{
+    "question": "What does MX record specify?",
+    "choices": ["Mail exchange server", "Multicast exchange", "Maximum TTL", "Managed extension"],
+    "answer": "Mail exchange server",
+    "explanation": "An MX (Mail Exchange) record specifies the mail server responsible for receiving email for a domain."
+},
+{
+    "question": "What does TXT record commonly store?",
+    "choices": ["Verification or SPF data", "Routing tables", "DHCP scopes", "DNSSEC keys"],
+    "answer": "Verification or SPF data",
+    "explanation": "TXT (Text) records store arbitrary text, commonly SPF or domain verification data."
+},
+{
+    "question": "What does SPF prevent?",
+    "choices": ["Email spoofing", "DNS poisoning", "Routing loops", "DHCP starvation"],
+    "answer": "Email spoofing",
+    "explanation": "SPF (Sender Policy Framework) helps prevent email spoofing by verifying sending servers."
+},
+{
+    "question": "What does DKIM validate?",
+    "choices": ["Email authenticity", "DNS integrity", "Routing metrics", "Wireless encryption"],
+    "answer": "Email authenticity",
+    "explanation": "DKIM (DomainKeys Identified Mail) uses cryptographic signatures to validate email authenticity."
+},
+{
+    "question": "What does DMARC enforce?",
+    "choices": ["Email authentication policies", "DNS caching rules", "Routing metrics", "Firewall rules"],
+    "answer": "Email authentication policies",
+    "explanation": "DMARC (Domain-based Message Authentication, Reporting & Conformance) enforces SPF/DKIM policies."
+},
+{
+    "question": "What does NBMA refer to?",
+    "choices": ["Non-Broadcast Multi-Access", "Network-Based Multicast Access", "Node-Based Media Allocation", "Non-Binary Message Architecture"],
+    "answer": "Non-Broadcast Multi-Access",
+    "explanation": "NBMA (Non-Broadcast Multi-Access) networks support multiple nodes but do not support broadcast traffic."
+},
+{
+    "question": "What does MTTR measure?",
+    "choices": ["Mean time to repair", "Maximum throughput rate", "Minimum transmission retry", "Managed traffic routing"],
+    "answer": "Mean time to repair",
+    "explanation": "MTTR (Mean Time To Repair) measures the average time required to fix a failed component."
+},
+{
+    "question": "What does MTBF measure?",
+    "choices": ["Mean time between failures", "Maximum transfer buffer", "Managed traffic bandwidth", "Minimum throughput baseline"],
+    "answer": "Mean time between failures",
+    "explanation": "MTBF (Mean Time Between Failures) measures expected reliability of hardware components."
+},
+{
+    "question": "What does EUI-64 generate?",
+    "choices": ["IPv6 interface IDs", "IPv4 subnets", "DNS records", "Routing metrics"],
+    "answer": "IPv6 interface IDs",
+    "explanation": "EUI-64 (Extended Unique Identifier 64-bit) generates IPv6 interface identifiers from MAC addresses."
+},
+{
+    "question": "What does BPDU stand for?",
+    "choices": ["Bridge Protocol Data Unit", "Broadcast Packet Delivery Unit", "Binary Protocol Distribution Utility", "Bridge Path Discovery Utility"],
+    "answer": "Bridge Protocol Data Unit",
+    "explanation": "BPDU (Bridge Protocol Data Unit) is used by STP to prevent switching loops."
+},
+{
+    "question": "What does LACP do?",
+    "choices": ["Aggregates switch links", "Encrypts traffic", "Assigns VLANs", "Manages DHCP leases"],
+    "answer": "Aggregates switch links",
+    "explanation": "LACP (Link Aggregation Control Protocol) bundles multiple physical links into one logical link."
+},
+{
+    "question": "What does TAC stand for in networking?",
+    "choices": ["Technical Assistance Center", "Traffic Allocation Control", "Transmission Access Channel", "Terminal Authentication Code"],
+    "answer": "Technical Assistance Center",
+    "explanation": "TAC (Technical Assistance Center) refers to vendor support teams like Cisco TAC."
+},
+{
+    "question": "What does WIDS detect?",
+    "choices": ["Wireless intrusions", "Routing loops", "DHCP failures", "DNS poisoning"],
+    "answer": "Wireless intrusions",
+    "explanation": "WIDS (Wireless Intrusion Detection System) monitors wireless networks for unauthorized activity."
+},
+{
+    "question": "What does LTE stand for?",
+    "choices": ["Long Term Evolution", "Local Transmission Exchange", "Low Traffic Ethernet", "Layered Transport Encoding"],
+    "answer": "Long Term Evolution",
+    "explanation": "LTE (Long Term Evolution) is a 4G wireless broadband communication standard."
+},
+{
+    "question": "What does GSM refer to?",
+    "choices": ["Global System for Mobile Communications", "General Switching Method", "Global Security Module", "Generic Subscriber Mode"],
+    "answer": "Global System for Mobile Communications",
+    "explanation": "GSM (Global System for Mobile Communications) is a standard for mobile networks."
+},
+{
+    "question": "What does HSPA improve?",
+    "choices": ["3G data speeds", "Routing updates", "Wireless encryption", "DHCP performance"],
+    "answer": "3G data speeds",
+    "explanation": "HSPA (High-Speed Packet Access) improves 3G mobile data performance."
+},
+{
+    "question": "What does SS7 handle?",
+    "choices": ["Telephony signaling", "Wireless encryption", "Routing metrics", "DNS resolution"],
+    "answer": "Telephony signaling",
+    "explanation": "SS7 (Signaling System No. 7) manages call setup and teardown in telephone networks."
+},
+{
+    "question": "What does PSTN stand for?",
+    "choices": ["Public Switched Telephone Network", "Private Secure Transport Network", "Packet-Switched Telephony Node", "Primary Signal Transport Network"],
+    "answer": "Public Switched Telephone Network",
+    "explanation": "PSTN (Public Switched Telephone Network) is the traditional circuit-switched telephone system."
+},
+{
+    "question": "What does ISDN provide?",
+    "choices": ["Digital voice and data services", "Wireless roaming", "Routing updates", "DNS caching"],
+    "answer": "Digital voice and data services",
+    "explanation": "ISDN (Integrated Services Digital Network) provides digital transmission of voice and data."
+},
+{
+    "question": "What does PRI refer to?",
+    "choices": ["Primary Rate Interface", "Packet Routing Interface", "Private Relay Interconnect", "Primary Routing Index"],
+    "answer": "Primary Rate Interface",
+    "explanation": "PRI (Primary Rate Interface) is an ISDN service with multiple voice/data channels."
+},
+{
+    "question": "What does SIP-T connect?",
+    "choices": ["VoIP and PSTN signaling", "Wireless APs", "Routers and switches", "DNS servers"],
+    "answer": "VoIP and PSTN signaling",
+    "explanation": "SIP-T (SIP for Telephones) bridges VoIP signaling with traditional PSTN networks."
+},
+{
+    "question": "What does QoE measure?",
+    "choices": ["User experience quality", "Routing efficiency", "Encryption strength", "DHCP reliability"],
+    "answer": "User experience quality",
+    "explanation": "QoE (Quality of Experience) measures perceived user satisfaction with a service."
+},
+{
+    "question": "What does BER stand for?",
+    "choices": ["Bit Error Rate", "Bandwidth Efficiency Ratio", "Binary Encoding Rule", "Broadcast Error Response"],
+    "answer": "Bit Error Rate",
+    "explanation": "BER (Bit Error Rate) measures the number of corrupted bits in a transmission."
+},
+{
+    "question": "What does FHRP provide?",
+    "choices": ["Router redundancy", "Wireless encryption", "DHCP failover", "DNS caching"],
+    "answer": "Router redundancy",
+    "explanation": "FHRP (First Hop Redundancy Protocol) ensures gateway availability using protocols like HSRP and VRRP."
+},
+{
+    "question": "What does SFP stand for?",
+    "choices": ["Small Form-factor Pluggable", "Secure Fiber Port", "Switch Forwarding Protocol", "Signal Frequency Port"],
+    "answer": "Small Form-factor Pluggable",
+    "explanation": "SFP (Small Form-factor Pluggable) is a modular transceiver used in switches and routers."
+},
+{
+    "question": "What does QSFP support?",
+    "choices": ["40/100Gbps fiber links", "Wireless roaming", "Routing updates", "DHCP services"],
+    "answer": "40/100Gbps fiber links",
+    "explanation": "QSFP (Quad Small Form-factor Pluggable) supports high-speed fiber connections like 40G and 100G."
+},
+{
+    "question": "What does SONET stand for?",
+    "choices": ["Synchronous Optical Network", "Secure Optical Node Exchange", "System Optical Network Transport", "Synchronous Online Network"],
+    "answer": "Synchronous Optical Network",
+    "explanation": "SONET (Synchronous Optical Network) is a standardized digital communication protocol over fiber."
+},
+{
+    "question": "What does CWDM allow?",
+    "choices": ["Multiple wavelengths on fiber", "Wireless encryption", "Routing updates", "DHCP failover"],
+    "answer": "Multiple wavelengths on fiber",
+    "explanation": "CWDM (Coarse Wavelength Division Multiplexing) allows multiple optical signals on a single fiber."
+},
+{
+    "question": "What does DWDM improve?",
+    "choices": ["Fiber bandwidth capacity", "Wireless range", "Routing metrics", "DHCP performance"],
+    "answer": "Fiber bandwidth capacity",
+    "explanation": "DWDM (Dense Wavelength Division Multiplexing) increases fiber capacity using tightly spaced wavelengths."
+},
+{
+    "question": "What does MPLS TE optimize?",
+    "choices": ["Traffic engineering", "Wireless encryption", "DNS resolution", "DHCP allocation"],
+    "answer": "Traffic engineering",
+    "explanation": "MPLS TE (Traffic Engineering) optimizes traffic flow across MPLS networks."
+},
+{
+    "question": "What does BSSID identify?",
+    "choices": ["A specific wireless access point", "A wireless network name", "A VLAN ID", "A routing protocol"],
+    "answer": "A specific wireless access point",
+    "explanation": "BSSID (Basic Service Set Identifier) identifies a specific AP using its MAC address."
+},
+{
+    "question": "What does ESSID represent?",
+    "choices": ["Extended wireless network name", "Encrypted SSID", "Enterprise security ID", "Extended subnet identifier"],
+    "answer": "Extended wireless network name",
+    "explanation": "ESSID (Extended Service Set Identifier) is the SSID used across multiple APs in a WLAN."
+},
+{
+    "question": "What does CAPWAP manage?",
+    "choices": ["AP-to-controller communication", "Routing updates", "DHCP failover", "DNS caching"],
+    "answer": "AP-to-controller communication",
+    "explanation": "CAPWAP (Control and Provisioning of Wireless Access Points) manages communication between APs and controllers."
+}
+
+]

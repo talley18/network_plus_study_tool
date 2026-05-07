@@ -1,8 +1,17 @@
+# ============================================================
+# 1. Imports & Global Constants
+# ============================================================
+
 import json
 import random
 import os
 
-# Domain mapping
+# ============================================================
+# 2. Data Structures & Mappings
+#    - Domain mapping
+#    - Acronym dictionary (loaded from JSON)
+# ============================================================
+
 DOMAINS = {
     "1": ("Networking Fundamentals", "fundamentals.json"),
     "2": ("Network Implementations", "implementations.json"),
@@ -19,9 +28,16 @@ EXAM_WEIGHTS = {
     "Network Security": 0.19,
     "Network Troubleshooting": 0.22
 }
+ #new 5/5/26
+
+ACRONYM_FILE = "questions/acronyms.json"
 
 
-# question loader
+# ============================================================
+# 3. Loaders
+#    - Question loader
+#    - Acronym loader
+# ============================================================
 
 QUESTIONS_DIR = "questions"
 
@@ -39,11 +55,65 @@ def load_all_questions():
         all_questions[name] = load_questions(filename)
     return all_questions
 
-# ⭐ Load ALL questions once at startup
+#new 
 
+def load_acronyms():
+    try:
+        with open(ACRONYM_FILE, "r") as f:
+            data = json.load(f)
+        return data
+    except FileNotFoundError:
+        print("[ERROR] Acronym file not found.")
+        return []
+    
+#end new 5/5/26
+
+# debugger addtion 
+# ⭐ Load ALL questions once at startup
 all_questions = load_all_questions()
 
-# study mode funtion
+# ⭐ DEBUG: Print counts per domain
+print("=== DEBUG: Questions per domain ===")
+for domain, qlist in all_questions.items():
+    print(domain, len(qlist))
+
+# ⭐ DEBUG: Combined total
+combined = []
+for qlist in all_questions.values():
+    combined.extend(qlist)
+
+print("=== DEBUG: Total questions loaded ===", len(combined))
+
+# ============================================================
+# 4. Utility Functions
+#    - Randomizers
+#    - Validators
+#    - Subnetting helpers (future)
+# ============================================================
+
+
+
+def pick_random_questions(questions, max_count=10):
+    num_to_ask = min(max_count, len(questions))
+    return random.sample(questions, num_to_ask)
+
+#new
+def randomize_acronyms(acronym_list):
+    random.shuffle(acronym_list)
+    return acronym_list
+#end new 
+
+
+
+
+
+
+# ============================================================
+# 5. Study Modes
+#    - Study Mode
+#    - Mastery Mode
+#    - Subnetting Mode (future)
+# ============================================================
 
 def study_mode():
     print("\n=== NSTPT STUDY MODE ===")
@@ -71,8 +141,9 @@ def study_mode():
 
     print(f"\n--- {domain_name} ---")
 
-    num_to_ask = min(10, len(questions))
-    session_questions = random.sample(questions, num_to_ask)
+# stuff moved form here to sec4
+    session_questions = pick_random_questions(questions)
+
 
     correct_count = 0
 
@@ -103,46 +174,136 @@ def study_mode():
         else:
             print("Invalid choice.")
 
-    print(f"\nSession complete. Correct: {correct_count}/{num_to_ask}\n")
+    print(f"\nSession complete. Correct: {correct_count}/{len(session_questions)}\n")
 
-#Main 
+# ⭐ INSERT THIS FUNCTION HERE ⭐
+def ask_question_mastery(q):
+    print(q["question"])
+    for i, choice in enumerate(q["choices"], 1):
+        print(f"{i}. {choice}")
 
-def main():
-    print("=== NPST ===")
-    print("Network Pluse Study Tool")
-    print("Type 'quit' at any time to exit.\n")
+    answer = input("Your answer(or q to quit): ").strip().lower()
 
-    while True:
-        print("Main Menu:")
-        print("1. Study Mode (by domain)")
-        print("2. Full Exam Simulation")
-        print("3. Test Mode (short exam)")
-        print("4. Mastery Mode (30-question perfect run) ")
-        choice = input("Select an option: ").strip().lower()
+    if answer == "q":
+        return "quit"
 
-        if choice == "quit":
-            print("Exiting NSTPT. Study strong.")
-            break
+    if not answer.isdigit() or int(answer) not in range(1, len(q["choices"]) + 1):
+        print("Invalid input. Marked as incorrect.\n")
+        print(f"Correct answer: {q['answer']}\n")
+        return False
 
-        if choice == "1":
-            study_mode()
+    selected_choice = q["choices"][int(answer) - 1]
 
-        elif choice == "2":
-            exam_simulation()
+    if selected_choice == q["answer"]:
+        print("✔ Correct!\n")
+        return True
+    else:
+        print("✘ Incorrect.")
+        print(f"Correct answer: {q['answer']}\n")
+        return False
 
-        elif choice == "3":     #test mode option
-            exam_simulation(test_mode=True)
+# Mastery Mode 
 
-        elif choice == "4":
-            mastery_mode(all_questions)
 
+def mastery_mode(all_questions):
+    print("\n=== NSTPT MASTERY MODE ===")
+    print("30 questions. Immediate feedback. Repeat until perfect.\n")
+
+    # Flatten all domain lists into one big list
+    combined = []
+    for domain_list in all_questions.values():
+        combined.extend(domain_list)
+
+    # Pick 30 random questions
+    session = random.sample(combined, min(30, len(combined)))
+
+    missed = []
+
+    # First pass
+    for q in session:
+        result = ask_question_mastery(q)
+
+        if result == "quit":
+            print("\nExiting Mastery Mode early.\n")
+            return
+
+        if not result:
+            missed.append(q)
+
+    # Retry loop
+    round_num = 2
+    while missed:
+        print(f"\n--- Round {round_num}: Retrying {len(missed)} missed questions ---\n")
+        retry = missed
+        missed = []
+
+        for q in retry:
+            result = ask_question_mastery(q)
+
+            if result == "quit":
+                print("\nExiting Mastery Mode early.\n")
+                return
+
+            if not result:
+                missed.append(q)
+
+        round_num += 1
+
+    print("\n🔥 Mastery Achieved! You answered all 30 questions correctly! 🔥\n")
+    
+#New acronym_mode
+
+def acronym_mode():
+    acronyms = load_acronyms()
+    if not acronyms:
+        print("No acronym data found.")
+        return
+
+    score = 0
+    total = len(acronyms)
+
+    random.shuffle(acronyms)
+
+    for item in acronyms:
+        print("\n====================================")
+        print(item["question"])
+
+        for i, choice in enumerate(item["choices"], start=1):
+            print(f"{i}. {choice}")
+
+        user_input = input("Your answer (1-4): ").strip()
+
+        if not user_input.isdigit() or not (1 <= int(user_input) <= len(item["choices"])):
+            print("Invalid input. Skipping question.")
+            continue
+
+        user_choice = item["choices"][int(user_input) - 1]
+
+        if user_choice == item["answer"]:
+            print("✔ Correct!")
         else:
-            print("Invalid choice.\n")
-        
+            print(f"✘ Incorrect. Correct answer: {item['answer']}")
+
+        print(f"Explanation: {item['explanation']}")
+
+    print("\n====================================")
+    print("Acronym Quiz Complete")
+    print(f"Score: {score}/{total}")
+    print("====================================")
 
 
 
-#Exam generator 
+
+#end new 5/5/26   
+
+
+
+# ============================================================
+# 6. Exam System
+#    - Exam generator
+#    - Exam simulation loop
+# ============================================================
+
 
 def generate_exam(all_questions):
     exam_questions = []
@@ -242,69 +403,53 @@ def exam_simulation(test_mode=False):
             print("Explanation:", q["explanation"])
 
         
-# Mastery Mode (NEW)
-
-def mastery_mode(all_questions):
-    print("\n=== NSTPT MASTERY MODE ===")
-    print("30 questions. Immediate feedback. Repeat until perfect.\n")
-
-    # Flatten all domain lists into one big list
-    combined = []
-    for domain_list in all_questions.values():
-        combined.extend(domain_list)
-
-    # Pick 30 random questions
-    session = random.sample(combined, min(30, len(combined)))
-
-    missed = []
-
-    # First pass
-    for q in session:
-        if not ask_question_mastery(q):
-            missed.append(q)
-
-    # Retry loop
-    round_num = 2
-    while missed:
-        print(f"\n--- Round {round_num}: Retrying {len(missed)} missed questions ---\n")
-        retry = missed
-        missed = []
-        for q in retry:
-            if not ask_question_mastery(q):
-                missed.append(q)
-        round_num += 1
-
-    print("\n🔥 Mastery Achieved! You answered all 30 questions correctly! 🔥\n")
-
-#New ask_question 's
-
-def ask_question_mastery(q):
-    print(q["question"])
-    for i, choice in enumerate(q["choices"], 1):
-        print(f"{i}. {choice}")
-
-    answer = input("Your answer: ").strip()
-
-    # Validate numeric input
-    if not answer.isdigit() or int(answer) not in range(1, len(q["choices"]) + 1):
-        print("Invalid input. Marked as incorrect.\n")
-        print(f"Correct answer: {q['answer']}\n")
-        return False
-
-    # Compare TEXT answers
-    selected_choice = q["choices"][int(answer) - 1]
-
-    if selected_choice == q["answer"]:
-        print("✔ Correct!\n")
-        return True
-    else:
-        print("✘ Incorrect.")
-        print(f"Correct answer: {q['answer']}\n")
-        return False
 
 
+# ============================================================
+# 7. Main Menu / Main Function
+# ============================================================
 
-# ATTN 
-# end main 
+def main():
+    print("=== NPST ===")
+    print("Network Pluse Study Tool")
+    print("Type 'quit' at any time to exit.\n")
+
+    while True:
+        print("Main Menu:")
+        print("1. Study Mode (by domain)")
+        print("2. Full Exam Simulation")
+        print("3. Test Mode (short exam)")
+        print("4. Mastery Mode (30-question perfect run) ")
+        print("5. Acronym Study Mode")
+
+        choice = input("Select an option: ").strip().lower()
+
+        if choice == "quit":
+            print("Exiting NSTPT. Study strong.")
+            break
+
+        if choice == "1":
+            study_mode()
+
+        elif choice == "2":
+            exam_simulation()
+
+        elif choice == "3":     #test mode option
+            exam_simulation(test_mode=True)
+
+        elif choice == "4":
+            mastery_mode(all_questions)
+        #new
+        elif choice == "5":
+            acronym_mode()
+        #end new 5/5/26
+
+        else:
+            print("Invalid choice.\n")
+
+# ============================================================
+# 7.5  Program Entry Point (ALWAYS LAST)
+# ============================================================
+
 if __name__ == "__main__":  
     main()

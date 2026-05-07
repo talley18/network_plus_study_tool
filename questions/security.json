@@ -64,5 +64,606 @@
         "choices": ["Store backups", "Trap attackers", "Encrypt data", "Improve Wi-Fi"],
         "answer": "Trap attackers",
         "explanation": "Honeypots lure attackers for analysis."
-    }
+    },
+    {
+    "question": "Which attack attempts to overwhelm a system with traffic to make it unavailable?",
+    "choices": ["DDoS", "Phishing", "MITM", "Brute force"],
+    "answer": "DDoS",
+    "explanation": "Distributed Denial of Service attacks flood a target with traffic from multiple sources."
+},
+{
+    "question": "Which protocol encrypts all data sent between a web browser and server?",
+    "choices": ["TLS", "HTTP", "FTP", "Telnet"],
+    "answer": "TLS",
+    "explanation": "TLS provides encryption for HTTPS and other secure protocols."
+},
+{
+    "question": "Which wireless security method uses AES encryption and is considered secure?",
+    "choices": ["WPA2", "WEP", "Open", "MAC filtering"],
+    "answer": "WPA2",
+    "explanation": "WPA2 uses AES encryption and is the current standard for secure Wi-Fi."
+},
+{
+    "question": "Which authentication factor is based on something you have?",
+    "choices": ["Smart card", "Password", "Fingerprint", "Location"],
+    "answer": "Smart card",
+    "explanation": "Smart cards and tokens are examples of 'something you have'."
+},
+{
+    "question": "Which device inspects traffic at multiple OSI layers to detect threats?",
+    "choices": ["Next-gen firewall", "Hub", "Repeater", "Switch"],
+    "answer": "Next-gen firewall",
+    "explanation": "NGFWs inspect traffic at layers 3–7 for advanced threat detection."
+},
+{
+    "question": "Which attack tricks users into revealing sensitive information?",
+    "choices": ["Phishing", "DDoS", "MITM", "Brute force"],
+    "answer": "Phishing",
+    "explanation": "Phishing uses deception to steal information from users."
+},
+{
+    "question": "Which protocol secures remote command-line access?",
+    "choices": ["SSH", "Telnet", "FTP", "HTTP"],
+    "answer": "SSH",
+    "explanation": "SSH encrypts remote terminal sessions."
+},
+{
+    "question": "Which security concept ensures that only authorized users can access data?",
+    "choices": ["Confidentiality", "Integrity", "Availability", "Non-repudiation"],
+    "answer": "Confidentiality",
+    "explanation": "Confidentiality ensures data is accessible only to authorized users."
+},
+{
+    "question": "Which attack involves intercepting communication between two parties?",
+    "choices": ["Man-in-the-middle", "Phishing", "DDoS", "Spoofing"],
+    "answer": "Man-in-the-middle",
+    "explanation": "MITM attacks intercept and possibly alter communication between two systems."
+},
+{
+    "question": "Which security device detects malicious activity but does NOT block it?",
+    "choices": ["IDS", "IPS", "Firewall", "Proxy"],
+    "answer": "IDS",
+    "explanation": "Intrusion Detection Systems alert administrators but do not block traffic."
+},
+{
+    "question": "Which type of malware encrypts files and demands payment?",
+    "choices": ["Ransomware", "Worm", "Trojan", "Spyware"],
+    "answer": "Ransomware",
+    "explanation": "Ransomware encrypts data and demands payment for decryption."
+},
+{
+    "question": "Which wireless security method uses a RADIUS server for authentication?",
+    "choices": ["WPA2-Enterprise", "WPA2-Personal", "WEP", "Open"],
+    "answer": "WPA2-Enterprise",
+    "explanation": "WPA2-Enterprise uses 802.1X and RADIUS for authentication."
+},
+{
+    "question": "Which attack attempts every possible password combination?",
+    "choices": ["Brute force", "Phishing", "MITM", "Spoofing"],
+    "answer": "Brute force",
+    "explanation": "Brute force attacks try all possible combinations to guess a password."
+},
+{
+    "question": "Which security principle ensures data has not been altered?",
+    "choices": ["Integrity", "Confidentiality", "Availability", "Authentication"],
+    "answer": "Integrity",
+    "explanation": "Integrity ensures data remains unchanged and accurate."
+},
+{
+    "question": "Which device filters traffic based on rules and policies?",
+    "choices": ["Firewall", "Switch", "Hub", "Repeater"],
+    "answer": "Firewall",
+    "explanation": "Firewalls allow or block traffic based on predefined rules."
+},
+{
+    "question": "Which attack involves sending fake ARP messages to redirect traffic?",
+    "choices": ["ARP spoofing", "DNS poisoning", "MITM", "Smurf attack"],
+    "answer": "ARP spoofing",
+    "explanation": "ARP spoofing tricks devices into sending traffic to the attacker."
+},
+{
+    "question": "Which protocol is used to securely transfer files over SSH?",
+    "choices": ["SFTP", "FTP", "TFTP", "SMB"],
+    "answer": "SFTP",
+    "explanation": "SFTP uses SSH to securely transfer files."
+},
+{
+    "question": "Which security concept ensures systems remain accessible to authorized users?",
+    "choices": ["Availability", "Integrity", "Confidentiality", "Non-repudiation"],
+    "answer": "Availability",
+    "explanation": "Availability ensures systems and data are accessible when needed."
+},
+{
+    "question": "Which attack floods a target with SYN packets to exhaust resources?",
+    "choices": ["SYN flood", "Smurf", "DNS poisoning", "ARP spoofing"],
+    "answer": "SYN flood",
+    "explanation": "SYN floods overwhelm servers by sending half-open connections."
+},
+{
+    "question": "Which security device blocks malicious traffic in real time?",
+    "choices": ["IPS", "IDS", "Proxy", "Load balancer"],
+    "answer": "IPS",
+    "explanation": "Intrusion Prevention Systems block malicious traffic automatically."
+},
+{
+    "question": "Which attack redirects users to a fake website by altering DNS records?",
+    "choices": ["DNS poisoning", "ARP spoofing", "MITM", "Phishing"],
+    "answer": "DNS poisoning",
+    "explanation": "DNS poisoning corrupts DNS records to redirect users to malicious sites."
+},
+{
+    "question": "Which security principle ensures users only have the permissions they need to perform their job?",
+    "choices": ["Least privilege", "Integrity", "Availability", "Non-repudiation"],
+    "answer": "Least privilege",
+    "explanation": "Least privilege limits access to only what is necessary for a user’s role."
+},
+{
+    "question": "Which device hides internal IP addresses from the public internet?",
+    "choices": ["NAT gateway", "Switch", "Hub", "Repeater"],
+    "answer": "NAT gateway",
+    "explanation": "NAT hides internal IPs by translating them to a public address."
+},
+{
+    "question": "Which attack involves sending fraudulent emails that appear to come from trusted sources?",
+    "choices": ["Phishing", "Smishing", "Vishing", "Whaling"],
+    "answer": "Phishing",
+    "explanation": "Phishing uses deceptive emails to steal information."
+},
+{
+    "question": "Which wireless security protocol is considered outdated and easily cracked?",
+    "choices": ["WEP", "WPA2", "WPA3", "802.1X"],
+    "answer": "WEP",
+    "explanation": "WEP uses weak encryption and can be cracked in minutes."
+},
+{
+    "question": "Which authentication method requires two or more verification factors?",
+    "choices": ["MFA", "SSO", "RADIUS", "Kerberos"],
+    "answer": "MFA",
+    "explanation": "Multi-factor authentication uses multiple verification methods."
+},
+{
+    "question": "Which attack involves injecting malicious code into a trusted website?",
+    "choices": ["Cross-site scripting", "SQL injection", "MITM", "Brute force"],
+    "answer": "Cross-site scripting",
+    "explanation": "XSS injects malicious scripts into trusted web pages."
+},
+{
+    "question": "Which protocol provides centralized authentication for network devices?",
+    "choices": ["RADIUS", "DNS", "DHCP", "SNMP"],
+    "answer": "RADIUS",
+    "explanation": "RADIUS provides centralized authentication and authorization."
+},
+{
+    "question": "Which type of malware disguises itself as legitimate software?",
+    "choices": ["Trojan", "Worm", "Ransomware", "Rootkit"],
+    "answer": "Trojan",
+    "explanation": "Trojans appear legitimate but contain malicious code."
+},
+{
+    "question": "Which security concept ensures actions can be traced back to a specific user?",
+    "choices": ["Accountability", "Integrity", "Availability", "Confidentiality"],
+    "answer": "Accountability",
+    "explanation": "Accountability ensures actions can be tied to specific identities."
+},
+{
+    "question": "Which attack attempts to insert malicious SQL commands into a database query?",
+    "choices": ["SQL injection", "XSS", "MITM", "DNS poisoning"],
+    "answer": "SQL injection",
+    "explanation": "SQL injection manipulates database queries to access or modify data."
+},
+{
+    "question": "Which device filters traffic based on application signatures and behavior?",
+    "choices": ["Next-gen firewall", "Hub", "Switch", "Repeater"],
+    "answer": "Next-gen firewall",
+    "explanation": "NGFWs inspect traffic at layers 3–7 using signatures and behavior analysis."
+},
+{
+    "question": "Which attack involves tricking a user into clicking a malicious link?",
+    "choices": ["Social engineering", "DDoS", "MITM", "ARP spoofing"],
+    "answer": "Social engineering",
+    "explanation": "Social engineering manipulates users into performing unsafe actions."
+},
+{
+    "question": "Which protocol secures email transmission between servers?",
+    "choices": ["TLS", "SMTP", "IMAP", "POP3"],
+    "answer": "TLS",
+    "explanation": "TLS encrypts email traffic between servers."
+},
+{
+    "question": "Which security concept ensures data is accurate and unaltered?",
+    "choices": ["Integrity", "Confidentiality", "Availability", "Authentication"],
+    "answer": "Integrity",
+    "explanation": "Integrity ensures data has not been tampered with."
+},
+{
+    "question": "Which attack involves exploiting vulnerabilities in software before the vendor is aware?",
+    "choices": ["Zero-day attack", "Brute force", "Phishing", "MITM"],
+    "answer": "Zero-day attack",
+    "explanation": "Zero-day attacks exploit unknown vulnerabilities."
+},
+{
+    "question": "Which device blocks unauthorized access to internal resources?",
+    "choices": ["Firewall", "Switch", "Hub", "Repeater"],
+    "answer": "Firewall",
+    "explanation": "Firewalls enforce access control policies."
+},
+{
+    "question": "Which attack involves sending fraudulent text messages?",
+    "choices": ["Smishing", "Phishing", "Vishing", "Whaling"],
+    "answer": "Smishing",
+    "explanation": "Smishing uses SMS messages to deceive users."
+},
+{
+    "question": "Which security method uses certificates to verify identity?",
+    "choices": ["PKI", "MFA", "SSO", "RADIUS"],
+    "answer": "PKI",
+    "explanation": "Public Key Infrastructure uses certificates for authentication."
+},
+{
+    "question": "Which attack attempts to guess passwords using a list of common or leaked passwords?",
+    "choices": ["Dictionary attack", "Brute force", "MITM", "Spoofing"],
+    "answer": "Dictionary attack",
+    "explanation": "Dictionary attacks try known words and leaked passwords."
+},
+{
+    "question": "Which attack attempts to overload a switch’s MAC table to force it into broadcast mode?",
+    "choices": ["MAC flooding", "ARP spoofing", "DNS poisoning", "MITM"],
+    "answer": "MAC flooding",
+    "explanation": "MAC flooding overwhelms a switch’s MAC table, causing it to broadcast traffic."
+},
+{
+    "question": "Which security method ensures that users are who they claim to be?",
+    "choices": ["Authentication", "Authorization", "Accounting", "Integrity"],
+    "answer": "Authentication",
+    "explanation": "Authentication verifies identity before granting access."
+},
+{
+    "question": "Which attack involves sending unsolicited messages over Bluetooth?",
+    "choices": ["Bluejacking", "Bluesnarfing", "Smishing", "Phishing"],
+    "answer": "Bluejacking",
+    "explanation": "Bluejacking sends unsolicited messages to nearby Bluetooth devices."
+},
+{
+    "question": "Which security concept ensures that users can only access resources they are permitted to?",
+    "choices": ["Authorization", "Authentication", "Integrity", "Non-repudiation"],
+    "answer": "Authorization",
+    "explanation": "Authorization determines what resources a user is allowed to access."
+},
+{
+    "question": "Which attack attempts to steal data from a Bluetooth-enabled device?",
+    "choices": ["Bluesnarfing", "Bluejacking", "Smishing", "MITM"],
+    "answer": "Bluesnarfing",
+    "explanation": "Bluesnarfing steals data from Bluetooth devices."
+},
+{
+    "question": "Which protocol is used to securely authenticate users in a Windows domain?",
+    "choices": ["Kerberos", "RADIUS", "LDAP", "TACACS+"],
+    "answer": "Kerberos",
+    "explanation": "Kerberos uses tickets for secure authentication in Windows domains."
+},
+{
+    "question": "Which attack involves tricking a DNS server into caching false information?",
+    "choices": ["DNS poisoning", "ARP spoofing", "MITM", "Smurf attack"],
+    "answer": "DNS poisoning",
+    "explanation": "DNS poisoning corrupts DNS caches to redirect traffic."
+},
+{
+    "question": "Which device inspects encrypted traffic for threats?",
+    "choices": ["SSL/TLS inspection appliance", "Hub", "Switch", "Repeater"],
+    "answer": "SSL/TLS inspection appliance",
+    "explanation": "These devices decrypt, inspect, and re-encrypt traffic to detect threats."
+},
+{
+    "question": "Which attack involves sending fake DHCP responses to clients?",
+    "choices": ["Rogue DHCP attack", "ARP spoofing", "DNS poisoning", "MITM"],
+    "answer": "Rogue DHCP attack",
+    "explanation": "Rogue DHCP servers provide incorrect IP settings to clients."
+},
+{
+    "question": "Which security concept ensures that actions performed by a user cannot be denied later?",
+    "choices": ["Non-repudiation", "Integrity", "Confidentiality", "Availability"],
+    "answer": "Non-repudiation",
+    "explanation": "Non-repudiation ensures actions can be proven and cannot be denied."
+},
+{
+    "question": "Which attack attempts to exploit vulnerabilities in wireless WPS?",
+    "choices": ["WPS PIN attack", "Bluejacking", "Smishing", "MITM"],
+    "answer": "WPS PIN attack",
+    "explanation": "WPS PIN attacks exploit weak PIN authentication in Wi-Fi Protected Setup."
+},
+{
+    "question": "Which protocol is commonly used for directory services and authentication?",
+    "choices": ["LDAP", "DNS", "DHCP", "SNMP"],
+    "answer": "LDAP",
+    "explanation": "LDAP provides directory services and authentication."
+},
+{
+    "question": "Which attack involves injecting malicious commands into a shell or terminal?",
+    "choices": ["Command injection", "SQL injection", "XSS", "MITM"],
+    "answer": "Command injection",
+    "explanation": "Command injection exploits input fields to run unauthorized commands."
+},
+{
+    "question": "Which device acts as a buffer between internal systems and the internet?",
+    "choices": ["Proxy server", "Switch", "Hub", "Repeater"],
+    "answer": "Proxy server",
+    "explanation": "Proxies filter and forward traffic between clients and external networks."
+},
+{
+    "question": "Which attack involves tricking a user into installing malicious software?",
+    "choices": ["Trojan attack", "Worm attack", "DDoS", "ARP spoofing"],
+    "answer": "Trojan attack",
+    "explanation": "Trojans disguise themselves as legitimate software to trick users."
+},
+{
+    "question": "Which security method uses biometric data for authentication?",
+    "choices": ["Something you are", "Something you know", "Something you have", "Somewhere you are"],
+    "answer": "Something you are",
+    "explanation": "Biometrics such as fingerprints and facial recognition fall under 'something you are'."
+},
+{
+    "question": "Which attack attempts to guess passwords by trying commonly used patterns?",
+    "choices": ["Dictionary attack", "Brute force", "MITM", "Spoofing"],
+    "answer": "Dictionary attack",
+    "explanation": "Dictionary attacks use known words and patterns to guess passwords."
+},
+{
+    "question": "Which security device blocks traffic based on signatures and behavior in real time?",
+    "choices": ["IPS", "IDS", "Proxy", "Load balancer"],
+    "answer": "IPS",
+    "explanation": "IPS systems block malicious traffic automatically."
+},
+{
+    "question": "Which attack involves sending malformed packets to crash or destabilize a system?",
+    "choices": ["DoS attack", "Phishing", "MITM", "Smishing"],
+    "answer": "DoS attack",
+    "explanation": "DoS attacks can use malformed packets to crash systems."
+},
+{
+    "question": "Which protocol provides secure directory access and supports encryption?",
+    "choices": ["LDAPS", "LDAP", "DNSSEC", "SFTP"],
+    "answer": "LDAPS",
+    "explanation": "LDAPS encrypts LDAP traffic using TLS."
+},
+{
+    "question": "Which attack attempts to trick a user into revealing information by impersonating a trusted authority?",
+    "choices": ["Pretexting", "Phishing", "Smishing", "MITM"],
+    "answer": "Pretexting",
+    "explanation": "Pretexting uses fabricated scenarios to manipulate victims into giving information."
+},
+{
+    "question": "Which security control physically prevents unauthorized access to a server room?",
+    "choices": ["Biometric lock", "Firewall", "IDS", "Proxy"],
+    "answer": "Biometric lock",
+    "explanation": "Biometric locks provide physical access control using fingerprints or other biometrics."
+},
+{
+    "question": "Which attack involves sending deceptive voice calls to steal information?",
+    "choices": ["Vishing", "Phishing", "Smishing", "Whaling"],
+    "answer": "Vishing",
+    "explanation": "Vishing uses voice calls to deceive victims."
+},
+{
+    "question": "Which protocol provides secure remote access using certificates?",
+    "choices": ["SSL VPN", "PPTP", "Telnet", "FTP"],
+    "answer": "SSL VPN",
+    "explanation": "SSL VPNs use certificates and TLS for secure remote access."
+},
+{
+    "question": "Which malware spreads without user interaction by exploiting vulnerabilities?",
+    "choices": ["Worm", "Trojan", "Spyware", "Ransomware"],
+    "answer": "Worm",
+    "explanation": "Worms self-replicate and spread automatically."
+},
+{
+    "question": "Which security concept ensures that data is available when needed?",
+    "choices": ["Availability", "Integrity", "Confidentiality", "Non-repudiation"],
+    "answer": "Availability",
+    "explanation": "Availability ensures systems and data are accessible to authorized users."
+},
+{
+    "question": "Which attack involves intercepting and altering communication between two parties?",
+    "choices": ["MITM", "Phishing", "Smishing", "Brute force"],
+    "answer": "MITM",
+    "explanation": "Man-in-the-middle attacks intercept and modify communication."
+},
+{
+    "question": "Which device analyzes traffic for malicious patterns and blocks threats automatically?",
+    "choices": ["IPS", "IDS", "Proxy", "Load balancer"],
+    "answer": "IPS",
+    "explanation": "IPS systems detect and block malicious traffic in real time."
+},
+{
+    "question": "Which security method uses one set of credentials to access multiple systems?",
+    "choices": ["SSO", "MFA", "RADIUS", "Kerberos"],
+    "answer": "SSO",
+    "explanation": "Single Sign-On allows users to authenticate once and access multiple systems."
+},
+{
+    "question": "Which attack involves tricking a user into clicking a malicious pop-up or ad?",
+    "choices": ["Clickjacking", "Phishing", "Smishing", "MITM"],
+    "answer": "Clickjacking",
+    "explanation": "Clickjacking hides malicious actions behind legitimate-looking elements."
+},
+{
+    "question": "Which protocol secures directory access using TLS encryption?",
+    "choices": ["LDAPS", "LDAP", "DNSSEC", "SFTP"],
+    "answer": "LDAPS",
+    "explanation": "LDAPS encrypts LDAP traffic using TLS."
+},
+{
+    "question": "Which attack attempts to guess passwords by trying every possible combination?",
+    "choices": ["Brute force", "Dictionary attack", "MITM", "Spoofing"],
+    "answer": "Brute force",
+    "explanation": "Brute force attacks try all possible combinations to guess a password."
+},
+{
+    "question": "Which device hides internal IP addresses and provides basic security?",
+    "choices": ["NAT router", "Hub", "Switch", "Repeater"],
+    "answer": "NAT router",
+    "explanation": "NAT routers translate private IPs to public ones and hide internal networks."
+},
+{
+    "question": "Which attack involves sending fake emails targeting high-level executives?",
+    "choices": ["Whaling", "Phishing", "Smishing", "Vishing"],
+    "answer": "Whaling",
+    "explanation": "Whaling targets executives with high-value access."
+},
+{
+    "question": "Which security method ensures that data cannot be read if intercepted?",
+    "choices": ["Encryption", "Hashing", "Authentication", "Authorization"],
+    "answer": "Encryption",
+    "explanation": "Encryption protects data confidentiality during transmission or storage."
+},
+{
+    "question": "Which attack attempts to modify ARP tables to redirect traffic?",
+    "choices": ["ARP poisoning", "DNS poisoning", "MITM", "Smurf attack"],
+    "answer": "ARP poisoning",
+    "explanation": "ARP poisoning corrupts ARP tables to redirect traffic."
+},
+{
+    "question": "Which protocol is used to securely transfer files using SSH?",
+    "choices": ["SCP", "FTP", "TFTP", "SMB"],
+    "answer": "SCP",
+    "explanation": "SCP uses SSH for secure file transfers."
+},
+{
+    "question": "Which security concept ensures that data has not been tampered with?",
+    "choices": ["Integrity", "Availability", "Confidentiality", "Authentication"],
+    "answer": "Integrity",
+    "explanation": "Integrity ensures data remains unchanged and accurate."
+},
+{
+    "question": "Which attack involves overwhelming a wireless network with fake deauthentication frames?",
+    "choices": ["Deauth attack", "Bluejacking", "Smishing", "MITM"],
+    "answer": "Deauth attack",
+    "explanation": "Deauth attacks disconnect clients by sending forged deauthentication frames."
+},
+{
+    "question": "Which device filters traffic based on rules, signatures, and application behavior?",
+    "choices": ["Next-gen firewall", "Hub", "Switch", "Repeater"],
+    "answer": "Next-gen firewall",
+    "explanation": "NGFWs inspect traffic at layers 3–7 for advanced threat detection."
+},
+{
+    "question": "Which attack involves overwhelming a wireless network by generating excessive RF interference?",
+    "choices": ["Jamming attack", "Deauth attack", "Bluejacking", "Smishing"],
+    "answer": "Jamming attack",
+    "explanation": "Jamming attacks disrupt wireless communication by flooding the airwaves with interference."
+},
+{
+    "question": "Which security control prevents unauthorized devices from connecting to a switch port?",
+    "choices": ["Port security", "STP", "QoS", "NAT"],
+    "answer": "Port security",
+    "explanation": "Port security restricts which MAC addresses can connect to a switch port."
+},
+{
+    "question": "Which attack attempts to trick a user into revealing credentials by imitating a login page?",
+    "choices": ["Credential harvesting", "Phishing", "MITM", "Smishing"],
+    "answer": "Credential harvesting",
+    "explanation": "Credential harvesting uses fake login pages to steal usernames and passwords."
+},
+{
+    "question": "Which protocol provides secure key exchange for encrypted communication?",
+    "choices": ["Diffie-Hellman", "FTP", "TFTP", "SMTP"],
+    "answer": "Diffie-Hellman",
+    "explanation": "Diffie-Hellman securely exchanges cryptographic keys over an insecure channel."
+},
+{
+    "question": "Which attack involves exploiting vulnerabilities in input fields to run unauthorized SQL commands?",
+    "choices": ["SQL injection", "XSS", "Command injection", "MITM"],
+    "answer": "SQL injection",
+    "explanation": "SQL injection manipulates database queries to access or modify data."
+},
+{
+    "question": "Which device filters traffic based on URL categories and content?",
+    "choices": ["Web security gateway", "Switch", "Hub", "Repeater"],
+    "answer": "Web security gateway",
+    "explanation": "Web gateways filter traffic based on content, categories, and reputation."
+},
+{
+    "question": "Which attack involves sending fraudulent emails targeting executives for financial gain?",
+    "choices": ["Whaling", "Phishing", "Vishing", "Smishing"],
+    "answer": "Whaling",
+    "explanation": "Whaling targets high-level executives with tailored phishing attacks."
+},
+{
+    "question": "Which security concept ensures that data is readable only by authorized users?",
+    "choices": ["Confidentiality", "Integrity", "Availability", "Non-repudiation"],
+    "answer": "Confidentiality",
+    "explanation": "Confidentiality ensures data is protected from unauthorized access."
+},
+{
+    "question": "Which attack involves exploiting vulnerabilities in wireless encryption protocols?",
+    "choices": ["Wireless cracking", "Bluejacking", "Smishing", "MITM"],
+    "answer": "Wireless cracking",
+    "explanation": "Wireless cracking attempts to break Wi-Fi encryption to gain unauthorized access."
+},
+{
+    "question": "Which protocol provides secure remote access using encrypted tunnels?",
+    "choices": ["IPsec", "FTP", "Telnet", "TFTP"],
+    "answer": "IPsec",
+    "explanation": "IPsec provides secure encrypted tunnels for remote access and site-to-site VPNs."
+},
+{
+    "question": "Which attack involves tricking a user into installing malware disguised as legitimate software?",
+    "choices": ["Trojan attack", "Worm attack", "DDoS", "ARP spoofing"],
+    "answer": "Trojan attack",
+    "explanation": "Trojans appear legitimate but contain malicious payloads."
+},
+{
+    "question": "Which security method uses hashing to verify data integrity?",
+    "choices": ["Checksums", "Encryption", "Authorization", "NAT"],
+    "answer": "Checksums",
+    "explanation": "Checksums and hashes verify that data has not been altered."
+},
+{
+    "question": "Which attack involves intercepting wireless traffic to capture authentication handshakes?",
+    "choices": ["Evil twin attack", "Bluejacking", "Smishing", "MITM"],
+    "answer": "Evil twin attack",
+    "explanation": "Evil twin attacks use rogue APs to capture wireless authentication data."
+},
+{
+    "question": "Which device blocks malicious traffic by analyzing behavior and signatures?",
+    "choices": ["Next-gen firewall", "Hub", "Switch", "Repeater"],
+    "answer": "Next-gen firewall",
+    "explanation": "NGFWs inspect traffic at layers 3–7 for advanced threat detection."
+},
+{
+    "question": "Which attack involves sending fake notifications to trick users into installing malware?",
+    "choices": ["Scareware", "Phishing", "Smishing", "MITM"],
+    "answer": "Scareware",
+    "explanation": "Scareware uses fake alerts to trick users into installing malicious software."
+},
+{
+    "question": "Which protocol is used to verify the authenticity of DNS responses?",
+    "choices": ["DNSSEC", "DHCP", "SNMP", "SFTP"],
+    "answer": "DNSSEC",
+    "explanation": "DNSSEC digitally signs DNS responses to prevent tampering."
+},
+{
+    "question": "Which attack attempts to gain access by repeatedly trying different username/password combinations?",
+    "choices": ["Brute force", "MITM", "Smishing", "ARP spoofing"],
+    "answer": "Brute force",
+    "explanation": "Brute force attacks try all possible combinations to guess credentials."
+},
+{
+    "question": "Which security method ensures that users cannot deny performing an action?",
+    "choices": ["Non-repudiation", "Integrity", "Confidentiality", "Availability"],
+    "answer": "Non-repudiation",
+    "explanation": "Non-repudiation ensures actions can be proven and tied to a specific user."
+},
+{
+    "question": "Which attack involves sending fake wireless access point beacons to lure users?",
+    "choices": ["Rogue AP attack", "Bluejacking", "Smishing", "MITM"],
+    "answer": "Rogue AP attack",
+    "explanation": "Rogue APs impersonate legitimate networks to steal data."
+},
+{
+    "question": "Which protocol provides secure file transfer using SSH?",
+    "choices": ["SFTP", "FTP", "TFTP", "SMB"],
+    "answer": "SFTP",
+    "explanation": "SFTP uses SSH to securely transfer files."
+}
+
 ]

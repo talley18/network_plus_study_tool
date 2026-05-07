@@ -64,5 +64,606 @@
         "choices": ["Static IP", "APIPA", "Loopback", "Reserved"],
         "answer": "APIPA",
         "explanation": "APIPA addresses are assigned when DHCP fails."
-    }
+    },
+    {
+    "question": "A user reports they cannot access the internet. You ping the default gateway and receive no response. What should you check first?",
+    "choices": ["Check the user's IP configuration", "Replace the router", "Restart the DNS server", "Update the firewall rules"],
+    "answer": "Check the user's IP configuration",
+    "explanation": "If the gateway is unreachable, verify the user's IP, subnet mask, and gateway settings."
+},
+{
+    "question": "A switch port shows a large number of CRC errors. What is the most likely cause?",
+    "choices": ["Bad cable", "Incorrect VLAN", "DHCP failure", "DNS issue"],
+    "answer": "Bad cable",
+    "explanation": "CRC errors typically indicate physical layer issues such as damaged cabling."
+},
+{
+    "question": "A user can access internal sites but not external websites. What is the most likely issue?",
+    "choices": ["DNS failure", "Bad cable", "Incorrect VLAN", "Duplicate IP"],
+    "answer": "DNS failure",
+    "explanation": "If internal resources work but external ones do not, DNS is often the cause."
+},
+{
+    "question": "A wireless client keeps disconnecting. Other clients are fine. What should you check first?",
+    "choices": ["Signal strength", "DHCP scope", "SSID broadcast", "Firewall rules"],
+    "answer": "Signal strength",
+    "explanation": "Weak signal or interference often causes intermittent wireless disconnects."
+},
+{
+    "question": "A user reports slow network speeds. You run a speed test and see normal results. What should you check next?",
+    "choices": ["Check for high CPU usage on the user's device", "Replace the switch", "Restart the router", "Reconfigure DHCP"],
+    "answer": "Check for high CPU usage on the user's device",
+    "explanation": "Local device performance issues can appear as network slowness."
+},
+{
+    "question": "A server is unreachable. You ping its IP and receive replies, but cannot access services. What is the likely issue?",
+    "choices": ["Service failure", "Bad cable", "Incorrect subnet mask", "Duplicate IP"],
+    "answer": "Service failure",
+    "explanation": "If ping works but services do not, the service or application may be down."
+},
+{
+    "question": "A user cannot connect to a shared printer. Other users can. What should you check first?",
+    "choices": ["User permissions", "Printer toner", "DHCP lease time", "Switch firmware"],
+    "answer": "User permissions",
+    "explanation": "If others can print, the issue is likely user-specific permissions."
+},
+{
+    "question": "A network technician sees excessive broadcast traffic on a switch. What is the likely cause?",
+    "choices": ["Switch loop", "DNS outage", "Bad cable", "Incorrect MTU"],
+    "answer": "Switch loop",
+    "explanation": "Broadcast storms often result from switching loops."
+},
+{
+    "question": "A user reports that VoIP calls are choppy. What should you check first?",
+    "choices": ["QoS configuration", "DNS settings", "Cable color coding", "Printer queue"],
+    "answer": "QoS configuration",
+    "explanation": "VoIP requires QoS to prioritize voice traffic."
+},
+{
+    "question": "A device shows an APIPA address (169.254.x.x). What is the likely issue?",
+    "choices": ["DHCP server unreachable", "DNS misconfigured", "Duplicate IP", "Incorrect VLAN"],
+    "answer": "DHCP server unreachable",
+    "explanation": "APIPA addresses appear when DHCP cannot assign an IP."
+},
+{
+    "question": "A user cannot reach a server by hostname but can reach it by IP. What is the issue?",
+    "choices": ["DNS resolution failure", "Duplicate IP", "Bad cable", "Incorrect subnet mask"],
+    "answer": "DNS resolution failure",
+    "explanation": "If IP works but hostname does not, DNS is the problem."
+},
+{
+    "question": "A technician sees high latency on a network link. What should be checked first?",
+    "choices": ["Bandwidth utilization", "Cable color", "Printer toner", "DHCP scope"],
+    "answer": "Bandwidth utilization",
+    "explanation": "High utilization often causes latency spikes."
+},
+{
+    "question": "A user cannot authenticate to the network. Other users can. What should you check first?",
+    "choices": ["User account status", "Firewall rules", "Switch firmware", "Cable labeling"],
+    "answer": "User account status",
+    "explanation": "A disabled or locked account is a common cause of authentication failures."
+},
+{
+    "question": "A technician notices that a switch port is flapping (rapidly going up and down). What is the likely cause?",
+    "choices": ["Bad cable or connector", "Incorrect VLAN", "DNS failure", "Duplicate IP"],
+    "answer": "Bad cable or connector",
+    "explanation": "Port flapping is often caused by physical layer issues."
+},
+{
+    "question": "A user reports that their VPN connects but they cannot access internal resources. What is the likely issue?",
+    "choices": ["Incorrect split-tunneling configuration", "Bad cable", "DNS outage", "Duplicate IP"],
+    "answer": "Incorrect split-tunneling configuration",
+    "explanation": "Improper split tunneling can prevent access to internal networks."
+},
+{
+    "question": "A technician cannot ping a device on another subnet. What should be checked first?",
+    "choices": ["Default gateway configuration", "Cable length", "SSID broadcast", "DHCP lease time"],
+    "answer": "Default gateway configuration",
+    "explanation": "Incorrect gateway settings prevent inter-subnet communication."
+},
+{
+    "question": "A user reports that their IP address keeps changing unexpectedly. What is the likely cause?",
+    "choices": ["Short DHCP lease time", "Bad cable", "DNS outage", "Incorrect VLAN"],
+    "answer": "Short DHCP lease time",
+    "explanation": "Short leases cause frequent IP renewals."
+},
+{
+    "question": "A technician sees duplicate IP address warnings on the network. What should be checked first?",
+    "choices": ["Static IP conflicts", "Cable shielding", "Switch stacking", "DNS caching"],
+    "answer": "Static IP conflicts",
+    "explanation": "Duplicate IPs often occur when static IPs overlap with DHCP ranges."
+},
+{
+    "question": "A user cannot access a mapped network drive. What should you check first?",
+    "choices": ["User credentials", "Cable color", "DHCP scope", "Switch firmware"],
+    "answer": "User credentials",
+    "explanation": "Mapped drives often fail due to expired or incorrect credentials."
+},
+{
+    "question": "A technician notices that a wireless network has poor performance even with strong signal. What is the likely cause?",
+    "choices": ["Channel interference", "Bad cable", "Incorrect VLAN", "DHCP failure"],
+    "answer": "Channel interference",
+    "explanation": "Strong signal but poor performance often indicates interference from nearby APs."
+},
+{
+    "question": "A user reports that their workstation cannot reach any network resources. The link light on the NIC is off. What should you check first?",
+    "choices": ["Check the cable connection", "Restart the DNS server", "Reboot the workstation", "Replace the switch"],
+    "answer": "Check the cable connection",
+    "explanation": "No link light usually indicates a physical connection issue."
+},
+{
+    "question": "A technician notices that a router’s CPU usage is at 100%. What is the most likely cause?",
+    "choices": ["Routing loop", "Bad cable", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "Routing loop",
+    "explanation": "Routing loops can overwhelm CPU resources with excessive processing."
+},
+{
+    "question": "A user cannot access a website, but other users can. What should you check first?",
+    "choices": ["Browser cache", "Firewall rules", "DNS server health", "Switch port configuration"],
+    "answer": "Browser cache",
+    "explanation": "A corrupted browser cache can prevent access to specific sites."
+},
+{
+    "question": "A technician sees that a switch port is showing 'err-disabled'. What is the likely cause?",
+    "choices": ["Port security violation", "DNS failure", "Incorrect subnet mask", "Duplicate IP"],
+    "answer": "Port security violation",
+    "explanation": "Switches often disable ports automatically when port security is triggered."
+},
+{
+    "question": "A user reports that their Wi-Fi connection is slow only in the afternoon. What is the likely cause?",
+    "choices": ["Channel congestion", "Bad cable", "Incorrect SSID", "DHCP failure"],
+    "answer": "Channel congestion",
+    "explanation": "Wi-Fi slowdowns at predictable times often indicate congestion or interference."
+},
+{
+    "question": "A technician cannot SSH into a router, but ping works. What should be checked first?",
+    "choices": ["SSH service status", "Cable length", "DHCP scope", "Switch stacking"],
+    "answer": "SSH service status",
+    "explanation": "If ping works but SSH does not, the service may be disabled or misconfigured."
+},
+{
+    "question": "A user reports that their IP phone has no dial tone. The phone has power but no network connectivity. What is the likely issue?",
+    "choices": ["Incorrect VLAN assignment", "DNS outage", "Bad power supply", "Duplicate IP"],
+    "answer": "Incorrect VLAN assignment",
+    "explanation": "VoIP phones often require a voice VLAN to function properly."
+},
+{
+    "question": "A technician sees that a server is responding slowly. CPU and RAM are normal. What should be checked next?",
+    "choices": ["Disk I/O", "DNS settings", "Cable shielding", "DHCP lease time"],
+    "answer": "Disk I/O",
+    "explanation": "Slow disk performance can cause overall system slowness."
+},
+{
+    "question": "A user cannot connect to a wireless network after a password change. What should you check first?",
+    "choices": ["Saved network credentials", "DHCP scope", "Firewall rules", "SSID broadcast"],
+    "answer": "Saved network credentials",
+    "explanation": "Devices often store old passwords and fail to reconnect."
+},
+{
+    "question": "A technician notices that a switch is dropping packets on one port. What is the likely cause?",
+    "choices": ["Duplex mismatch", "DNS failure", "Incorrect gateway", "DHCP exhaustion"],
+    "answer": "Duplex mismatch",
+    "explanation": "Duplex mismatches cause collisions and dropped packets."
+},
+{
+    "question": "A user reports that they cannot access a mapped drive after a password reset. What should you check?",
+    "choices": ["Stored credentials", "Cable connection", "DHCP lease time", "Switch firmware"],
+    "answer": "Stored credentials",
+    "explanation": "Mapped drives often rely on cached credentials that become invalid after password changes."
+},
+{
+    "question": "A technician cannot ping a device by hostname, but nslookup returns the correct IP. What is the likely issue?",
+    "choices": ["Local DNS cache", "Bad cable", "Incorrect VLAN", "DHCP failure"],
+    "answer": "Local DNS cache",
+    "explanation": "Ping uses cached DNS entries unless flushed."
+},
+{
+    "question": "A user reports that their laptop connects to Wi-Fi but shows 'No Internet'. Others are fine. What should you check first?",
+    "choices": ["IP configuration", "AP firmware", "Switch stacking", "Cable length"],
+    "answer": "IP configuration",
+    "explanation": "Incorrect IP settings can allow Wi-Fi association but block internet access."
+},
+{
+    "question": "A technician sees that a router is dropping packets on its WAN interface. What should be checked first?",
+    "choices": ["Bandwidth saturation", "DNS settings", "Cable color coding", "DHCP scope"],
+    "answer": "Bandwidth saturation",
+    "explanation": "High utilization on WAN links often causes packet drops."
+},
+{
+    "question": "A user reports that they cannot access a secure website, but non-secure sites work. What is the likely issue?",
+    "choices": ["Incorrect system time", "Bad cable", "Incorrect VLAN", "DHCP failure"],
+    "answer": "Incorrect system time",
+    "explanation": "SSL/TLS certificates fail when system time is incorrect."
+},
+{
+    "question": "A technician sees that a device is reachable by IP but not by hostname. Other devices resolve it fine. What should be checked?",
+    "choices": ["Local hosts file", "DHCP scope", "Switch port", "Cable shielding"],
+    "answer": "Local hosts file",
+    "explanation": "Incorrect entries in the hosts file override DNS."
+},
+{
+    "question": "A user reports that their VPN disconnects frequently. What is the likely cause?",
+    "choices": ["Unstable internet connection", "Incorrect VLAN", "DNS outage", "Duplicate IP"],
+    "answer": "Unstable internet connection",
+    "explanation": "VPNs are sensitive to connection instability."
+},
+{
+    "question": "A technician sees that a server is reachable but extremely slow to respond. CPU, RAM, and disk are normal. What should be checked next?",
+    "choices": ["Network congestion", "DNS settings", "Cable labeling", "DHCP lease time"],
+    "answer": "Network congestion",
+    "explanation": "Congestion can cause slow responses even when server resources are normal."
+},
+{
+    "question": "A user reports that they cannot access a website, but the site loads fine on other networks. What is the likely issue?",
+    "choices": ["Firewall blocking the site", "Bad cable", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "Firewall blocking the site",
+    "explanation": "Local firewalls can block specific domains or ports."
+},
+{
+    "question": "A technician sees that a switch is showing high collision counts. What is the likely cause?",
+    "choices": ["Half-duplex configuration", "DNS failure", "Incorrect gateway", "DHCP exhaustion"],
+    "answer": "Half-duplex configuration",
+    "explanation": "Collisions occur when one side is half-duplex and the other is full-duplex."
+},
+{
+    "question": "A user reports that they can access websites by IP address but not by domain name. What should you check first?",
+    "choices": ["DNS server settings", "Default gateway", "Cable connection", "Firewall rules"],
+    "answer": "DNS server settings",
+    "explanation": "If IP access works but domain names fail, DNS is the issue."
+},
+{
+    "question": "A technician notices that a switch is experiencing intermittent connectivity on multiple ports. What is the likely cause?",
+    "choices": ["Power supply issue", "Incorrect VLAN", "DNS outage", "Duplicate IPs"],
+    "answer": "Power supply issue",
+    "explanation": "Intermittent issues across multiple ports often indicate failing hardware or power problems."
+},
+{
+    "question": "A user reports that their laptop cannot obtain an IP address. The network cable is good. What should you check next?",
+    "choices": ["DHCP server availability", "DNS settings", "Firewall rules", "Switch stacking"],
+    "answer": "DHCP server availability",
+    "explanation": "If a device cannot obtain an IP, the DHCP server may be down or unreachable."
+},
+{
+    "question": "A technician sees that a router’s routing table is empty. What is the likely cause?",
+    "choices": ["Routing protocol failure", "Bad cable", "Incorrect VLAN", "DNS outage"],
+    "answer": "Routing protocol failure",
+    "explanation": "If the routing table is empty, dynamic routing may not be functioning."
+},
+{
+    "question": "A user reports that their Wi-Fi works in one room but not another. What should you check first?",
+    "choices": ["Signal coverage", "DHCP scope", "Firewall rules", "SSID broadcast"],
+    "answer": "Signal coverage",
+    "explanation": "Wi-Fi dead zones are usually caused by poor coverage."
+},
+{
+    "question": "A technician cannot reach a server on the same subnet. Other devices can. What should be checked first?",
+    "choices": ["Local firewall on the server", "Router configuration", "DNS server", "Cable labeling"],
+    "answer": "Local firewall on the server",
+    "explanation": "Local firewalls can block traffic even within the same subnet."
+},
+{
+    "question": "A user reports that their VoIP phone displays 'Network Unavailable'. The PC daisy-chained through it works fine. What is the likely issue?",
+    "choices": ["Voice VLAN misconfiguration", "DHCP exhaustion", "DNS outage", "Bad cable"],
+    "answer": "Voice VLAN misconfiguration",
+    "explanation": "VoIP phones often require a separate voice VLAN that the PC does not use."
+},
+{
+    "question": "A technician sees that a device is reachable but responds very slowly to pings. What should be checked first?",
+    "choices": ["Network congestion", "DNS settings", "Cable shielding", "DHCP lease time"],
+    "answer": "Network congestion",
+    "explanation": "High latency often indicates congestion or overloaded links."
+},
+{
+    "question": "A user reports that they cannot connect to a shared folder. Other users can. What should you check first?",
+    "choices": ["User permissions", "Switch port", "Cable length", "DHCP scope"],
+    "answer": "User permissions",
+    "explanation": "If others can access the share, the issue is likely permissions-related."
+},
+{
+    "question": "A technician notices that a switch is showing excessive late collisions. What is the likely cause?",
+    "choices": ["Cable too long", "DNS failure", "Incorrect gateway", "DHCP exhaustion"],
+    "answer": "Cable too long",
+    "explanation": "Late collisions often occur when cable lengths exceed Ethernet standards."
+},
+{
+    "question": "A user reports that their VPN connects but they cannot access local internet resources. What is the likely cause?",
+    "choices": ["Split tunneling disabled", "DNS outage", "Incorrect VLAN", "Duplicate IP"],
+    "answer": "Split tunneling disabled",
+    "explanation": "If split tunneling is disabled, all traffic goes through the VPN."
+},
+{
+    "question": "A technician cannot ping a device on another subnet. The gateway is reachable. What should be checked next?",
+    "choices": ["Routing table", "Cable connection", "DNS server", "Switch port"],
+    "answer": "Routing table",
+    "explanation": "If the gateway works but the remote subnet does not, routing may be misconfigured."
+},
+{
+    "question": "A user reports that their laptop connects to Wi-Fi but receives an IP in the wrong subnet. What is the likely cause?",
+    "choices": ["Incorrect VLAN assignment", "DNS failure", "Bad cable", "Firewall rules"],
+    "answer": "Incorrect VLAN assignment",
+    "explanation": "Incorrect VLANs can place clients in the wrong subnet."
+},
+{
+    "question": "A technician sees that a server is reachable but file transfers are extremely slow. What should be checked first?",
+    "choices": ["Duplex mismatch", "DNS settings", "Cable labeling", "DHCP lease time"],
+    "answer": "Duplex mismatch",
+    "explanation": "Duplex mismatches cause severe performance issues."
+},
+{
+    "question": "A user reports that they cannot access a website, but the site loads fine on other networks. What should be checked first?",
+    "choices": ["Local firewall or content filter", "DNS server", "Cable connection", "Switch firmware"],
+    "answer": "Local firewall or content filter",
+    "explanation": "Local firewalls can block specific sites or ports."
+},
+{
+    "question": "A technician sees that a switch port is constantly moving between up and down states. What is the likely cause?",
+    "choices": ["Damaged cable or connector", "Incorrect VLAN", "DNS failure", "DHCP exhaustion"],
+    "answer": "Damaged cable or connector",
+    "explanation": "Flapping ports are usually caused by physical layer issues."
+},
+{
+    "question": "A user reports that their device cannot authenticate to Wi-Fi. Other users can. What should you check first?",
+    "choices": ["Incorrect password saved on the device", "DHCP scope", "Switch port", "Firewall rules"],
+    "answer": "Incorrect password saved on the device",
+    "explanation": "Devices often store old passwords and fail authentication."
+},
+{
+    "question": "A technician sees that a router is dropping packets only during peak hours. What is the likely cause?",
+    "choices": ["Bandwidth saturation", "DNS outage", "Incorrect VLAN", "Duplicate IP"],
+    "answer": "Bandwidth saturation",
+    "explanation": "Packet loss during peak hours usually indicates congestion."
+},
+{
+    "question": "A user reports that they cannot access internal resources after connecting to Wi-Fi. Wired connections work fine. What should you check first?",
+    "choices": ["Wireless VLAN assignment", "DNS server", "Cable length", "DHCP lease time"],
+    "answer": "Wireless VLAN assignment",
+    "explanation": "Incorrect VLANs can isolate wireless clients from internal networks."
+},
+{
+    "question": "A technician sees that a device is reachable but shows extremely high packet loss. What should be checked first?",
+    "choices": ["Faulty cable or port", "DNS settings", "DHCP scope", "Firewall rules"],
+    "answer": "Faulty cable or port",
+    "explanation": "High packet loss is often caused by physical layer issues."
+},
+{
+    "question": "A user reports that they cannot access any internal resources, but they can browse the internet. What should you check first?",
+    "choices": ["Incorrect default gateway", "DNS server", "Cable connection", "Firewall rules"],
+    "answer": "Incorrect default gateway",
+    "explanation": "If internet works but internal resources do not, the gateway may be pointing externally."
+},
+{
+    "question": "A technician notices that a switch is showing high CPU usage during STP recalculations. What is the likely cause?",
+    "choices": ["Switch loop", "DNS outage", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "Switch loop",
+    "explanation": "Loops cause constant STP recalculations and high CPU usage."
+},
+{
+    "question": "A user reports that their laptop cannot connect to Wi-Fi after waking from sleep. Other devices work fine. What should you check first?",
+    "choices": ["Wireless adapter power settings", "DHCP scope", "SSID broadcast", "Firewall rules"],
+    "answer": "Wireless adapter power settings",
+    "explanation": "Power-saving modes often disable or suspend wireless adapters."
+},
+{
+    "question": "A technician cannot reach a server by hostname or IP. The server responds to pings from other devices. What should be checked first?",
+    "choices": ["Local firewall on the technician's device", "DNS server", "Router configuration", "Cable length"],
+    "answer": "Local firewall on the technician's device",
+    "explanation": "If only one device cannot reach the server, the issue is likely local."
+},
+{
+    "question": "A user reports that their network drive disconnects randomly. What is the likely cause?",
+    "choices": ["Power-saving settings on the NIC", "DNS failure", "Incorrect VLAN", "Bad cable"],
+    "answer": "Power-saving settings on the NIC",
+    "explanation": "NIC power-saving modes can drop connections during inactivity."
+},
+{
+    "question": "A technician sees that a device is reachable but shows extremely high jitter. What should be checked first?",
+    "choices": ["QoS configuration", "DNS settings", "Cable shielding", "DHCP lease time"],
+    "answer": "QoS configuration",
+    "explanation": "High jitter often indicates poor QoS or congestion affecting real-time traffic."
+},
+{
+    "question": "A user reports that they cannot access a website, and the browser shows a certificate warning. What is the likely cause?",
+    "choices": ["Incorrect system date/time", "Bad cable", "DHCP failure", "Incorrect VLAN"],
+    "answer": "Incorrect system date/time",
+    "explanation": "SSL certificates fail validation when system time is incorrect."
+},
+{
+    "question": "A technician notices that a switch port is receiving traffic but not transmitting. What is the likely cause?",
+    "choices": ["Port disabled or blocked", "DNS failure", "Incorrect gateway", "DHCP exhaustion"],
+    "answer": "Port disabled or blocked",
+    "explanation": "A blocked or disabled port may still receive traffic but cannot send."
+},
+{
+    "question": "A user reports that their device connects to Wi-Fi but receives an IP address of 0.0.0.0. What should you check first?",
+    "choices": ["DHCP server availability", "DNS settings", "Firewall rules", "SSID broadcast"],
+    "answer": "DHCP server availability",
+    "explanation": "0.0.0.0 indicates the device failed to obtain an IP address."
+},
+{
+    "question": "A technician sees that a router is dropping packets only on one interface. What is the likely cause?",
+    "choices": ["Interface congestion or errors", "DNS outage", "Incorrect VLAN", "Duplicate IP"],
+    "answer": "Interface congestion or errors",
+    "explanation": "Packet drops on a single interface usually indicate congestion or physical issues."
+},
+{
+    "question": "A user reports that their workstation cannot reach a server by hostname, but nslookup returns the correct IP. What should you check next?",
+    "choices": ["Local DNS cache", "Cable connection", "DHCP scope", "Switch port"],
+    "answer": "Local DNS cache",
+    "explanation": "Ping uses cached DNS entries unless flushed."
+},
+{
+    "question": "A technician sees that a device is reachable but responds slowly only during large file transfers. What is the likely cause?",
+    "choices": ["Duplex mismatch", "DNS failure", "Incorrect gateway", "DHCP exhaustion"],
+    "answer": "Duplex mismatch",
+    "explanation": "Duplex mismatches cause severe slowdowns during heavy traffic."
+},
+{
+    "question": "A user reports that they cannot access a cloud application, but all other internet services work. What should you check first?",
+    "choices": ["Firewall or content filter", "DNS server", "Cable connection", "Switch firmware"],
+    "answer": "Firewall or content filter",
+    "explanation": "Specific cloud services may be blocked by filtering rules."
+},
+{
+    "question": "A technician sees that a switch is showing excessive FCS errors. What is the likely cause?",
+    "choices": ["Damaged cable or interference", "DNS failure", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "Damaged cable or interference",
+    "explanation": "FCS errors indicate corrupted frames, often due to physical issues."
+},
+{
+    "question": "A user reports that their VPN connects but internal DNS names do not resolve. What is the likely cause?",
+    "choices": ["Incorrect DNS server assignment in VPN profile", "Bad cable", "Incorrect VLAN", "Duplicate IP"],
+    "answer": "Incorrect DNS server assignment in VPN profile",
+    "explanation": "VPNs often require internal DNS servers to resolve internal hostnames."
+},
+{
+    "question": "A technician cannot ping a device on the same subnet. ARP table shows no entry for the device. What should be checked first?",
+    "choices": ["Device is powered on and connected", "DNS server", "Router configuration", "DHCP scope"],
+    "answer": "Device is powered on and connected",
+    "explanation": "If ARP cannot resolve, the device may be offline or disconnected."
+},
+{
+    "question": "A user reports that their connection drops whenever they use a microwave. What is the likely cause?",
+    "choices": ["2.4 GHz interference", "DHCP failure", "Incorrect VLAN", "DNS outage"],
+    "answer": "2.4 GHz interference",
+    "explanation": "Microwaves interfere with 2.4 GHz Wi-Fi channels."
+},
+{
+    "question": "A technician sees that a device is reachable but shows extremely inconsistent ping times. What should be checked first?",
+    "choices": ["Network congestion or interference", "DNS settings", "Cable labeling", "DHCP lease time"],
+    "answer": "Network congestion or interference",
+    "explanation": "Inconsistent latency is often caused by congestion or wireless interference."
+},
+{
+    "question": "A user reports that they cannot access a shared printer. The printer is online and reachable. What should you check first?",
+    "choices": ["Print spooler service", "Cable connection", "DHCP scope", "Switch firmware"],
+    "answer": "Print spooler service",
+    "explanation": "If the printer is reachable but not printing, the spooler may be stopped."
+},
+{
+    "question": "A technician sees that a server is reachable but RDP fails to connect. What is the likely cause?",
+    "choices": ["RDP service disabled or blocked", "DNS failure", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "RDP service disabled or blocked",
+    "explanation": "If ping works but RDP does not, the service or port may be blocked."
+},
+{
+    "question": "A critical application is down for all users. Pinging the server works, but the application port is closed. What should you check first?",
+    "choices": ["Application service status", "DNS server", "Switch port", "Cable connection"],
+    "answer": "Application service status",
+    "explanation": "If the server responds but the port is closed, the application service likely crashed."
+},
+{
+    "question": "A core switch fails and redundancy does not activate. What is the likely cause?",
+    "choices": ["Misconfigured STP or failover settings", "Bad cable", "DNS outage", "Incorrect VLAN"],
+    "answer": "Misconfigured STP or failover settings",
+    "explanation": "Failover failures usually indicate misconfigured redundancy protocols."
+},
+{
+    "question": "A major outage occurs: no users can reach the internet. Internal resources work. What should you check first?",
+    "choices": ["Edge router status", "DNS server", "DHCP scope", "Switch firmware"],
+    "answer": "Edge router status",
+    "explanation": "If internal works but external does not, the edge router may be down."
+},
+{
+    "question": "A VoIP system is experiencing massive call drops across the company. What should be checked first?",
+    "choices": ["QoS configuration on core switches", "DNS settings", "Cable labeling", "DHCP lease time"],
+    "answer": "QoS configuration on core switches",
+    "explanation": "VoIP relies heavily on QoS; misconfigurations cause widespread call failures."
+},
+{
+    "question": "A critical database server becomes unreachable. The NIC link light is on, but no traffic passes. What is the likely cause?",
+    "choices": ["Firewall blocking traffic", "Bad cable", "Incorrect gateway", "DNS failure"],
+    "answer": "Firewall blocking traffic",
+    "explanation": "If link is up but no traffic flows, firewall rules may be blocking communication."
+},
+{
+    "question": "A redundant power supply in a core switch fails, and the switch shuts down. What should you check first?",
+    "choices": ["Whether redundancy was actually enabled", "Cable length", "DHCP scope", "DNS server"],
+    "answer": "Whether redundancy was actually enabled",
+    "explanation": "If a redundant PSU fails to take over, redundancy was likely disabled or misconfigured."
+},
+{
+    "question": "A major file server is online but users report extremely slow access. CPU, RAM, and disk are normal. What should be checked first?",
+    "choices": ["Network congestion or bottleneck", "DNS settings", "Cable shielding", "DHCP lease time"],
+    "answer": "Network congestion or bottleneck",
+    "explanation": "Slow file access with normal server resources often indicates network congestion."
+},
+{
+    "question": "A critical web service is unreachable. The load balancer is online but shows all backend servers as down. What is the likely cause?",
+    "choices": ["Health check misconfiguration", "Bad cable", "Incorrect VLAN", "DNS outage"],
+    "answer": "Health check misconfiguration",
+    "explanation": "If the load balancer marks all servers down, health checks may be failing."
+},
+{
+    "question": "A company-wide outage occurs after a firmware update on a core switch. What should you check first?",
+    "choices": ["Rollback availability", "DNS server", "DHCP scope", "Cable labeling"],
+    "answer": "Rollback availability",
+    "explanation": "Firmware updates can break configs; rolling back is often the fastest fix."
+},
+{
+    "question": "A critical server is reachable but authentication to it fails for all users. What is the likely cause?",
+    "choices": ["Domain controller outage", "Bad cable", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "Domain controller outage",
+    "explanation": "If authentication fails globally, the domain controller may be down."
+},
+{
+    "question": "A major outage occurs: all wireless clients lose connectivity, but wired clients are fine. What should you check first?",
+    "choices": ["Wireless controller status", "DNS server", "DHCP scope", "Switch firmware"],
+    "answer": "Wireless controller status",
+    "explanation": "If all APs drop clients, the controller may be offline."
+},
+{
+    "question": "A critical VPN service is down for all remote users. The VPN gateway is reachable but not accepting connections. What is the likely cause?",
+    "choices": ["Certificate expiration", "Bad cable", "Incorrect VLAN", "DNS failure"],
+    "answer": "Certificate expiration",
+    "explanation": "Expired certificates can cause VPN gateways to reject all connections."
+},
+{
+    "question": "A storage array becomes unreachable, causing multiple servers to fail. What should be checked first?",
+    "choices": ["SAN switch or fabric connectivity", "DNS server", "DHCP scope", "Cable labeling"],
+    "answer": "SAN switch or fabric connectivity",
+    "explanation": "If storage is unreachable, SAN fabric issues are common culprits."
+},
+{
+    "question": "A critical application is slow for all users. The database server shows high disk queue length. What is the likely cause?",
+    "choices": ["Storage bottleneck", "DNS failure", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "Storage bottleneck",
+    "explanation": "High disk queue length indicates storage cannot keep up with requests."
+},
+{
+    "question": "A firewall upgrade causes multiple services to go offline. What should you check first?",
+    "choices": ["NAT and ACL rules", "Cable connection", "DHCP scope", "DNS server"],
+    "answer": "NAT and ACL rules",
+    "explanation": "Firewall upgrades often reset or alter NAT/ACL configurations."
+},
+{
+    "question": "A major outage occurs: users cannot authenticate to any service. What is the likely cause?",
+    "choices": ["Active Directory failure", "Bad cable", "Incorrect VLAN", "DNS caching"],
+    "answer": "Active Directory failure",
+    "explanation": "If authentication fails everywhere, AD is likely down."
+},
+{
+    "question": "A core router is reachable but cannot route traffic. What should be checked first?",
+    "choices": ["Routing table corruption", "DNS server", "DHCP scope", "Cable shielding"],
+    "answer": "Routing table corruption",
+    "explanation": "If the router is up but not routing, the routing table may be empty or corrupted."
+},
+{
+    "question": "A critical service is unreachable after a firewall change. Pings work but the service port is blocked. What is the likely cause?",
+    "choices": ["Incorrect firewall rule", "Bad cable", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "Incorrect firewall rule",
+    "explanation": "Firewall changes often block required ports."
+},
+{
+    "question": "A major outage occurs: DHCP is down across multiple subnets. What should you check first?",
+    "choices": ["DHCP relay configuration", "DNS server", "Switch port", "Cable length"],
+    "answer": "DHCP relay configuration",
+    "explanation": "If multiple subnets lose DHCP, relay agents may be misconfigured."
+},
+{
+    "question": "A critical server is online but users report extremely slow authentication. What is the likely cause?",
+    "choices": ["DNS latency or failure", "Bad cable", "Incorrect VLAN", "DHCP exhaustion"],
+    "answer": "DNS latency or failure",
+    "explanation": "Authentication relies heavily on DNS; slow DNS causes slow logins."
+}
+
 ]

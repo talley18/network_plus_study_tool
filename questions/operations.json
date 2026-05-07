@@ -64,5 +64,607 @@
         "choices": ["netstat", "ipconfig", "arp", "nslookup"],
         "answer": "netstat",
         "explanation": "Netstat shows active connections and listening ports."
-    }
+    },
+    {
+    "question": "Which document outlines the steps required to restore a system after a failure?",
+    "choices": ["Disaster recovery plan", "SLA", "Topology diagram", "Acceptable use policy"],
+    "answer": "Disaster recovery plan",
+    "explanation": "A disaster recovery plan defines procedures for restoring systems after major failures."
+},
+{
+    "question": "Which tool is commonly used to monitor network device performance and uptime?",
+    "choices": ["SNMP", "SMTP", "DNS", "DHCP"],
+    "answer": "SNMP",
+    "explanation": "SNMP collects performance and status information from network devices."
+},
+{
+    "question": "Which type of change requires approval before implementation?",
+    "choices": ["Planned change", "Emergency change", "Unauthorized change", "Shadow change"],
+    "answer": "Planned change",
+    "explanation": "Planned changes follow a formal approval process through change management."
+},
+{
+    "question": "Which document defines the expected level of service between a provider and a customer?",
+    "choices": ["SLA", "MOU", "NDA", "SOP"],
+    "answer": "SLA",
+    "explanation": "A Service Level Agreement defines performance expectations and responsibilities."
+},
+{
+    "question": "Which log type records authentication attempts on a network device?",
+    "choices": ["Security logs", "Application logs", "Environmental logs", "Performance logs"],
+    "answer": "Security logs",
+    "explanation": "Security logs track authentication attempts, access, and security events."
+},
+{
+    "question": "Which backup type only copies files that have changed since the last full backup?",
+    "choices": ["Incremental", "Differential", "Snapshot", "Clone"],
+    "answer": "Incremental",
+    "explanation": "Incremental backups copy only files changed since the last full or incremental backup."
+},
+{
+    "question": "Which environmental factor is most critical for preventing hardware failure in a server room?",
+    "choices": ["Temperature control", "Lighting", "Cable color coding", "Humidity labels"],
+    "answer": "Temperature control",
+    "explanation": "Overheating is a major cause of hardware failure, making temperature control essential."
+},
+{
+    "question": "Which tool is used to capture and analyze network packets?",
+    "choices": ["Packet sniffer", "Cable tester", "OTDR", "Tone generator"],
+    "answer": "Packet sniffer",
+    "explanation": "Packet sniffers capture and analyze network traffic for troubleshooting and monitoring."
+},
+{
+    "question": "Which document describes how to perform a specific task step-by-step?",
+    "choices": ["SOP", "SLA", "MOU", "AUP"],
+    "answer": "SOP",
+    "explanation": "Standard Operating Procedures provide step-by-step instructions for tasks."
+},
+{
+    "question": "Which type of monitoring alerts administrators when a threshold is exceeded?",
+    "choices": ["Threshold monitoring", "Baseline monitoring", "Passive monitoring", "Manual monitoring"],
+    "answer": "Threshold monitoring",
+    "explanation": "Threshold monitoring triggers alerts when performance metrics exceed defined limits."
+},
+{
+    "question": "Which device monitors temperature, humidity, and airflow in a server room?",
+    "choices": ["Environmental sensor", "UPS", "Patch panel", "Load balancer"],
+    "answer": "Environmental sensor",
+    "explanation": "Environmental sensors track conditions that affect hardware reliability."
+},
+{
+    "question": "Which backup method creates a complete copy of all data every time it runs?",
+    "choices": ["Full backup", "Incremental backup", "Differential backup", "Snapshot"],
+    "answer": "Full backup",
+    "explanation": "Full backups copy all data regardless of changes."
+},
+{
+    "question": "Which document outlines the responsibilities of two organizations working together?",
+    "choices": ["MOU", "SLA", "SOP", "AUP"],
+    "answer": "MOU",
+    "explanation": "A Memorandum of Understanding defines responsibilities between organizations."
+},
+{
+    "question": "Which monitoring method collects data by actively sending traffic to test performance?",
+    "choices": ["Active monitoring", "Passive monitoring", "Threshold monitoring", "Baseline monitoring"],
+    "answer": "Active monitoring",
+    "explanation": "Active monitoring sends test traffic to measure performance and availability."
+},
+{
+    "question": "Which tool is used to centralize and analyze logs from multiple devices?",
+    "choices": ["SIEM", "DNS server", "Proxy server", "DHCP relay"],
+    "answer": "SIEM",
+    "explanation": "SIEM systems aggregate and analyze logs for security and operational insights."
+},
+{
+    "question": "Which type of change must be implemented immediately to resolve a critical outage?",
+    "choices": ["Emergency change", "Planned change", "Routine change", "Unauthorized change"],
+    "answer": "Emergency change",
+    "explanation": "Emergency changes bypass normal approval processes to restore service quickly."
+},
+{
+    "question": "Which documentation shows the physical layout of network cables and equipment?",
+    "choices": ["Wiring diagram", "SLA", "SOP", "AUP"],
+    "answer": "Wiring diagram",
+    "explanation": "Wiring diagrams show physical cabling and equipment connections."
+},
+{
+    "question": "Which tool is used to test UPS functionality and runtime?",
+    "choices": ["Load tester", "Packet sniffer", "Cable certifier", "Tone probe"],
+    "answer": "Load tester",
+    "explanation": "Load testers simulate electrical load to verify UPS performance."
+},
+{
+    "question": "Which process ensures that network changes are documented, reviewed, and approved?",
+    "choices": ["Change management", "Incident response", "Asset tracking", "Baseline analysis"],
+    "answer": "Change management",
+    "explanation": "Change management controls and documents modifications to the network."
+},
+{
+    "question": "Which metric measures the average time required to repair a failed device?",
+    "choices": ["MTTR", "MTBF", "SLA", "QoS"],
+    "answer": "MTTR",
+    "explanation": "Mean Time To Repair measures how long it takes to restore a failed component."
+},
+{
+    "question": "Which type of documentation shows how devices are physically connected in a network?",
+    "choices": ["Physical topology diagram", "Logical topology diagram", "SLA", "SOP"],
+    "answer": "Physical topology diagram",
+    "explanation": "Physical topology diagrams show actual device locations and cabling."
+},
+{
+    "question": "Which monitoring method collects data by observing real production traffic?",
+    "choices": ["Passive monitoring", "Active monitoring", "Threshold monitoring", "Synthetic monitoring"],
+    "answer": "Passive monitoring",
+    "explanation": "Passive monitoring analyzes real network traffic without injecting test packets."
+},
+{
+    "question": "Which type of backup copies all files changed since the last full backup?",
+    "choices": ["Differential", "Incremental", "Snapshot", "Clone"],
+    "answer": "Differential",
+    "explanation": "Differential backups copy all changes since the last full backup."
+},
+{
+    "question": "Which document defines acceptable behavior for users on a corporate network?",
+    "choices": ["AUP", "SLA", "MOU", "SOP"],
+    "answer": "AUP",
+    "explanation": "An Acceptable Use Policy outlines allowed and prohibited user actions."
+},
+{
+    "question": "Which tool is used to detect unauthorized wireless access points?",
+    "choices": ["Wireless scanner", "Cable tester", "OTDR", "Tone probe"],
+    "answer": "Wireless scanner",
+    "explanation": "Wireless scanners detect rogue APs and unauthorized wireless activity."
+},
+{
+    "question": "Which metric measures the average time between hardware failures?",
+    "choices": ["MTBF", "MTTR", "SLA", "QoS"],
+    "answer": "MTBF",
+    "explanation": "Mean Time Between Failures measures hardware reliability."
+},
+{
+    "question": "Which type of change is performed frequently and follows a predefined process?",
+    "choices": ["Routine change", "Emergency change", "Unauthorized change", "Shadow change"],
+    "answer": "Routine change",
+    "explanation": "Routine changes follow standard procedures and occur regularly."
+},
+{
+    "question": "Which log type records CPU, memory, and bandwidth usage?",
+    "choices": ["Performance logs", "Security logs", "Application logs", "Environmental logs"],
+    "answer": "Performance logs",
+    "explanation": "Performance logs track resource utilization on devices."
+},
+{
+    "question": "Which tool aggregates logs from multiple devices into a single dashboard?",
+    "choices": ["SIEM", "DNS server", "Proxy server", "DHCP server"],
+    "answer": "SIEM",
+    "explanation": "SIEM systems centralize and analyze logs for security and operations."
+},
+{
+    "question": "Which process ensures that network assets such as switches and routers are tracked?",
+    "choices": ["Asset management", "Incident response", "Change management", "Baseline analysis"],
+    "answer": "Asset management",
+    "explanation": "Asset management tracks hardware, software, and configurations."
+},
+{
+    "question": "Which environmental factor can cause corrosion and equipment failure if not controlled?",
+    "choices": ["Humidity", "Lighting", "Cable color", "Airflow direction"],
+    "answer": "Humidity",
+    "explanation": "High humidity can cause corrosion and electrical issues."
+},
+{
+    "question": "Which type of monitoring compares current performance to historical data?",
+    "choices": ["Baseline monitoring", "Threshold monitoring", "Active monitoring", "Passive monitoring"],
+    "answer": "Baseline monitoring",
+    "explanation": "Baseline monitoring compares current metrics to historical norms."
+},
+{
+    "question": "Which document outlines the steps to follow when responding to a security incident?",
+    "choices": ["Incident response plan", "SLA", "AUP", "MOU"],
+    "answer": "Incident response plan",
+    "explanation": "Incident response plans define procedures for handling security events."
+},
+{
+    "question": "Which tool helps identify the cause of intermittent network outages by analyzing long-term trends?",
+    "choices": ["Network monitoring system", "Packet sniffer", "Cable certifier", "Tone generator"],
+    "answer": "Network monitoring system",
+    "explanation": "Monitoring systems track long-term performance and detect patterns."
+},
+{
+    "question": "Which backup method creates a point-in-time image of a system?",
+    "choices": ["Snapshot", "Incremental", "Differential", "Full backup"],
+    "answer": "Snapshot",
+    "explanation": "Snapshots capture the exact state of a system at a specific moment."
+},
+{
+    "question": "Which document describes how to safely power down and restart critical equipment?",
+    "choices": ["SOP", "AUP", "SLA", "MOU"],
+    "answer": "SOP",
+    "explanation": "Standard Operating Procedures provide step-by-step instructions for tasks."
+},
+{
+    "question": "Which type of monitoring alerts administrators when a device becomes unreachable?",
+    "choices": ["Availability monitoring", "Baseline monitoring", "Passive monitoring", "Environmental monitoring"],
+    "answer": "Availability monitoring",
+    "explanation": "Availability monitoring checks whether devices are online and reachable."
+},
+{
+    "question": "Which tool is used to test the battery health of a UPS?",
+    "choices": ["Load tester", "Packet sniffer", "OTDR", "Cable tester"],
+    "answer": "Load tester",
+    "explanation": "Load testers simulate electrical load to verify UPS performance."
+},
+{
+    "question": "Which document outlines the expected recovery time after a system failure?",
+    "choices": ["RTO", "SLA", "AUP", "SOP"],
+    "answer": "RTO",
+    "explanation": "Recovery Time Objective defines how quickly a system must be restored."
+},
+{
+    "question": "Which process ensures that all network changes are reviewed, approved, and documented?",
+    "choices": ["Change management", "Incident response", "Asset tracking", "Baseline analysis"],
+    "answer": "Change management",
+    "explanation": "Change management controls and documents modifications to the network."
+},
+{
+    "question": "Which process ensures that all network devices are running approved and up-to-date firmware?",
+    "choices": ["Patch management", "Change management", "Asset tracking", "Incident response"],
+    "answer": "Patch management",
+    "explanation": "Patch management ensures devices receive approved firmware and software updates."
+},
+{
+    "question": "Which type of documentation shows IP address assignments for all devices?",
+    "choices": ["IP address management sheet", "Wiring diagram", "SLA", "AUP"],
+    "answer": "IP address management sheet",
+    "explanation": "IPAM documentation tracks IP assignments and prevents conflicts."
+},
+{
+    "question": "Which tool is used to monitor bandwidth usage on a network link?",
+    "choices": ["NetFlow analyzer", "Cable tester", "OTDR", "Tone probe"],
+    "answer": "NetFlow analyzer",
+    "explanation": "NetFlow tools analyze bandwidth usage and traffic patterns."
+},
+{
+    "question": "Which type of backup includes all files changed since the last full or differential backup?",
+    "choices": ["Incremental", "Differential", "Snapshot", "Clone"],
+    "answer": "Incremental",
+    "explanation": "Incremental backups copy only files changed since the last backup of any type."
+},
+{
+    "question": "Which environmental factor can cause static electricity buildup and equipment damage if too low?",
+    "choices": ["Humidity", "Temperature", "Airflow", "Lighting"],
+    "answer": "Humidity",
+    "explanation": "Low humidity increases static electricity risk."
+},
+{
+    "question": "Which process ensures that all network issues are logged, categorized, and resolved?",
+    "choices": ["Incident management", "Change management", "Asset tracking", "Baseline analysis"],
+    "answer": "Incident management",
+    "explanation": "Incident management handles detection, logging, and resolution of issues."
+},
+{
+    "question": "Which document outlines the expected recovery point after a system failure?",
+    "choices": ["RPO", "RTO", "SLA", "SOP"],
+    "answer": "RPO",
+    "explanation": "Recovery Point Objective defines how much data loss is acceptable."
+},
+{
+    "question": "Which tool is used to detect excessive heat in a server rack?",
+    "choices": ["Thermal camera", "Packet sniffer", "Cable certifier", "Tone generator"],
+    "answer": "Thermal camera",
+    "explanation": "Thermal cameras detect hotspots and airflow issues."
+},
+{
+    "question": "Which type of monitoring alerts administrators when a device exceeds CPU or memory thresholds?",
+    "choices": ["Performance monitoring", "Availability monitoring", "Passive monitoring", "Environmental monitoring"],
+    "answer": "Performance monitoring",
+    "explanation": "Performance monitoring tracks resource usage and triggers alerts."
+},
+{
+    "question": "Which document outlines the responsibilities and expectations between a service provider and a customer?",
+    "choices": ["SLA", "MOU", "AUP", "SOP"],
+    "answer": "SLA",
+    "explanation": "SLAs define service expectations and responsibilities."
+},
+{
+    "question": "Which tool is used to centralize authentication logs from multiple devices?",
+    "choices": ["Syslog server", "DNS server", "Proxy server", "DHCP relay"],
+    "answer": "Syslog server",
+    "explanation": "Syslog servers collect logs from network devices for analysis."
+},
+{
+    "question": "Which type of change is implemented without proper approval and violates policy?",
+    "choices": ["Unauthorized change", "Emergency change", "Routine change", "Planned change"],
+    "answer": "Unauthorized change",
+    "explanation": "Unauthorized changes bypass the change management process."
+},
+{
+    "question": "Which documentation shows how data flows between systems and applications?",
+    "choices": ["Logical diagram", "Physical diagram", "SLA", "AUP"],
+    "answer": "Logical diagram",
+    "explanation": "Logical diagrams show data flow and logical relationships."
+},
+{
+    "question": "Which tool is used to measure power consumption in a server rack?",
+    "choices": ["Power meter", "Cable tester", "OTDR", "Packet sniffer"],
+    "answer": "Power meter",
+    "explanation": "Power meters measure electrical load and consumption."
+},
+{
+    "question": "Which process ensures that all network devices are accounted for and tracked throughout their lifecycle?",
+    "choices": ["Asset management", "Incident response", "Change management", "Baseline analysis"],
+    "answer": "Asset management",
+    "explanation": "Asset management tracks devices from acquisition to retirement."
+},
+{
+    "question": "Which type of monitoring checks whether a device is reachable via ping?",
+    "choices": ["Availability monitoring", "Performance monitoring", "Passive monitoring", "Environmental monitoring"],
+    "answer": "Availability monitoring",
+    "explanation": "Availability monitoring checks device reachability and uptime."
+},
+{
+    "question": "Which document outlines the steps required to escalate an unresolved issue?",
+    "choices": ["Escalation policy", "SOP", "SLA", "AUP"],
+    "answer": "Escalation policy",
+    "explanation": "Escalation policies define when and how issues are escalated."
+},
+{
+    "question": "Which tool helps identify long-term performance degradation trends?",
+    "choices": ["Network monitoring system", "Packet sniffer", "Cable certifier", "Tone probe"],
+    "answer": "Network monitoring system",
+    "explanation": "Monitoring systems track performance over time to detect trends."
+},
+{
+    "question": "Which type of backup stores only the data that has changed since the last full backup, regardless of incremental backups?",
+    "choices": ["Differential", "Incremental", "Snapshot", "Clone"],
+    "answer": "Differential",
+    "explanation": "Differential backups copy all changes since the last full backup."
+},
+{
+    "question": "Which environmental factor can cause equipment overheating if not properly managed?",
+    "choices": ["Airflow", "Lighting", "Cable color", "Humidity labels"],
+    "answer": "Airflow",
+    "explanation": "Proper airflow prevents overheating in server rooms."
+},
+{
+    "question": "Which type of documentation provides a high-level overview of network segments and routing paths?",
+    "choices": ["Logical topology diagram", "Physical topology diagram", "SOP", "AUP"],
+    "answer": "Logical topology diagram",
+    "explanation": "Logical diagrams show how data flows and how networks are segmented."
+},
+{
+    "question": "Which tool is used to detect power fluctuations that may damage network equipment?",
+    "choices": ["Power quality monitor", "Packet sniffer", "Cable tester", "Tone probe"],
+    "answer": "Power quality monitor",
+    "explanation": "Power quality monitors detect voltage drops, spikes, and irregularities."
+},
+{
+    "question": "Which process ensures that all network changes are tested before deployment?",
+    "choices": ["Change management", "Incident response", "Asset tracking", "Baseline analysis"],
+    "answer": "Change management",
+    "explanation": "Change management includes testing, approval, and documentation."
+},
+{
+    "question": "Which log type records system startup, shutdown, and service failures?",
+    "choices": ["System logs", "Security logs", "Environmental logs", "Performance logs"],
+    "answer": "System logs",
+    "explanation": "System logs track OS-level events such as boot and service failures."
+},
+{
+    "question": "Which backup method creates a full copy of a virtual machine’s state?",
+    "choices": ["Snapshot", "Incremental", "Differential", "Clone"],
+    "answer": "Snapshot",
+    "explanation": "Snapshots capture the entire VM state at a point in time."
+},
+{
+    "question": "Which environmental factor can cause condensation and equipment damage if too high?",
+    "choices": ["Humidity", "Airflow", "Lighting", "Cable density"],
+    "answer": "Humidity",
+    "explanation": "High humidity can cause condensation and corrosion."
+},
+{
+    "question": "Which tool is used to track and manage help desk tickets?",
+    "choices": ["Ticketing system", "SIEM", "Syslog server", "Proxy server"],
+    "answer": "Ticketing system",
+    "explanation": "Ticketing systems track issues, assignments, and resolutions."
+},
+{
+    "question": "Which document outlines the steps required to bring a system back online after maintenance?",
+    "choices": ["SOP", "AUP", "SLA", "MOU"],
+    "answer": "SOP",
+    "explanation": "Standard Operating Procedures define step-by-step instructions."
+},
+{
+    "question": "Which monitoring method uses synthetic traffic to test network performance?",
+    "choices": ["Active monitoring", "Passive monitoring", "Baseline monitoring", "Threshold monitoring"],
+    "answer": "Active monitoring",
+    "explanation": "Active monitoring injects test traffic to measure performance."
+},
+{
+    "question": "Which tool is used to detect unauthorized devices plugged into the network?",
+    "choices": ["Network access control system", "Cable tester", "OTDR", "Tone generator"],
+    "answer": "Network access control system",
+    "explanation": "NAC systems enforce authentication and detect unauthorized devices."
+},
+{
+    "question": "Which document defines the maximum acceptable downtime for a service?",
+    "choices": ["SLA", "RTO", "RPO", "AUP"],
+    "answer": "SLA",
+    "explanation": "SLAs define uptime expectations and acceptable downtime."
+},
+{
+    "question": "Which tool is used to monitor temperature hotspots in a data center?",
+    "choices": ["Thermal camera", "Packet sniffer", "Cable certifier", "Load tester"],
+    "answer": "Thermal camera",
+    "explanation": "Thermal cameras detect overheating and airflow issues."
+},
+{
+    "question": "Which type of monitoring alerts administrators when a device stops responding?",
+    "choices": ["Availability monitoring", "Performance monitoring", "Environmental monitoring", "Passive monitoring"],
+    "answer": "Availability monitoring",
+    "explanation": "Availability monitoring checks device reachability and uptime."
+},
+{
+    "question": "Which document outlines the rules for using company-owned devices?",
+    "choices": ["AUP", "SOP", "SLA", "MOU"],
+    "answer": "AUP",
+    "explanation": "Acceptable Use Policies define allowed and prohibited actions."
+},
+{
+    "question": "Which tool helps identify long-term bandwidth usage trends?",
+    "choices": ["NetFlow analyzer", "Packet sniffer", "Cable tester", "Tone probe"],
+    "answer": "NetFlow analyzer",
+    "explanation": "NetFlow tools analyze traffic patterns and bandwidth usage."
+},
+{
+    "question": "Which process ensures that all network assets are documented and tracked?",
+    "choices": ["Asset management", "Incident response", "Change management", "Baseline analysis"],
+    "answer": "Asset management",
+    "explanation": "Asset management tracks hardware, software, and configurations."
+},
+{
+    "question": "Which type of backup stores only the data that has changed since the last backup of any type?",
+    "choices": ["Incremental", "Differential", "Snapshot", "Full"],
+    "answer": "Incremental",
+    "explanation": "Incremental backups copy only files changed since the last backup."
+},
+{
+    "question": "Which environmental factor can cause equipment to overheat if not properly managed?",
+    "choices": ["Airflow", "Lighting", "Cable color", "Humidity labels"],
+    "answer": "Airflow",
+    "explanation": "Proper airflow prevents overheating in server rooms."
+},
+{
+    "question": "Which document outlines the steps required to escalate an issue to higher-level support?",
+    "choices": ["Escalation policy", "SOP", "SLA", "AUP"],
+    "answer": "Escalation policy",
+    "explanation": "Escalation policies define when and how issues are escalated."
+},
+{
+    "question": "Which tool is used to centralize logs from firewalls, switches, and servers?",
+    "choices": ["SIEM", "DNS server", "Proxy server", "DHCP relay"],
+    "answer": "SIEM",
+    "explanation": "SIEM systems aggregate and analyze logs from multiple devices."
+},
+{
+    "question": "Which type of monitoring checks for unusual spikes in traffic that may indicate an attack?",
+    "choices": ["Anomaly monitoring", "Baseline monitoring", "Passive monitoring", "Environmental monitoring"],
+    "answer": "Anomaly monitoring",
+    "explanation": "Anomaly monitoring detects deviations from normal behavior, often indicating security issues."
+},
+{
+    "question": "Which document outlines the procedures for handling sensitive customer data?",
+    "choices": ["Data handling policy", "AUP", "SLA", "MOU"],
+    "answer": "Data handling policy",
+    "explanation": "Data handling policies define how sensitive data must be stored, accessed, and protected."
+},
+{
+    "question": "Which tool is used to verify that a backup can be successfully restored?",
+    "choices": ["Backup validation tool", "Packet sniffer", "Cable tester", "Load tester"],
+    "answer": "Backup validation tool",
+    "explanation": "Backup validation ensures backups are usable and not corrupted."
+},
+{
+    "question": "Which type of log records failed login attempts and access violations?",
+    "choices": ["Security logs", "System logs", "Performance logs", "Environmental logs"],
+    "answer": "Security logs",
+    "explanation": "Security logs track authentication attempts and access-related events."
+},
+{
+    "question": "Which process ensures that network performance is compared against historical norms?",
+    "choices": ["Baseline analysis", "Incident response", "Asset tracking", "Change management"],
+    "answer": "Baseline analysis",
+    "explanation": "Baseline analysis compares current performance to historical baselines."
+},
+{
+    "question": "Which tool is used to monitor the health of hard drives in servers?",
+    "choices": ["SMART monitoring", "Packet sniffer", "Cable certifier", "Tone probe"],
+    "answer": "SMART monitoring",
+    "explanation": "SMART monitors disk health and predicts failures."
+},
+{
+    "question": "Which document outlines the steps required to shut down equipment safely during an emergency?",
+    "choices": ["Emergency procedures", "SOP", "AUP", "SLA"],
+    "answer": "Emergency procedures",
+    "explanation": "Emergency procedures define how to safely power down and protect equipment."
+},
+{
+    "question": "Which type of monitoring checks for device overheating or poor airflow?",
+    "choices": ["Environmental monitoring", "Performance monitoring", "Availability monitoring", "Passive monitoring"],
+    "answer": "Environmental monitoring",
+    "explanation": "Environmental monitoring tracks temperature, humidity, and airflow."
+},
+{
+    "question": "Which tool is used to track the lifecycle of hardware from purchase to disposal?",
+    "choices": ["Asset management system", "SIEM", "Syslog server", "Proxy server"],
+    "answer": "Asset management system",
+    "explanation": "Asset management systems track hardware and software throughout their lifecycle."
+},
+{
+    "question": "Which document defines how long logs must be stored for compliance?",
+    "choices": ["Retention policy", "AUP", "SLA", "MOU"],
+    "answer": "Retention policy",
+    "explanation": "Retention policies define how long data and logs must be kept."
+},
+{
+    "question": "Which type of backup creates an exact copy of a system’s disk, including boot sectors?",
+    "choices": ["Disk image", "Snapshot", "Incremental", "Differential"],
+    "answer": "Disk image",
+    "explanation": "Disk imaging creates a full copy of the entire disk structure."
+},
+{
+    "question": "Which monitoring method uses agents installed on devices to collect performance data?",
+    "choices": ["Agent-based monitoring", "Passive monitoring", "Synthetic monitoring", "Threshold monitoring"],
+    "answer": "Agent-based monitoring",
+    "explanation": "Agent-based monitoring collects detailed metrics directly from devices."
+},
+{
+    "question": "Which document outlines the responsibilities of employees during a disaster recovery event?",
+    "choices": ["DR plan", "SLA", "AUP", "MOU"],
+    "answer": "DR plan",
+    "explanation": "Disaster recovery plans define roles and responsibilities during recovery."
+},
+{
+    "question": "Which tool is used to detect unauthorized configuration changes on network devices?",
+    "choices": ["Configuration management system", "Packet sniffer", "Cable tester", "Load tester"],
+    "answer": "Configuration management system",
+    "explanation": "Configuration management tools track and alert on unauthorized changes."
+},
+{
+    "question": "Which type of monitoring checks whether services like DNS or DHCP are functioning properly?",
+    "choices": ["Service monitoring", "Environmental monitoring", "Passive monitoring", "Baseline monitoring"],
+    "answer": "Service monitoring",
+    "explanation": "Service monitoring checks the health of critical network services."
+},
+{
+    "question": "Which document outlines the rules for remote access to corporate systems?",
+    "choices": ["Remote access policy", "AUP", "SLA", "SOP"],
+    "answer": "Remote access policy",
+    "explanation": "Remote access policies define authentication and usage rules for remote connections."
+},
+{
+    "question": "Which tool is used to track and analyze long-term log trends for security and operations?",
+    "choices": ["SIEM", "Syslog server", "Proxy server", "DHCP relay"],
+    "answer": "SIEM",
+    "explanation": "SIEM systems analyze logs and detect patterns over time."
+},
+{
+    "question": "Which type of backup stores only the data that has changed since the last full backup, ignoring incremental backups?",
+    "choices": ["Differential", "Incremental", "Snapshot", "Clone"],
+    "answer": "Differential",
+    "explanation": "Differential backups copy all changes since the last full backup."
+},
+{
+    "question": "Which environmental factor can cause equipment to fail if dust accumulates?",
+    "choices": ["Air quality", "Lighting", "Cable density", "Humidity labels"],
+    "answer": "Air quality",
+    "explanation": "Poor air quality and dust buildup can cause overheating and hardware failure."
+},
+{
+    "question": "Which document outlines the steps required to verify that a change was successful?",
+    "choices": ["Post-change review", "SOP", "SLA", "AUP"],
+    "answer": "Post-change review",
+    "explanation": "Post-change reviews confirm that changes were implemented correctly and without issues."
+}
+
+
 ]
