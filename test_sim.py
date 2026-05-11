@@ -57,10 +57,7 @@ EXAM_WEIGHTS = {
     "Network Security": 0.19,
     "Network Troubleshooting": 0.22
 }
- #new 5/5/26
-
-ACRONYM_FILE = "questions/acronyms.json"
-
+ 
 
 # ============================================================
 # 3. Loaders
@@ -69,6 +66,8 @@ ACRONYM_FILE = "questions/acronyms.json"
 #new loader added 5/10/20
 # ============================================================
 
+#chaged 5/11/26
+ACRONYM_FILE = "acronyms.json"
 
 QUESTIONS_DIR = "questions"
 
