@@ -269,8 +269,7 @@ def mastery_mode(all_questions):
 
     print("\n🔥 Mastery Achieved! You answered all 30 questions correctly! 🔥\n")
     
-#New acronym_mode
-
+#New acronym_mode 5/10/26
 def acronym_mode():
     acronyms = load_acronyms()
     if not acronyms:
@@ -286,7 +285,12 @@ def acronym_mode():
         print("\n====================================")
         print(item["question"])
 
-        for i, choice in enumerate(item["choices"], start=1):
+        # Make a shuffled copy of the choices
+        shuffled_choices = item["choices"][:]
+        random.shuffle(shuffled_choices)
+
+        # Display shuffled choices
+        for i, choice in enumerate(shuffled_choices, start=1):
             print(f"{i}. {choice}")
 
         user_input = input("Your answer (or 'q' to quit): ").strip().lower()
@@ -295,32 +299,28 @@ def acronym_mode():
             print("Exiting Acronym Mode...")
             break
 
-        if not user_input.isdigit() or not (1 <= int(user_input) <= len(item["choices"])):
+        if not user_input.isdigit() or not (1 <= int(user_input) <= len(shuffled_choices)):
             print("Invalid input. Skipping question.")
             continue
 
-        user_choice = item["choices"][int(user_input) - 1]
+        # Get the selected answer from the SHUFFLED list
+        user_choice = shuffled_choices[int(user_input) - 1]
 
-        
-
+        # Check correctness
         if user_choice == item["answer"]:
-            print("✔ Correct!")
+            print(GREEN + CORRECT_TEXT + RESET)
+            score += 1
         else:
-            print(f"✘ Incorrect. Correct answer: {item['answer']}")
+            print(RED + f"✘ Incorrect. Correct answer: {item['answer']}" + RESET)
 
         print(f"Explanation: {item['explanation']}")
-
-        
 
     print("\n====================================")
     print("Acronym Quiz Complete")
     print(f"Score: {score}/{total}")
     print("====================================")
 
-
-
-
-#end new 5/5/26   
+#end new 5/10/26   
 
 
 
