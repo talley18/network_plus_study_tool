@@ -6,6 +6,25 @@ import json
 import random
 import os
 
+# ===== Color Codes =====
+GREEN = "\033[92m"
+RED = "\033[91m"
+YELLOW = "\033[93m"
+BLUE = "\033[94m"
+CYAN = "\033[96m"
+RESET = "\033[0m"
+
+# ===== Pre-Styled Text =====
+CORRECT_TEXT = f"{GREEN}✔ Correct!{RESET}"
+INCORRECT_TEXT = f"{RED}✘ Incorrect.{RESET}"
+
+PASS_TEXT = f"{GREEN}✔ PASS{RESET}"
+FAIL_TEXT = f"{RED}✘ FAIL{RESET}"
+
+INFO_TEXT = f"{CYAN}ℹ Info:{RESET}"
+WARNING_TEXT = f"{YELLOW}⚠ Warning:{RESET}"
+
+
 # ============================================================
 # 2. Data Structures & Mappings
 #    - Domain mapping
@@ -140,7 +159,7 @@ def study_mode():
 
     print(f"\n--- {domain_name} ---")
 
-# stuff moved form here to sec4
+
     session_questions = pick_random_questions(questions)
 
 
@@ -165,10 +184,10 @@ def study_mode():
         if 0 <= idx < len(q["choices"]):
             chosen = q["choices"][idx]
             if chosen.lower() == q["answer"].lower():
-                print("Correct!")
+                print (CORRECT_TEXT)
                 correct_count += 1
             else:
-                print(f"Incorrect. Correct answer: {q['answer']}")
+                print(f"{INCORRECT_TEXT} correct answer: {q['answer']}")
                 print("Explanation:", q["explanation"])
         else:
             print("Invalid choice.")
@@ -188,16 +207,16 @@ def ask_question_mastery(q):
 
     if not answer.isdigit() or int(answer) not in range(1, len(q["choices"]) + 1):
         print("Invalid input. Marked as incorrect.\n")
-        print(f"Correct answer: {q['answer']}\n")
+        print(f"{CORRECT_TEXT}  answer: {q['answer']}\n")
         return False
 
     selected_choice = q["choices"][int(answer) - 1]
 
     if selected_choice == q["answer"]:
-        print("✔ Correct!\n")
+        print(f"{CORRECT_TEXT}\n")
         return True
     else:
-        print("✘ Incorrect.")
+        print(INCORRECT_TEXT)
         print(f"Correct answer: {q['answer']}\n")
         return False
 
@@ -270,7 +289,11 @@ def acronym_mode():
         for i, choice in enumerate(item["choices"], start=1):
             print(f"{i}. {choice}")
 
-        user_input = input("Your answer (1-4): ").strip()
+        user_input = input("Your answer (or 'q' to quit): ").strip().lower()
+
+        if user_input == 'q':
+            print("Exiting Acronym Mode...")
+            break
 
         if not user_input.isdigit() or not (1 <= int(user_input) <= len(item["choices"])):
             print("Invalid input. Skipping question.")
@@ -278,12 +301,16 @@ def acronym_mode():
 
         user_choice = item["choices"][int(user_input) - 1]
 
+        
+
         if user_choice == item["answer"]:
             print("✔ Correct!")
         else:
             print(f"✘ Incorrect. Correct answer: {item['answer']}")
 
         print(f"Explanation: {item['explanation']}")
+
+        
 
     print("\n====================================")
     print("Acronym Quiz Complete")
@@ -330,7 +357,7 @@ def exam_simulation(test_mode=False):
 
     if test_mode:
         print("\n=== NSTPT TEST MODE ===")
-        print("Running a short 5-question exam for debugging.\n")
+        print("Running a short 10-question exam for debugging.\n")
     else:
         print("\n=== NSTPT EXAM SIMULATION ===")
         print("90 questions, weighted by domain.")
@@ -339,11 +366,11 @@ def exam_simulation(test_mode=False):
     all_questions = load_all_questions()
 
     if test_mode:
-        # Pull 5 random questions from ALL domains combined
+        # Pull 10 random questions from ALL domains combined
         combined = []
         for domain_list in all_questions.values():
             combined.extend(domain_list)
-        exam = random.sample(combined, min(5, len(combined)))
+        exam = random.sample(combined, min(10, len(combined)))
     else:
         exam = generate_exam(all_questions)
 
@@ -382,6 +409,7 @@ def exam_simulation(test_mode=False):
 
 
 
+
     total_questions = len(exam)
     scaled_score = int(100 + (score / total_questions) * 800)
 
@@ -389,10 +417,24 @@ def exam_simulation(test_mode=False):
     print(f"Correct: {score}/90")
     print(f"Score: {scaled_score} (Pass: 720)\n")
 
+    #### pasth test test ## scaled_score = 800   # force a passing score for testing
+
+
+# new 5/9/26 start Kiwi passed 
+
     if scaled_score >= 720:
-        print("Status: PASS")
+        print("\n🎉🎉🎉  YOU PASSED!  🎉🎉🎉\n")
+        print(r"""
+ /\_/\  
+( o.o )   < Kiwi approves!
+ > ^ <
+    """)
+        print("Welcome to IT.")
+        print("Now go fix the printer down in HR.\n")
+
     else:
-        print("Status: FAIL")
+            print("\nYou'll get it next time — review your missed questions and try again.\n")
+
 
     print("\nReview missed questions? (y/n)")
     if input("> ").strip().lower() == "y":
@@ -400,6 +442,8 @@ def exam_simulation(test_mode=False):
             print("\n" + q["question"])
             print("Correct answer:", q["answer"])
             print("Explanation:", q["explanation"])
+
+#end new 5/9/26 Kiwi passed             
 
         
 
