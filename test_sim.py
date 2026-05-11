@@ -6,6 +6,16 @@ import json
 import random
 import os
 
+import sys, os
+
+def resource_path(relative_path):
+    # When running as an EXE, PyInstaller sets sys._MEIPASS
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    # When running normally (python test_sim.py)
+    return os.path.join(os.path.abspath("."), relative_path)
+
+
 # ===== Color Codes =====
 GREEN = "\033[92m"
 RED = "\033[91m"
@@ -56,17 +66,18 @@ ACRONYM_FILE = "questions/acronyms.json"
 # 3. Loaders
 #    - Question loader
 #    - Acronym loader
+#new loader added 5/10/20
 # ============================================================
+
 
 QUESTIONS_DIR = "questions"
 
-
 def load_questions(filename):
     """Load questions from a JSON file inside /questions."""
-    path = os.path.join(QUESTIONS_DIR, filename)
+    relative = os.path.join(QUESTIONS_DIR, filename)
+    path = resource_path(relative)
     with open(path, "r") as f:
         return json.load(f)
-    
 
 def load_all_questions():
     all_questions = {}
@@ -74,18 +85,17 @@ def load_all_questions():
         all_questions[name] = load_questions(filename)
     return all_questions
 
-#new 
-
 def load_acronyms():
     try:
-        with open(ACRONYM_FILE, "r") as f:
-            data = json.load(f)
-        return data
+        path = resource_path(os.path.join(QUESTIONS_DIR, ACRONYM_FILE))
+        with open(path, "r") as f:
+            return json.load(f)
     except FileNotFoundError:
         print("[ERROR] Acronym file not found.")
         return []
+
     
-#end new 5/5/26
+#end new loaded added 5/10/26
 
 # debugger addtion 
 # ⭐ Load ALL questions once at startup
