@@ -70,19 +70,18 @@ def load_acronyms():
 
 # debugger addtion 
 # ⭐ Load ALL questions once at startup
-all_questions = load_all_questions()
+#all_questions = load_all_questions()
 
 # ⭐ DEBUG: Print counts per domain
-print("=== DEBUG: Questions per domain ===")
-for domain, qlist in all_questions.items():
-    print(domain, len(qlist))
+##for domain, qlist in all_questions.items():
+    #print(domain, len(qlist))
 
 # ⭐ DEBUG: Combined total
-combined = []
-for qlist in all_questions.values():
-    combined.extend(qlist)
+#combined = []
+#for qlist in all_questions.values():
+    #combined.extend(qlist)
 
-print("=== DEBUG: Total questions loaded ===", len(combined))
+#print("=== DEBUG: Total questions loaded ===", len(combined))
 
 # ============================================================
 # 4. Utility Functions
@@ -312,7 +311,7 @@ def generate_exam(all_questions):
         domain_questions = all_questions[domain]
 
         # Number of questions for this domain
-        num = int(90 * weight)
+        num = round(90 * weight)
 
         # If your pool is small, sample with min()
         selected = random.sample(domain_questions, min(num, len(domain_questions)))
@@ -438,7 +437,9 @@ def main():
             exam_simulation(test_mode=True)
 
         elif choice == "4":
+            all_questions = load_all_questions()
             mastery_mode(all_questions)
+
         #new
         elif choice == "5":
             acronym_mode()
