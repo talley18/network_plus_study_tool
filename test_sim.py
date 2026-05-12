@@ -5,8 +5,9 @@
 import json
 import random
 import os
+import sys
+import time
 
-import sys, os
 
 def resource_path(relative_path):
     # When running as an EXE, PyInstaller sets sys._MEIPASS
@@ -14,6 +15,36 @@ def resource_path(relative_path):
         return os.path.join(sys._MEIPASS, relative_path)
     # When running normally (python test_sim.py)
     return os.path.join(os.path.abspath("."), relative_path)
+
+def type_out(text, speed=0.01):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(speed)
+    print()
+
+#New
+def glow_text(text):
+    # Layered ANSI glow effect
+    bright = "\033[92m"      # bright green
+    dim = "\033[32m"         # dimmer green
+    bold = "\033[1m"
+    reset = "\033[0m"
+
+    # Outer glow (dim)
+    line1 = dim + text + reset
+    # Inner glow (bright + bold)
+    line2 = bold + bright + text + reset
+
+    return line1 + "\n" + line2
+
+def crt_flicker(text, speed=0.008):
+    for char in text:
+        sys.stdout.write("\033[92m" + char + "\033[0m")
+        sys.stdout.flush()
+        time.sleep(speed + random.uniform(0, 0.003))
+    print()
+
 
 
 # ===== Color Codes =====
@@ -354,14 +385,15 @@ def acronym_directory():
         print("No acronym data found.")
         return
 
-    print("\n===============================================")
-    print("            ACRONYM DIRECTORY (A–Z)")
-    print("===============================================\n")
+    print(GREEN + "\n===========================================")
+    print("        ACRONYM DIRECTORY (A–Z)")
+    print("===========================================\n" + RESET)
 
     for item in sorted(acronyms, key=lambda x: x["acronym"]):
-        print(f"{item['acronym']} – {item['definition']}")
+        line = f"{item['acronym']} : {item['definition']}"
+        type_out(GREEN + line + RESET, speed=0.002)
 
-    print("\n===============================================\n")
+    print(GREEN + "\n===========================================\n" + RESET)
 
 # ============================================================
 # 6. Exam System
