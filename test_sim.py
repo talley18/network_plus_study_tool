@@ -34,6 +34,14 @@ FAIL_TEXT = f"{RED}✘ FAIL{RESET}"
 INFO_TEXT = f"{CYAN}ℹ Info:{RESET}"
 WARNING_TEXT = f"{YELLOW}⚠ Warning:{RESET}"
 
+#New 
+def title_block():
+    print("╔══════════════════════════════════════════════╗")
+    print("║        NETWORK+ STUDY TERMINAL               ║")
+    print("╚══════════════════════════════════════════════╝")
+    print()
+
+
 
 # ============================================================
 # 2. Data Structures & Mappings
@@ -92,9 +100,16 @@ def load_acronyms():
     except FileNotFoundError:
         print("[ERROR] Acronym file not found.")
         return []
-
     
-#end new loaded added 5/10/26
+###New loader added acronym Dir 5/11/26###
+
+def load_acronym_reference():
+    relative = os.path.join(QUESTIONS_DIR, "list_acronymsAZ.json")
+    path = resource_path(relative)
+    with open(path, "r") as f:
+        return json.load(f)
+
+
 
 # debugger addtion 
 # ⭐ Load ALL questions once at startup
@@ -329,9 +344,24 @@ def acronym_mode():
     print(f"Score: {score}/{total}")
     print("====================================")
 
-#end new 5/10/26   
+ 
+##new mode acronym listings 5/11/26
 
+def acronym_directory():
+    acronyms = load_acronym_reference()
 
+    if not acronyms:
+        print("No acronym data found.")
+        return
+
+    print("\n===============================================")
+    print("            ACRONYM DIRECTORY (A–Z)")
+    print("===============================================\n")
+
+    for item in sorted(acronyms, key=lambda x: x["acronym"]):
+        print(f"{item['acronym']} – {item['definition']}")
+
+    print("\n===============================================\n")
 
 # ============================================================
 # 6. Exam System
@@ -460,19 +490,24 @@ def exam_simulation(test_mode=False):
 # ============================================================
 # 7. Main Menu / Main Function
 # ============================================================
-
+##new Minu 5/11/26##
 def main():
-    print("=== NPST ===")
+    title_block()
     print("Network Pluse Study Tool")
     print("Type 'quit' at any time to exit.\n")
 
     while True:
         print("Main Menu:")
         print("1. Study Mode (by domain)")
-        print("2. Full Exam Simulation")
-        print("3. Test Mode (short exam)")
-        print("4. Mastery Mode (30-question perfect run) ")
+        print("2. Mini Test (10 questions)")
+        print("3. Mastery Mode (30-question perfect run)") 
+        print("4. Full Exam Simulation 90 Questions")
         print("5. Acronym Study Mode")
+        print("6. In Development Acronym listings")
+        print("7. In Development")
+        print("8. In Development Sotry Mode (Escape the OSI model)")
+        print("9.In Development Subnet Study “Your Doom is below the net”")
+
 
         choice = input("Select an option: ").strip().lower()
 
@@ -480,23 +515,24 @@ def main():
             print("Exiting NSTPT. Study strong.")
             break
 
-        if choice == "1":
+        elif choice == "1":
             study_mode()
 
-        elif choice == "2":
+        elif choice == "4":
             exam_simulation()
 
-        elif choice == "3":     #test mode option
+        elif choice == "2":     #test mode option
             exam_simulation(test_mode=True)
 
-        elif choice == "4":
+        elif choice == "3":
             all_questions = load_all_questions()
             mastery_mode(all_questions)
 
-        #new
         elif choice == "5":
             acronym_mode()
-        #end new 5/5/26
+
+        elif choice == "6":
+            acronym_directory()
 
         else:
             print("Invalid choice.\n")

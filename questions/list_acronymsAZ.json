@@ -1,0 +1,22 @@
+[
+    {
+        "acronym": "SLA",
+        "definition": "Service Level Agreement"
+    },
+    {
+        "acronym": "SLAAC",
+        "definition": "Stateless Address Autoconfiguration"
+    },
+    {
+        "acronym": "SMTP",
+        "definition": "Simple Mail Transfer Protocol"
+    },
+    {
+        "acronym": "SS7",
+        "definition": "Signaling System 7"
+    },
+    {
+        "acronym": "STP",
+        "definition": "Spanning Tree Protocol"
+    }
+]
