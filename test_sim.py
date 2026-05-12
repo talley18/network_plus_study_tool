@@ -38,12 +38,13 @@ def glow_text(text):
 
     return line1 + "\n" + line2
 
-def crt_flicker(text, speed=1.08):
+def crt_flicker(text, speed=0.05):
     for char in text:
         sys.stdout.write("\033[92m" + char + "\033[0m")
-        sys.stdout.flush()
-        time.sleep(speed + random.uniform(0.02, 0.04))
+        sys.stdout.flush()  # force flush
+        time.sleep(speed + random.uniform(0.01, 0.02))
     print()
+
 
 
 
