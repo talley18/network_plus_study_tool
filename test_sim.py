@@ -1,3 +1,62 @@
+
+# ==========================
+# ASCII ART LIBRARY
+# ==========================
+
+WIZARD_LEONARD = r"""
+                                   ....
+                                .'' .'''
+.                             .'   :
+\\                          .:    :
+ \\                        _:    :       ..----.._
+  \\                    .:::.....:::.. .'         ''.
+   \\                 .'  #-. .-######'     #        '.
+    \\                 '.##'/ ' ################       :
+     \\                  #####################         :
+      \\               ..##.-.#### .''''###'.._        :
+       \\             :--:########:            '.    .' :
+        \\..__...--.. :--:#######.'   '.         '.     :
+        :     :  : : '':'-:'':'::        .         '.  .'
+        '---'''..: :    ':    '..'''.      '.        :'
+           \\  :: : :     '      ''''''.     '.      .:
+            \\ ::  : :     '            '.      '      :
+             \\::   : :           ....' ..:       '     '.
+              \\::  : :    .....####\\ .~~.:.             :
+               \':.:.:.:'#########.===. ~ |.'-.   . '''.. :
+                \\    .'  ########## \\ \\ _.' '. '-.       '''.
+                :\\  :     ########   \\ \\      '.  '-.        :
+               :  \\'    '   #### :    \\ \\      :.    '-.      :
+              :  .'\\   :'  :     :     \\ \\       :      '-.    :
+             : .'  .\\  '  :      :     :\\ \\       :        '.   :
+             ::   :  \\'  :.      :     : \\ \\      :          '. :
+             ::. :    \\  : :      :    ;  \\ \\     :           '.:
+              : ':    '\\ :  :     :     :  \\:\\     :        ..'
+                 :    ' \\ :        :     ;  \\|      :   .'''
+                 '.   '  \\:                         :.''
+                  .:..... \\:       :            ..''
+                 '._____|'.\\......'''''''.:..'''
+                            \\
+"""
+
+WIZARD_LEONARD2 = r""" 
+
+              *
+             / \
+            /___\
+           ( o o )            * *
+           )  L  (           /   * *
+   ________()(-)()________  /     * * *
+ E\| _____ )()()() ______ |/B     * * *
+   |/      ()()()(       \|      * * * *
+           | )() |
+           /     \
+          / *  *  \
+         /   *  *  \
+        / *_  *  _  \
+
+"""
+
+
 # ============================================================
 # 1. Imports & Global Constants
 # ============================================================
@@ -45,7 +104,32 @@ def crt_flicker(text, speed=0.05):
         time.sleep(speed + random.uniform(0.01, 0.02))
     print()
 
+###New and testing 5/13/2026
+def wizard_blessing():
+    acronyms = load_acronym_reference()
 
+    # Find the wizard entry
+    wizard_entry = next((a for a in acronyms if a["acronym"] == "WIZARD"), None)
+
+    print(GREEN + "\n===========================================")
+    print("      THE BLESSING OF ACRONYM KNOWLEDGE")
+    print("===========================================\n" + RESET)
+    print(WIZARD_LEONARD2)
+    
+    input(GREEN + "\nPress ENTER to receive the blessing OF ACRONYM KNOWLEDGE!..." + RESET)
+
+    # Now scroll the acronyms
+    print(GREEN + "\n===========================================")
+    print("        ACRONYM DIRECTORY (A–Z)")
+    print("===========================================\n" + RESET)
+
+    for item in sorted(acronyms, key=lambda x: x["acronym"]):
+        line = f"{item['acronym']} : {item['definition']}"
+        type_out(GREEN + line + RESET, speed=0.002)
+
+    print(GREEN + "\n===========================================\n" + RESET)
+
+##end testing
 
 
 
@@ -73,8 +157,15 @@ def title_block():
     print("╔══════════════════════════════════════════════╗")
     print("║        NETWORK+ STUDY TERMINAL               ║")
     print("╚══════════════════════════════════════════════╝")
-    print()
+    print(WIZARD_LEONARD)
 
+
+#============================================================
+# 1.5 (2 later)
+# unlock sytem 
+#============================================================
+
+WIZARD_UNLOCKED = False
 
 
 # ============================================================
@@ -188,8 +279,8 @@ def randomize_acronyms(acronym_list):
 # 5. Study Modes
 #    - Study Mode
 #    - Mastery Mode
-#    - Subnetting Mode (future)
 # ============================================================
+
 
 def study_mode():
     print("\n=== NSTPT STUDY MODE ===")
@@ -223,6 +314,8 @@ def study_mode():
 
     correct_count = 0
 
+
+
     for q in session_questions:
         print("\n" + q["question"])
         for i, option in enumerate(q["choices"], 1):
@@ -230,6 +323,12 @@ def study_mode():
 
         answer = input("Your answer (number or 'q' to quit): ").strip().lower()
 
+#TEST wizard spell# 3/13/26
+
+        if  answer.lower() in ("wizard", "wadir"):
+            wizard_blessing()
+            continue
+#########################################################
         if answer == "q":
             break
 
@@ -249,6 +348,11 @@ def study_mode():
                 print("Explanation:", q["explanation"])
         else:
             print("Invalid choice.")
+
+
+
+    
+
 
     print(f"\nSession complete. Correct: {correct_count}/{len(session_questions)}\n")
 
@@ -388,15 +492,15 @@ def acronym_directory():
         print("No acronym data found.")
         return
 
-    print(GREEN + "\n===========================================")
-    print("        ACRONYM DIRECTORY (A–Z)")
-    print("===========================================\n" + RESET)
+    print(GREEN + "\n=============================")
+    print("      ACRONYM DIRECTORY (A⇔Z)")
+    print("=============================\n" + RESET)
 
     for item in sorted(acronyms, key=lambda x: x["acronym"]):
         line = f"{item['acronym']} : {item['definition']}"
         type_out(GREEN + line + RESET, speed=0.002)
 
-    print(GREEN + "\n===========================================\n" + RESET)
+    print(GREEN + "\n=============================\n" + RESET)
 
 # ============================================================
 # 6. Exam System
@@ -538,10 +642,9 @@ def main():
         print("3. Mastery Mode (30-question perfect run)") 
         print("4. Full Exam Simulation 90 Questions")
         print("5. Acronym Study Mode")
-        print("6. In Development Acronym listings")
-        print("7. In Development")
-        print("8. In Development Sotry Mode (Escape the OSI model)")
-        print("9.In Development Subnet Study “Your Doom is below the net”")
+        print("6. Acronym listings")
+        print("8. In Development Story Mode (Escape the OSI model)")
+        print("9.In Development Subnet story “Your Doom is below the net”")
 
 
         choice = input("Select an option: ").strip().lower()
@@ -565,12 +668,26 @@ def main():
 
         elif choice == "5":
             acronym_mode()
+# new 6 code added 5/13/2026
 
         elif choice == "6":
-            acronym_directory()
+            global WIZARD_UNLOCKED
 
-        else:
-            print("Invalid choice.\n")
+            wizard_blessing()
+
+            if not WIZARD_UNLOCKED:
+                WIZARD_UNLOCKED = True
+
+                print(GREEN + "\n*** You now, know all the acronyms in Networking! Well… The good ones anyway. ***" + RESET)
+                print(GREEN + "\n*** Mini Test Mode Unlocked! ***" + RESET)
+                print("You can now summon the Acronym Blessing anytime by typing 'wizard' or 'wadir'.\n")
+
+                continue   # <-- return to main menu loop
+
+
+###end new code added 
+
+        
 
 # ============================================================
 # 7.5  Program Entry Point (ALWAYS LAST)
